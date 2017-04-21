@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS 初始化 */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font-family: "微软雅黑","MicroSoft YaHei","Arial Narrow","HELVETICA"; font-size:14px; padding:0; margin:0; color:#666;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,li{ margin:0px; padding:0px; list-style:none; }
+img{border:none;}
+h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0;}
+.clear{ clear:both; margin:0; padding:0;}
+a{text-decoration:none; color:#666;}
+html{overflow-x:hidden;-webkit-text-size-adjust:none;}
+
+input{border:none;}
+input,textarea{background:#FFF;outline:none;}
+textarea{overflow-y:auto;}
+em,i{ font-style:normal;}
+body{ background:#fafafa;}
+.clear{clear:both; overflow:hidden;height:1px;margin-top:-1px;font-size:0;/*background:#F00; */}

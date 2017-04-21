@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>遍历返回最长的数组</title>
+</head>
+<script>
+	// 返回最长的数组
+	var arr4=[[1,2,3],[2,3,5,6],[1,5,3,4,],[8,9,6,5,4]];
+	function max_arr(arr){
+	    var maxarr=arr[0];
+	     for(var i in arr){   
+	        if(arr[i].length>maxarr.length){
+	            maxarr=arr[i];            
+	        }
+	    }
+	    return maxarr;
+	}
+	alert(max_arr(arr4)); 
+</script>
+<body>
+	
+</body>
+</html>

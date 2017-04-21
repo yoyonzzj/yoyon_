@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>遍历出数组里的最大值</title>
+</head>
+<script>
+	// 找出数组里最大值
+	// var arr3=[45,21,3,4,23,12,7,8];
+	// var max=arr3[0];
+	// for(var i in arr3){
+	//     if(arr3[i]>max){
+	//         max=arr3[i]
+	//     }
+	// }
+	// alert(max);
+
+
+	// 函数解决
+	var arr=[45,21,3,4,23,12,7,8];
+	function max_num(arr){
+	    var max=arr[0];
+	    for(var i=1;i<arr.length;i++){
+	        if(arr[i]>max){
+	           max=arr[i]
+	        }    
+	    }
+	    return max;
+	}
+	alert(max_num(arr));
+
+	// 从最后一个取的话，var max=arr[arr.length-1];
+</script>
+<body>
+	
+</body>
+</html>

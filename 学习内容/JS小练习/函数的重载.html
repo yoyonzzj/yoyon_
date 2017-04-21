@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数的重载</title>
+</head>
+<script>
+	function type(n){
+	    if(arguments.length==1){
+	        if(typeof arguments[0]=="number"){
+	            console.log("1");
+	        }
+	        if(typeof arguments[0]=="string"){
+	            console.log("2");
+	        }
+	    }else if(arguments.length==2){
+	        if(typeof arguments[0]=="number"){
+	            console.log("3");
+	        }
+	        if(typeof arguments[0]=="string"){
+	            console.log("4");
+	        }
+	    }
+	}
+	type(3);
+	type("3");
+	type(3,"3");
+	type("3",3);
+</script>
+<body>
+	
+</body>
+</html>

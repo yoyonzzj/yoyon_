@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>回调函数2</title>
+</head>
+<script>
+	// 回调
+	function jisuan(num1,num2,fun){
+	    var res=fun(num1,num2);
+	    alert(res);
+	}
+	function jia(m,n){
+	    return m+n;
+	}
+	function jian(m,n){
+	    return m-n;
+	}
+	function cheng(m,n){
+	    return m*n;
+	}
+	function chu(m,n){
+	    return m/n;
+	}
+	jisuan(5,7,jia);
+	jisuan(5,7,jian);
+	jisuan(5,7,cheng);
+	jisuan(5,7,chu);
+</script>
+<body>
+	
+</body>
+</html>

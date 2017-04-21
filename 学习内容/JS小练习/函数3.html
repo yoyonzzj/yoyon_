@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数3</title>
+</head>
+<script>
+	var b=1;
+	function aa()
+	{
+	    var b=2;
+	    function bb()
+	    {
+	        var b=3;
+	        function cc()
+	        {
+	            var b=4;
+	            alert(b);
+	        }
+	        cc();
+	    }
+	    bb();
+	}
+	aa();
+</script>
+<body>
+	
+</body>
+</html>

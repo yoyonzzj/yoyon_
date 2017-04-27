@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>自律公约</title>
+	<link rel="stylesheet" href="css/zilvgongyue.css">
+</head>
+<body>
+	<div class="banner">
+		<img src="images/banner.jpg" alt="">
+	</div>
+	<div class="content1">
+		<div class="title">
+			<div class="innerbox">
+				<div class="left"></div>
+				<p>金融行业自律公约是什么？</p>
+				<div class="right"></div>
+			</div>
+		</div>
+		<div class="wenzibox">
+			<div class="wenzi">
+				<p style="padding-top:30px">3.15国际消费者权益日当天，“2016金融消费者权益保护高峰论坛”在京召开，此次会议由新华网、中国人民大学法学院、中央财经大学法学院、中国社科院金融研究所支付清算研究中心联合主办，国家工商总局消费者权益保护局、中国人民银行金融研究所等相关部门领导、行业专家学者、互联网金融行业代表出席了会议。</p>
+				<p>此次会议同时发起了《金融行业自律公约》公约明确规定了成员需遵循“合作共赢、诚实信用、规范管理、发展共享金融”的基本方针，自觉营造良好的竞争环境，鼓励、支持开展合法、公平、有序的行业竞争。反对采用不正当手段进行行业内竞争，反对诋毁竞争对手、编造有关竞争对手虚假的负面的信息。并强调金融产品应合理合法宣传、推介，不夸大其收益率，特别要提示金融消费者注意投资风险，尽到合理的风险提示义务，坚决杜绝欺骗、误导金融消费者的销售行为。维护金融消费者信息安全，不随意泄漏消费者的个人信息，不利用消费者提供的信息从事无关活动。</p>
+			</div>
+			<div class="tupian">
+				<img src="images/gongyue.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="content2">
+		<div class="title">
+			<div class="innerbox">
+				<div class="left" style="margin-right:52px"></div>
+				<p style="color:#F4FFFD">金融行业自律公约的意义</p>
+				<div class="right"></div>
+			</div>
+		</div>
+		<div class="yiyibox">
+			<div class="yiyicontent1" style="margin-right:192px">
+				<div class="dongxiaotubox">
+					<div class="dongxiaotu">
+						<div class="imgbox">
+							<img src="images/img1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="title1">行业行驶持续化</div>
+				<div class="followword">《金融行业自律公约》的发起加强了行业自律和规范，引导了行业驶进良性发展的轨道，共同促进了互联网金融行业健康可持续发展。</div>
+			</div>
+			<div class="yiyicontent1">
+				<div class="dongxiaotubox">
+					<div class="dongxiaotu">
+						<div class="imgbox" style="width: 44px;height: 54px;margin: 31px auto;">
+							<img src="images/img2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="title1">资金管理安全化</div>
+				<div class="followword">加入金融行业自律公约的企业，密切关注消费者金融权益的基础，在账户保护上将采取更多的技术手段，甄别风险交易，平衡风险市场，共同建立规范更好地保护金融消费者权。</div>
+			</div>
+			<div class="yiyicontent1" style="float:right">
+				<div class="dongxiaotubox">
+					<div class="dongxiaotu">
+						<div class="imgbox" style="width: 54px;height: 38px;margin: 39px auto;">
+							<img src="images/img3.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="title1">信息披露制度化</div>
+				<div class="followword">《金融行业自律公约》共立下十条“铁规”，鼓励、支持开展合法、公平、有序的行业竞争。反对采用不正当手段进行行业内竞争，反对诋毁竞争对手、编造有关竞争对手虚假的负面的信息。</div>
+			</div>
+		</div>
+	</div>
+	<div class="content3">
+		<div class="title">
+			<div class="innerbox" style="width:844px">
+				<div class="left" style="margin-right:52px"></div>
+				<p style="color:#3E5E98">柚子理财加入金融行业自律公约</p>
+				<div class="right"></div>
+			</div>
+		</div>
+		<div class="gongyuebox">
+			<p>作为首批《金融行业自律公约》签署会员单位，柚子理财为贯彻国家政策层面的要求，柚子理财向每一位投资人公布借款人的他项权利证明和强力公正协议等信息，使投资者明晰自身所投标的的借款人所在区域、房产评估价值等重要数据。</p>
+			<p>为保障投资者的金融产品自主选择权，柚子理财客户在所投产品到期后，均系自主选择是否续投，而非业内部分企业采取的“自动续约强制模式”，这一点充分保障了投资人的利益。</p>
+			<p>柚子理财着力于风控体系、信息披露和投资者教育方面履行企业责任，更好发挥互联网金融的普惠作用。保护投资者合法权益，就是保护企业自己。</p>
+		</div>
+	</div>
+</body>
+</html>

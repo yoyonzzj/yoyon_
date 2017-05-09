@@ -55,5 +55,23 @@
 		<a id="biaoji">标记</a>
 		<a href="#biaoji">点我跳转到标记</a>
 
+9.HTML <base> 元素  <base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:
+	<head>
+	<base href="http://www.runoob.com/images/" target="_blank">
+	</head>
+	<body>
+		<img src="logo.png"> - 注意这里我们设置了图片的相对地址。能正常显示是因为我们在 head 部分设置了 base 标签，该标签指定了页面上所有链接的默认 URL，所以该图片的访问地址为 "http://www.runoob.com/images/logo.png"
+	</body>
+
+10.<meta> 标签- 使用实例
+	为搜索引擎定义关键词:
+	<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+	为网页定义描述内容:
+	<meta name="description" content="免费 Web & 编程 教程">
+	定义网页作者:
+	<meta name="author" content="Runoob">
+	每30秒中刷新当前页面:
+	<meta http-equiv="refresh" content="30">
+	
 </body>
 </html>

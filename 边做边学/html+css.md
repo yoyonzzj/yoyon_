@@ -72,6 +72,35 @@
 	<meta name="author" content="Runoob">
 	每30秒中刷新当前页面:
 	<meta http-equiv="refresh" content="30">
+
+11.<map> 定义图像地图  <area> 定义图像地图中的可点击区域
+	<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+	<map name="planetmap">
+		<area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+		<area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+		<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+	</map>
 	
+12.HTML 表格  表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+	定义表格的表头：<th>  
+	单元格跨两列：<th colspan="2">Telephone</th>
+	单元格跨两行：<th rowspan="2">Telephone</th>
+	单元格边距：<table border="1" cellpadding="10">
+	单元格间距：<table border="1" cellspacing="10">
+				<h4>没有单元格间距:</h4>  -->  <table border="1">
+	            <h4>单元格间距="0":</h4>  -->  <table border="1" cellspacing="0">
+	            <h4>单元格间距="10":</h4>  -->  <table border="1" cellspacing="10">
+	表格详情：<a href="">http://www.runoob.com/html/html-tables.html</a>
+
+13..无序列表：<h4>圆圈/圆点/正方形列表：</h4>
+	<ul style="list-style-type:circle/disc/square;color:red">
+		<li><a style="color:blue">Apples</a></li>
+	有序列表：<h4>默认(从1开始自然数字)/大写字母/小写字母/罗马数字/小写罗马数字列表：</h4>
+    <ol type="A/a/I/i" start="16">
+		<li>Apples</li>
+		<li>Bananas</li>
+		<li>Lemons</li>
+		<li>Oranges</li>
+</ol>  
 </body>
 </html>

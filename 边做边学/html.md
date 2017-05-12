@@ -5,6 +5,37 @@
 	<title>html+css</title>
 </head>
 <body>
+
+行元素：<a>标签可定义锚                             块元素：<address>定义地址
+		<b>字体加粗											<caption>定义表格标题
+		<img>向网页中嵌入一幅图像							<dd>定义列表中定义条目						
+		<input>输入框										<div>定义文档中的分区或节
+		<span>组合文档中的行内元素							<dl>定义列表
+		<br>换行											<dt>定义列表中的项目
+		<em>定义为强调的内容								<fieldset>定义一个框架集
+		<i>斜体文本效果										<form>创建 HTML 表单
+		<select>创建单选或多选菜单							<h1h6>定义标题
+		<small>呈现小号字体效果								<hr>创建一条水平线
+		<strong>语气更强的强调的内容						<legend>元素为
+		<label>标签为										<fieldset>元素定义标题
+		<sub>定义下标文本									<li>标签定义列表项目
+		<sup>定义上标文本									<noframes>为那些不支持框架的浏览器显示文本，于 frameset 元素内部
+		<textarea>多行的文本输入控件						<noscript>定义在脚本未被执行时的替代内容
+		<abbr>表示一个缩写形式								<ol>定义有序列表
+		<acronym>定义只取首字母缩写							<ul>定义无序列表
+		<bdo>可覆盖默认的文本方向							<p>标签定义段落
+		<big>大号字体加粗									<pre>定义预格式化的文本
+		<cite>引用进行定义									<table>标签定义 HTML 表格
+		<code>定义计算机代码文本							<tbody>标签表格主体（正文）
+		<dfn>定义一个定义项目								<td>表格中的标准单元格
+		<kbd>定义键盘文本									<tfoot>定义表格的页脚（脚注或表注）
+		<input> 元素定义标注（标记）						<th>定义表头单元格
+		<q>定义短的引用										<thead>标签定义表格的表头
+		<samp>定义样本文本									<tr>定义表格中的行
+		<tt>打字机或者等宽的文本效果						
+		<var>定义变量										
+
+
 1.对于中文网页需要使用 <meta charset="utf-8"> 声明编码，否则会出现乱码。
 
 2. 一些标签的使用，切记所有标签都需要闭合，不管是单体标签还是成对标签。（尽管目前浏览器是识别有些标签不闭合的情况，但是取的最好的保证兼容性，使用闭合）
@@ -90,6 +121,22 @@
 				<h4>没有单元格间距:</h4>  -->  <table border="1">
 	            <h4>单元格间距="0":</h4>  -->  <table border="1" cellspacing="0">
 	            <h4>单元格间距="10":</h4>  -->  <table border="1" cellspacing="10">
+	<style>
+		.table{
+			border-collapse 属性设置表格的边框是否被合并为一个单一的边框，还是象在标准的 HTML 中那样分开显示。
+
+			border-collapse: separate;---默认值。边框会被分开。不会忽略 border-spacing 和 empty-cells 属性。
+			border-collapse: collapse;---如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
+		}
+	</style>
+	表格标题的位置：<table border="1">
+						<caption>Table 1.1 Customers</caption>
+					</table>
+					<style>
+						caption{
+							caption-side: top/bottom;
+						}
+					</style>
 	表格详情：<a href="">http://www.runoob.com/html/html-tables.html</a>
 
 13..无序列表：<h4>圆圈/圆点/正方形列表：</h4>
@@ -101,6 +148,17 @@
 		<li>Bananas</li>
 		<li>Lemons</li>
 		<li>Oranges</li>
-</ol>  
+	</ol>  
+	详情：<a href="">http://www.runoob.com/try/try.php?filename=trycss_list-style-type_all</a>
+
+	设置作为列表项标记的图像 
+<style>
+	ul {
+		list-style-image:url('sqpurple.gif');
+	}
+</style>
+
+14.表单详情：<a href="">http://www.runoob.com/html/html-forms.html</a>
+15.字符实体：<a href="">http://www.runoob.com/html/html-entities.html</a>
 </body>
 </html>

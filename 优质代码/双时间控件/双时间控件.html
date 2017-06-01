@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双时间控件</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-datetimepicker.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="bootstrap-datetimepicker.js"></script>
+	<script src="bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+	起止时间<input type="text" id="datetimeStart" readonly>
+	终止时间<input type="text" id="datetimeEnd" readonly>
+	<script type="text/javascript">
+		$('.date').datetimepicker({
+			  language: 'zh-CN',//显示中文
+			  format: 'yyyy-mm-dd',//显示格式
+			  minView: "month",//设置只显示到月份
+			  initialDate: new Date(),//初始化当前日期
+			  autoclose: true,//选中自动关闭
+			  todayBtn: true//显示今日按钮
+		 })
+	    $("#datetimeStart").datetimepicker({
+	        format: 'yyyy-mm-dd',
+	        minView:'month',
+	        language: 'zh-CN',
+	        autoclose:true,
+	        startDate:new Date()
+	    }).on("click",function(){
+	        $("#datetimeStart").datetimepicker("setEndDate",$("#datetimeEnd").val())
+	    });
+	    $("#datetimeEnd").datetimepicker({
+	        format: 'yyyy-mm-dd',
+	        minView:'month',
+	        language: 'zh-CN',
+	        autoclose:true,
+	        startDate:new Date()
+	    }).on("click",function(){
+	        $("#datetimeEnd").datetimepicker("setStartDate",$("#datetimeStart").val())
+	    });
+	</script>
+</body>
+</html>

@@ -177,4 +177,14 @@
 14.表单详情：<a href="">http://www.runoob.com/html/html-forms.html</a>
 15.字符实体：<a href="">http://www.runoob.com/html/html-entities.html</a>
 </body>
+
+<script>
+	$("img").each(function(){
+		if(this.width.value>200){
+			this.width=100px;
+		}
+	})
+</script>
+
+
 </html>

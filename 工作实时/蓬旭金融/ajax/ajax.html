@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+</head>
+<body>
+	
+</body>
+<script>
+	$.post('/renren-security/zyuserverify/userSummary?userId='+userId,function(data){
+		//获得响应数据
+	  	$("#person-phone").html("").append(data.result.phone);
+	  	$("#person-userName").html("").append(data.result.userName);
+	  	$("#person-bankName").html("").append(data.result.bankName);
+	  	$("#person-idcardZ").html("").append('<a href="javascript:void(0)" onclick="idpicturesZ('+"'"+data.result.idcardZ+"'"+')">正面</a>');
+	  	$("#person-userStatus").html("").append(function(){if(data.result.userStatus==1){return "上班族"}else{return "学生族"}});
+	  	$("#person-idcardF").html("").append('<a href="javascript:void(0)" onclick="idpicturesF('+"'"+data.result.idcardF+"'"+')">反面</a>');
+	},'json');
+</script>
+</html>

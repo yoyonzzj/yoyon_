@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>滚轮放大缩小</title>
 	<link rel="stylesheet" href="css/滚轮放大缩小.css">
+	<script src="js/jquery.min.js"></script>
 </head>
 <body>
 	<div class="zhezhao">
@@ -29,8 +30,44 @@
 		</div>
 	</div>
 </body>
-<script src="js/functions.js"></script>
+<!-- <script src="js/functions.js"></script> -->
 <script>
+	function getStyle(obj,attr){
+		if(obj.currentStyle){
+			return obj.currentStyle[attr];
+		}else{
+			return getComputedStyle(obj,null)[attr];
+		}
+	}
+	function mouseWheel(obj,upFun,downFun){
+
+	if(obj.attachEvent){
+		obj.attachEvent("onmousewheel",scrollFn);				//IE
+	}else if(obj.addEventListener){
+		obj.addEventListener("mousewheel",scrollFn,false);		//-webkit
+		obj.addEventListener("DOMMouseScroll",scrollFn,false);	//-moz
+	}
+	function scrollFn(e){
+		var ev=e||window.event;
+		var num=ev.detail||ev.wheelDelta;
+		if(num==120||num==-3){
+			if(upFun){
+				upFun.call(obj);
+			}
+		}else if(num==-120||num==3){
+			if(downFun){
+				downFun.call(obj);
+			}
+		}
+		if(ev.preventDefault){
+			ev.preventDefault();
+		}else{
+			ev.returnValue=false;
+		}
+	}
+
+}
+
 	var xiaohezi=document.querySelectorAll(".xiaohezi");
 	var zhezhao=document.querySelector(".zhezhao");
 	var centerbox=document.querySelector(".centerbox");

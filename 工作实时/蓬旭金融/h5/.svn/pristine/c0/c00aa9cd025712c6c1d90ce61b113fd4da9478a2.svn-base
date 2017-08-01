@@ -1,0 +1,15 @@
+body,input,form,p,pre,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+ul,li,ol,dl,dt,dd{margin:0;padding:0;list-style: none;}
+a{text-decoration: none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input[type="button"],button,a{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+img{border: 0;}
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-user-select:none;}
+input,textarea{outline: none;}
+html,body{width: 100%;}
+
+.czz-top{width:100%;height:28.8vh;background:url(../img/yqh_02.png) no-repeat center center;background-size:cover}
+.czz-conter{width:100%;height:auto;background:#f4f4f4;}
+.czz-img1{width:100%;height:39.22vh;background:url(../img/yqh_03.png) no-repeat center center;background-size:cover}
+.czz-img2{width:100%;height:39.22vh;background:url(../img/yqh_04.png) no-repeat center center;background-size:cover;margin-top:.2rem}
+.czz-img3{width:100%;height:39.22vh;background:url(../img/yqh_05.png) no-repeat center center;background-size:cover;margin-top:.2rem}
+.czz-img4{width:100%;height:39.22vh;background:url(../img/yqh_06.png) no-repeat center center;background-size:cover;margin-top:.2rem}

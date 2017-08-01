@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>投资详情页</title>
+		<link rel="stylesheet" href="css/czz-common.css" />
+		<link rel="stylesheet" href="css/czz-touzixiangqingye.css" />
+		
+	</head>
+	<body>
+		<div class="czz-container">
+			<div class="czz-conter">
+				<div class="czz-xq">
+					<div class="czz-xql">
+						<div class="czz-ll">
+							<p class="czz-bt">月柚利20170228-1</p>
+						<ul class="czz-biao">
+							<li>
+								<p class="czz-syl">7.8%</p>
+								<p class="czz-yq">预期年化收益率</p>								
+							</li>
+							<li class="czz-zj">
+								<p><span class="czz-s">200,000</span><span class="czz-t">元</span></p>
+								<p class="czz-chanpin">产品总额</p>
+							</li>
+							<li class="czz-zj1">
+								<p><span class="czz-s">30</span><span class="czz-t">天</span></p>
+								<p class="czz-chanpin">产品期限</p>
+							</li>
+						</ul>
+						<div class="czz-jd">
+							<div class="czz-jdt">
+								<p></p>
+							</div>
+								<p class="czz-jds">75%</p>
+						</div>
+						<div class="czz-sm">
+							<ul>
+								<li><p><span>计息方式：</span>T+1日起计息</p></li>
+								<li class="czz-l"><p><span>还款方式：</span>到期一次性还本付息</p></li>
+							</ul>
+							<ul class="czz-t">
+								<li><p><span>费用说明：</span>柚子理财不收取任何费用</p></li>
+								<li><p><span>安全保障：</span>由第三方,个人或机构为借款标提供担保</p></li>
+							</ul>
+						</div>
+						</div>
+						
+						<div class="czz-bj"></div>
+					</div>
+					<div class="czz-xqr">
+						<p class="czz-sy">剩余可投：<span>4,900元</span></p>
+						<p class="czz-ye">账户余额：<span>423,900元</span><span><a href="">充值</a></span></p>
+						<input class="czz-srk" type="text" placeholder="100元起投"/>
+						<button class="czz-btn">全额</button>
+						<p class="czz-yqsy">预期收益：<span>35.23元</span></p>
+						<a class="czz-tz" href="">确认投资</a>
+						<p class="czz-fx">理财有风险，投资需谨慎</p>
+					</div>
+				</div>
+				<!--导航列表-->
+				<div class="czz-nav">
+					<ul>
+						<li class="czz-ys _lis">项目详情</li>
+						<li class="_lis">投资记录</li>
+						<li class="_lis">风控措施</li>
+					</ul>
+				</div>
+				<div class="czz-xmxq">
+				<!--项目详情-->
+				<section class="czz-xx1">
+					<p class="czz-js"><span class="czz-tu"></span>产品介绍</p>
+					<p class="czz-jsn">月柚利是柚子理财推出的30天的债权转让型投资产品。结合投资人需求，柚子理财着力于开发流动性强、安全性高的债权类资产，该类资产大部分都是有抵押的优质债权。在兼顾收益的前提下，柚子理财让投资人同时享有流动性和安全性兼具的产品。</p>
+					<p class="czz-xmjd"><span class="czz-tu"></span>项目进度</p>
+					<div class="czz-xmsj">
+						<dl>
+							<dt><img src="img/wytz/strat.png" alt="" /></dt>
+							<dd>
+								<p>开始加入</p>
+								<p>2017-06-13  04:30</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/wytz/ suo.png" alt="" /></dt>
+							<dd>
+								<p>开始加入</p>
+								<p>2017-06-13  04:30</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/wytz/end.png" alt="" /></dt>
+							<dd>
+								<p>开始加入</p>
+								<p>2017-06-13  04:30</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/wytz/bx.png" alt="" /></dt>
+							<dd>
+								<p>开始加入</p>
+								<p>2017-06-13  04:30</p>
+							</dd>
+						</dl>
+					</div>
+					<p class="czz-xmjd"><span class="czz-tu"></span>产品信息</p>
+					<table class="czz-tab">
+						<tr>
+							<td class="czz-mc">产品名称</td>
+							<td class="czz-nn">月柚利</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">投资范围</td>
+							<td class="czz-nn">具有多重安全保障措施的优质借款项目。包括车商贷、个人消费贷款、个人以及企业的不动产抵押贷款等等</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">资金投向</td>
+							<td class="czz-nn">投资后可查看详情</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">预计年化收益</td>
+							<td class="czz-nn">7.8%</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">加入条件</td>
+							<td class="czz-nn">100元起投</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">收益处理方式</td>
+							<td class="czz-nn">t+1日计息（第二个工作日计息，遇节假日顺延）</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">封闭期</td>
+							<td class="czz-nn">30天</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">退出说明</td>
+							<td class="czz-nn">到期退出，提现后最晚t+3日到账</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">费率说明</td>
+							<td class="czz-nn">柚子理财不收取任何费用</td>
+						</tr>
+						<tr>
+							<td class="czz-mc">安全保障</td>
+							<td class="czz-nn">由第三方、个人或者机构为借款标的提供担保</td>
+						</tr>
+						
+					</table>
+					
+				</section>
+				<!--投资介绍-->
+				<section>
+					<table class="czz-tzjl">
+						<tr class="czz-tabHeader">
+							<th>序号</th>
+							<th>投资人</th>
+							<th>投资金额</th>
+							<th>有效金额</th>
+							<th>投标时间</th>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>1</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>2</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>3</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>4</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>5</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>6</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>7</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>8</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>9</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+						<tr class="czz-tabBody">
+							<td>10</td>
+							<td>第1期</td>
+							<td>200000</td>
+							<td>150000</td>
+							<td>2017-06-12 11：25：01</td>
+						</tr>
+					</table>
+					<!--分页-->
+						<div class="czz-pagination" style="margin:5% 0 0 30%">
+						  <ul>
+						    <li><a href="#">上一页</a></li>
+						    <li><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">...</a></li>
+						    <li><a href="#">112</a></li>
+						    <li><a href="#">113</a></li>
+						    <li><a href="#">下一页</a></li>
+						  </ul>
+						</div>
+				</section>
+				<!--风控风险-->
+				<section>
+					<p class="czz-pneumaticControl"><span class="czz-tu"></span>风控保障措施</p>
+					<p class="czz-list1">1.房产抵押</p>
+					<p class="czz-txt">借款人此次借款用于公司经营发展，用其名下上海市长宁区古北路虹桥万博花园的沿街商铺，面积117.31平方米，年租金21.6万，市场售价约700万的房产进行抵押借款，内有银行贷款，此次为余值抵押，借款金额为100万。
+</p>
+					<p class="czz-list2">2.公司连带责任担保</p>
+					<p class="czz-safety"><span class="czz-tu"></span>资金安全</p>
+					<p class="czz-txt">
+						借款人上海人，研究生学历，目前自己经营三家企业，收入稳定；借款人名下有3处房产2辆汽车；借款人提供名下房产作余值抵押，抵押物的市场评估价值约为700万元。本次借款用途明确，风险可控，且借款人具备相应的还款能力。
+					</p>
+					<p class="czz-safety"><span class="czz-tu"></span>资金安全</p>
+					<p class="czz-txt">
+						借款人上海人，研究生学历，目前自己经营三家企业，收入稳定；借款人名下有3处房产2辆汽车；借款人提供名下房产作余值抵押，抵押物的市场评估价值约为700万元。本次借款用途明确，风险可控，且借款人具备相应的还款能力。
+					</p>
+				</section>
+				</div>
+			</div>	
+		</div>
+	</body>
+	<script>
+		var _lis = document.getElementsByClassName("_lis")
+        var _divs = document.getElementsByTagName("section")
+
+
+			for(var i = 0; i < _lis.length; i++){
+			    _lis[i].index = i;
+			    _lis[i].onclick = function(){
+			        for(var m = 0;m < _lis.length; m++){
+			            _lis[m].className = ""
+			        }
+			        	this.className ="czz-ys";
+			
+			    for(var n = 0 ; n < _divs.length; n++){
+			        _divs[n].className = ""
+			    }
+			    	_divs[this.index].className ="czz-xx1"
+			}
+			    
+			}  		
+	</script>
+</html>

@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE-Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<!-- <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"> -->
+	<script src="js/rem.js"></script>
+	<title>微信端老客复投活动</title>
+	<link rel="stylesheet" href="css/futouhuodong.css">
+</head>
+<body>
+	
+<div class="content">
+
+
+	<div class="zhezhao">
+		<div class="tanchuang">
+			<div class="jiaohubox">
+				<div class="innerbox">
+					<div class="bufuhe">
+						<p>抱歉，您不符合</p>
+						<p>此次活动的参与规则！</p>
+					</div>
+				</div>
+			</div>
+			<div class="close">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="zhezhao1">
+		<div class="tanchuang1">
+			<div class="jiaohubox1">
+				<div class="innerbox1">
+					<div class="bufuhe1">
+						<p>您还没有领取</p>
+						<p>8元和25元投资红包哦！</p>
+					</div>
+					<a href="###"><div class="zzlingqu">立即领取</div></a>
+				</div>
+			</div>
+			<div class="close1">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="zhezhao2">
+		<div class="tanchuang2">
+			<div class="jiaohubox2">
+				<div class="innerbox2">
+					<div class="bufuhe2">
+						<p>您还没有登录，</p>
+						<p>马上登陆？</p>
+					</div>
+					<div class="cancel">取消</div>
+					<a href="###"><div class="login">登录</div></a>
+				</div>
+			</div>
+			<div class="close2">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="zhezhao3">
+		<div class="tanchuang3">
+			<div class="jiaohubox3">
+				<div class="innerbox3">
+					<div class="bufuhe3">
+						<p>您还没有领取50元</p>
+						<p>和100元投资红包哦！</p>
+					</div>
+					<a href="###"><div class="aalingqu">立即领取</div></a>
+				</div>
+			</div>
+			<div class="close3">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="zhezhao4">
+		<div class="tanchuang4">
+			<div class="jiaohubox4">
+				<div class="innerbox4">
+					<div class="bufuhe4">
+						<p>您还没有使用</p>
+						<p>8元和25元投资红包哦！</p>
+					</div>
+					<a href="###"><div class="bblingqu">立即使用</div></a>
+				</div>
+			</div>
+			<div class="close4">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="zhezhao5">
+		<div class="tanchuang5">
+			<div class="jiaohubox5">
+				<div class="innerbox5">
+					<div class="bufuhe5">
+						<p>您还没有使用50元</p>
+						<p>和100元投资红包哦！</p>
+					</div>
+					<a href="###"><div class="cclingqu">立即使用</div></a>
+				</div>
+			</div>
+			<div class="close5">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="zhezhao6">
+		<div class="tanchuang6">
+			<div class="jiaohubox6">
+				<div class="innerbox6">
+					<div class="bufuhe6">
+						<p>抱歉，您已领取过</p>
+						<p>该红包！</p>
+					</div>
+				</div>
+			</div>
+			<div class="close6">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<header class="head">邀请好友</header>
+ 	<div class="banner">
+ 		<img src="images/banner.png" alt="">
+ 	</div>
+ 	<div class="hongbao-box">
+ 		<div class="hongbaobox">
+	 		<div class="hongbao-box1">
+		 		<div class="step1">
+		 			<p>Step 1</p>
+		 		</div>
+		 		<div class="hongbao1">
+		 			<a href="###">
+		 				<div class="wenzi">
+		 					<p>8元投资红包</p>
+		 				</div>
+		 			</a>
+		 		</div>
+		 		<p class="jia">+</p>
+		 		<div class="hongbao2">
+		 			<a href="###">
+		 				<div class="wenzi">
+		 					<p>25元投资红包</p>
+		 				</div>
+		 			</a>
+		 		</div>
+		 		<div class="lingqu1 lingqu">
+		 			<div class="yilingqu1">已领取</div>
+		 			<p class="tp1"><a href="###">立即领取</a></p>		
+		 		</div>
+		 		<div class="lingqu2 lingqu">
+		 			<div class="yilingqu2">已领取</div>
+		 			<p class="tp1"><a href="###">立即领取</a></p>
+		 		</div>
+		 	</div>
+
+		 	<div class="hongbao-box1">
+		 		<div class="step1">
+		 			<p>Step 2</p>
+		 		</div>
+		 		<div class="hongbao1">
+		 			<a href="###">
+		 				<div class="wenzi">
+		 					<p>50元投资红包</p>
+		 				</div>
+		 			</a>
+		 		</div>
+		 		<p class="jia">+</p>
+		 		<div class="hongbao2">
+		 			<a href="###">
+		 				<div class="wenzi">
+		 					<p>100元投资红包</p>
+		 				</div>
+		 			</a>
+		 		</div>
+		 		<div class="lingqu1 lingqu">
+		 			<div class="yilingqu3">已领取</div>
+		 			<p class="tp1"><a href="###">立即领取</a></p>
+		 		</div>
+		 		<div class="lingqu2 lingqu">
+		 			<div class="yilingqu4">已领取</div>
+		 			<p class="tp1"><a href="###">立即领取</a></p>
+		 		</div>
+		 	</div>
+
+		 	<div class="hongbao-box1" style="margin-top:.2rem;">
+		 		<div class="step1">
+		 			<p>Step 3</p>
+		 		</div>
+		 		<div class="hongbao-3">
+		 			<a href="###">
+		 				<div class="wenzi1">
+		 					<p>86元现金红包</p>
+		 				</div>
+		 			</a>
+		 		</div>
+		 		<div class="lingqu3 lingqu">
+		 			<div class="yilingqu5">已领取</div>
+		 			<p class="tp1"><a href="###" onclick="case7()">立即领取</a></p>
+		 		</div>
+		 	</div>
+		</div>
+ 	</div>
+ 	<div class="guize">
+ 		<div class="guizebox">
+ 			<div class="huodong1">
+ 				<p style="padding-left:0"><img src="images/yuanqiu.png" alt="" style="width:.16rem;height:.16rem;vertical-align:middle"> 活动对象 : 注册时间截止在2017年1月31日前的用户</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<p style="padding-left:0"><img src="images/yuanqiu.png" alt="" style="width:.16rem;height:.16rem;vertical-align:middle"> 活动时间 : 即日起至2017年5月31号</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>符合此次活动的用户 ，可免费领取8元，25元投资红</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img" style="display:none">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>包各一个，成功使用此两个红包后，能再次免费领取</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img" style="display:none">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>50元，100元投资红包各一个。以上四个投资红包全</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img" style="display:none">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>部成功使用后，平台再赠送一个86元现金红包（现</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img" style="display:none">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>金红包可直接提现哦）;</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>参与此活动的用户不能与其他活动同时共享;</p>
+ 			</div>
+ 			<div class="huodong1">
+ 				<div class="img">
+ 					<img src="images/yuanqiu.png" alt="">
+ 				</div>
+ 				<p>本次活动最终解释权归柚子理财所有。</p>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+
+</body>
+<script>
+
+
+// 判断弹窗类型
+
+// 未登录
+function case1(){
+	var lingqu3=document.querySelector(".lingqu3");
+	var zhezhao2=document.querySelector(".zhezhao2");
+	zhezhao2.style.display="block";
+	var close2=document.querySelector(".close2");
+	close2.onclick=function(){
+		zhezhao2.style.display="none";
+	}
+	var cancel=document.querySelector(".cancel");
+	cancel.onclick=function(){
+		zhezhao2.style.display="none";
+	}
+}
+
+	
+// 不符合领取规则
+function case2(){
+	var lingqu1=document.querySelector(".lingqu1");
+	var zhezhao=document.querySelector(".zhezhao");
+	zhezhao.style.display="block";
+	var close=document.querySelector(".close");
+	close.onclick=function(){
+		zhezhao.style.display="none";
+	}
+}
+	
+
+// 还未领取8元和25元的红包
+function case3(){
+	var lingqu2=document.querySelector(".lingqu2");
+	var zhezhao1=document.querySelector(".zhezhao1");
+	var zzlingqu=document.querySelector(".zzlingqu");
+	zhezhao1.style.display="block";
+	var close1=document.querySelector(".close1");
+	close1.onclick=function(){
+		zhezhao1.style.display="none";
+	}
+	zzlingqu.onclick=function(){
+		zhezhao1.style.display="none";
+	}
+}
+
+
+
+// 还未领取50元和100元的红包
+function case4(){
+	var zhezhao3=document.querySelector(".zhezhao3");
+	var aalingqu=document.querySelector(".aalingqu");
+	zhezhao3.style.display="block";
+	var close3=document.querySelector(".close3");
+	close3.onclick=function(){
+		zhezhao3.style.display="none";
+	}
+	aalingqu.onclick=function(){
+		zhezhao3.style.display="none";
+	}
+}
+
+
+
+
+// 还未使用8元和25元的红包
+function case5(){
+	var zhezhao4=document.querySelector(".zhezhao4");
+	var bblingqu=document.querySelector(".bblingqu");
+	zhezhao4.style.display="block";
+	var close4=document.querySelector(".close4");
+	close4.onclick=function(){
+		zhezhao4.style.display="none";
+	}
+	bblingqu.onclick=function(){
+		zhezhao4.style.display="none";
+	}
+}
+
+
+
+
+// 还未使用50元和100元的红包
+function case6(){
+	var zhezhao5=document.querySelector(".zhezhao5");
+	var cclingqu=document.querySelector(".cclingqu");
+	zhezhao5.style.display="block";
+	var close5=document.querySelector(".close5");
+	close5.onclick=function(){
+		zhezhao5.style.display="none";
+	}
+	cclingqu.onclick=function(){
+		zhezhao5.style.display="none";
+	}
+}
+
+
+
+
+// 已领取过该红包
+function case7(){
+	var zhezhao6=document.querySelector(".zhezhao6");
+	zhezhao6.style.display="block";
+	var close6=document.querySelector(".close6");
+	close6.onclick=function(){
+		zhezhao6.style.display="none";
+	}
+}
+	
+
+
+// 领取后颜色变化
+function changecolor1(){
+	var yilingqu1=document.querySelector(".yilingqu1");
+	yilingqu1.style.display="block";
+}
+function changecolor2(){
+	var yilingqu2=document.querySelector(".yilingqu2");
+	yilingqu2.style.display="block";
+}
+function changecolor3(){
+	var yilingqu3=document.querySelector(".yilingqu3");
+	yilingqu3.style.display="block";
+}
+function changecolor4(){
+	var yilingqu4=document.querySelector(".yilingqu4");
+	yilingqu4.style.display="block";
+}
+function changecolor5(){
+	var yilingqu5=document.querySelector(".yilingqu5");
+	yilingqu5.style.display="block";
+}
+	
+
+
+
+	
+	
+</script>
+</html>

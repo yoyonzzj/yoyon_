@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付结果</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/paysuccess.css">
+</head>
+<body>
+ 
+<div class="content">
+    <img src="img/paysuc.png">
+    <h4>恭喜您成功参与了<span>5</span>人次</h4>
+    <h4>共支付了1.80元</h4>
+    <p>幸运号码：<span>10000555</span>   <span>12052365</span>  <a href="#">查看更多</a></p>
+    <a href="#" class="btn">确定</a>
+</div>
+ 
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

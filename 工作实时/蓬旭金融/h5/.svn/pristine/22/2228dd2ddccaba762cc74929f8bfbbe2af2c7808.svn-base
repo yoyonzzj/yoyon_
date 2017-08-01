@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="czz-top">
+			<p class="czz-iphone">
+				<i class="czz-i"></i>
+				<span class="czz-z">iPhone版</span>
+			</p>
+			<p class="czz-az">
+				<i class="czz-a"></i>
+				<span class="czz-q">敬请期待</span>
+			</p>
+		</div>
+		<div class="czz-center">
+			<div class="czz-tp">
+				<img src="img/content.png" alt="" />
+			</div>
+		</div>
+		<div class="czz-footer">
+			<button class="czz-jk">立即借款</button>
+			<div class="czz-fc">
+				<p>借款还能赚钱？</p>
+				<p>马上邀请好友，立即赢取奖金，借款越多，奖金越多！</p>
+			</div>
+		</div>
+	</body>
+</html>

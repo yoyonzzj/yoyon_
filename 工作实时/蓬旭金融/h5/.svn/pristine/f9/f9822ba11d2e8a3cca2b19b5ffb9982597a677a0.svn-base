@@ -1,0 +1,32 @@
+#list{
+	font-size:0.26rem;
+}
+#list li{
+	overflow:hidden;
+	padding:0.25rem 0.4rem;
+	border-bottom:1px solid rgb(236,236,236);
+	color:rgb(153,153,153);
+}
+#list li .left{
+	float: left;
+}
+#list li h4{
+	font-weight:normal;
+	color:rgb(51,51,51);
+	font-size:0.3rem;
+	padding-bottom:0.1rem;
+}
+#list li strong{
+	padding-bottom:0.1rem;
+	display:block;
+	font-size:0.3rem;
+	color:rgb(51,51,51);
+	font-weight:normal;
+}
+#list li strong.orange{
+	color:rgb(255,151,27);
+}
+#list li .right{
+	float: right;
+	text-align: right;
+}

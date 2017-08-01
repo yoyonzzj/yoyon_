@@ -1,0 +1,11 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,div{margin:0;padding:0;}
+body,button,input,select,textarea{font-family: "微软雅黑","MicroSoft YaHei","Arial Narrow","HELVETICA"; font-size:14px; padding:0; margin:0; color:#666;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,li{ margin:0px; padding:0px; list-style:none; }
+img{border:none;}
+h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0;}
+.clear{ clear:both; margin:0; padding:0;}
+a{text-decoration:none; color:#666;}
+html{overflow-x:hidden;-webkit-text-size-adjust:none;}
+
+.czz-top{width: 1920px;height: 366px;border:1px solid #eee}

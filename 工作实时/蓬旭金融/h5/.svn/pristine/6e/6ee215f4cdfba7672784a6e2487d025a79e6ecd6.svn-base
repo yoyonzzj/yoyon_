@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>邀请注册</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<style>
+	.box{
+		width: 100%;
+		height: auto;
+	}
+	.top{
+		width: 100%;
+		height: 3.01rem;
+		background: url(img/top.png) no-repeat center center;
+		background-size: 7.5rem 3.01rem;
+	}
+	form{
+		width: 100%;
+		height: 5.68rem;
+		margin-top: 1rem;
+	}
+	ul{
+		width: 6.7rem;
+		height: 100%;
+		margin: 0 auto;
+	}
+	li{
+		width: 6.36rem;
+		height: .88rem;
+		border-bottom: .01rem solid #CBCBCB;
+		padding-left: .24rem;
+		padding-right: .1rem;
+		vertical-align: middle;
+	}
+	.icon{
+		width: .4rem;
+		height: .88rem
+		display: inline-block;
+		float:left;
+		padding-top: .26rem;
+	}
+	li img{
+		width: .4rem;
+		height: .4rem;
+		float: left;
+	}
+	input{
+		border: none;
+		height: .6rem;
+		padding-left: .36rem;
+		padding-top: .16rem;
+		width: 5rem;
+		float: left;
+		font-family: "微软雅黑";
+		font-size: .3rem;
+		color: #737373;
+		line-height: .88rem;
+	}
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	    color:#999;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:#999;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:#999;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color:#999;
+	}
+	.access{
+		width: auto;
+		height: .46rem;
+		font-family: "微软雅黑";
+		font-size: .32rem;
+		color: #FFA02E;
+		border-left: .01rem solid #A3A3A3;
+	}
+	.hidden{
+		width: 100%;
+		height: .64rem;
+		padding-top: .24rem;
+		display: block;
+		position: absolute;
+	}
+	.show{
+		width: 100%;
+		height: .64rem;
+		padding-top: .24rem;
+		display: none;
+		position: absolute;
+	}
+	#register{
+		width: 100%;
+		height: .88rem;
+		background: #ff971b;
+		opacity: 0.5;
+		border-radius: .1rem;
+		padding: 0;
+		font-family: "微软雅黑";
+		font-size: .36rem;
+		margin-top: 1rem;
+		color: #fff;
+		text-align: center;
+		line-height: .88rem;
+	}
+	.agreement{
+		width: 100%;
+		height: .58rem;
+		padding: 0;
+		padding-top: .2rem;
+		font-family: "微软雅黑";
+		font-size: .26rem;
+		color: #393939;
+		border:none!important;
+	}
+	#agreement{
+		height: .36rem;
+		width: .36rem;
+	}
+</style>
+<body>
+	<div class="box">
+		<div class="top"></div>
+		<form action="">
+			<ul>
+				<li>
+					<div class="icon">
+						<img src="img/phone.png" alt="" />
+					</div>
+					<input type="text" id="phone" placeholder="请输入您的手机号" />
+					<div class="icon close" style="float: right;">
+						<img src="img/clear.png" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+						<img src="img/message.png" alt="" />
+					</div>
+					<input type="text" id="message" placeholder="请输入短信验证码" style="width: 2.6rem;" />
+					<a href="javascript:void(0)" class="icon access" id="btnSendCode" onclick="sendMessage()" style="float: right;padding-top: 0;padding-left: .2rem;margin-top: .28rem;">
+						点击获取
+					</a>
+				</li>
+				<li>
+					<div class="icon">
+						<img src="img/password.png" alt="" />
+					</div>
+					<input type="password" id="password" placeholder="请输入登录密码" />
+					<div class="icon" style="float: right;width: .4rem;height: .88rem;padding-top: 0;position: relative;">
+						<div class="hidden"><img src="img/hidden.png" alt="" /></div>
+						<div class="show"><img src="img/show.png" alt="" /></div>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+						<img src="img/invitenumber.png" alt="" />
+					</div>
+					<input type="text" id="invitenumber" />
+				</li>
+				<a href="javascript:void(0)" id="href"><li id="register">
+					立即注册
+				</li></a>
+				<li class="agreement">
+					<input type="checkbox" checked name="agreement" id="agreement" value="" style="margin-right: .1rem;" /> 点击阅读《<a href="" style="color: #F18E17;">柚子理财用户协议</a>》
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	$("input").focus(function(){
+		$(this).closest('li').css("border-bottom",".01rem solid #F8C78C");
+	}).blur(function(){
+		$(this).closest('li').css("border-bottom","");
+	})
+	$(".close").click(function(){
+		$("#phone").val("").focus();
+	})
+	$(".hidden").click(function(){
+		$(this).css("display","none");
+		$(".show").css("display","block");
+		$("#password").attr("type","text");
+	})
+	$(".show").click(function(){
+		$(this).css("display","none");
+		$(".hidden").css("display","block");
+		$("#password").attr("type","password");
+	})
+	$(function(){
+	    $('input').on('input propertychange',function(){
+	        if(($.trim($('#phone').val())!=="")&&($.trim($('#message').val())!=="")&&($.trim($('#password').val())!=="")&&($.trim($('#invitenumber').val())!=="")){
+	        $('#register').css('opacity','1');
+	        $("#href").attr("href","javascript:register();");
+	    }else{
+	        $('#register').css('opacity','0.5');  
+	        $("#href").removeAttr("href");
+	         }
+	    });
+	});
+</script>
+<script type="text/javascript">
+		var InterValObj; //timer变量，控制时间
+		var count = 60; //间隔函数，1秒执行
+		var curCount;//当前剩余秒数
+
+		function sendMessage() {
+		  　curCount = count;
+		　　//设置button效果，开始计时
+		     $("#btnSendCode").removeAttr('onclick');
+		     $("#btnSendCode").html("").append(curCount + "s");
+		     InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+		}
+		//timer处理函数
+		function SetRemainTime() {
+		    if (curCount == 0) {                
+		        window.clearInterval(InterValObj);//停止计时器
+		        $("#btnSendCode").attr("onclick","sendMessage()");//启用按钮
+		        $("#btnSendCode").html("").append("重新发送");
+		    }
+		    else {
+		        curCount--;
+		        $("#btnSendCode").html("").append(curCount + "s");
+		    }
+		}
+	</script>
+</html>

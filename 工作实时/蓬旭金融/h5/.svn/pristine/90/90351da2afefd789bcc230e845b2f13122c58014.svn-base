@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.fcbtn{
+			width: 113px;
+			height: 92px;
+			position: absolute;
+			left: 0;
+			bottom: 88px;
+			cursor: pointer;
+			z-index: 99;
+		}
+		.fuceng{
+			width: 0;
+			height: 150px;
+			position: absolute;
+			left: 0;
+			bottom:30px;
+			background: rgba(0,0,0,0.8);
+			overflow: visible!important;
+		}
+		.fcmiddle{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			opacity: 0;
+			position: relative;
+			display: none;
+		}
+		.fcclose{
+			width: 22px;
+			height: 21px;
+			cursor: pointer;
+			position: absolute;
+		}
+		.fcpic{
+			width: 477px;
+			height: 182px;
+			position: absolute;
+			left: 30px;
+			top: -35px;
+			display: none;
+			z-index: 9999;
+		}
+		.fcbox{
+			width: 220px;
+			height: 100%;
+			float: right;
+			margin-left: 10px;
+		}
+		.fcerweima{
+			width: 114px;
+			height: 114px;
+			margin-top: 18px;
+			float: left;
+		}
+		.fcerweima img{
+			width: 114px;
+			height: 114px;
+		}
+		.fcword{
+			width: 100px;
+			height: 100%;
+			float: right;
+		}
+		.fclogo{
+			width: 38px;
+			height: 38px;
+			margin-top: 26px;
+			margin-left: 31px;
+		}
+		.word1{
+			width: 100%;
+			text-align: center;
+			font-family: "微软雅黑";
+			font-size: 18px;
+			color: #fff;
+			margin-top: 18px;
+		}
+		.word2{
+			width: 100%;
+			text-align: center;
+			font-family: "微软雅黑";
+			font-size: 14px;
+			color: #fff;
+			margin-top: 4px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="fcbtn"><img src="img/fcbtn.png" alt=""></div>
+	<div class="fuceng">
+		<div class="fcmiddle">
+			<div class="fcclose"><img src="img/fcclose.png" alt=""></div>
+			<div class="fcpic"><img src="img/fcpic.png" alt=""></div>
+			<!-- <a href="###">
+				<div class="fcbox">
+					<div class="fcerweima"></div>
+					<div class="fcword">
+						<div class="fclogo">
+							<img src="img/fclogo1.png" alt="">
+						</div>
+						<div class="word1">借款APP</div>
+						<div class="word2">掌上借款神器</div>
+					</div>
+				</div>
+			</a> -->
+			<a href="###">
+				<div class="fcbox">
+					<div class="fcerweima">
+						<img src="img/licai.png" alt="">
+					</div>
+					<div class="fcword">
+						<div class="fclogo">
+							<img src="img/fclogo2.png" alt="">
+						</div>
+						<div class="word1">理财APP</div>
+						<div class="word2">安全合规投资</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+</body>
+<script src="js/jquery.js"></script>
+<script>
+	$(".fcbtn").click(function(){
+		$(this).animate({left:"-113px"},200);
+		$(".fuceng").animate({width:"100%"},200);
+		$(".fcmiddle").animate({opacity:"1"},200);
+		$(".fcmiddle").css("display","block");
+		$(".fcpic").css("display","block");
+	})
+	$(".fcclose").click(function(){
+		$(".fuceng").animate({width:"0"},200);
+		$(".fcbtn").animate({left:"0"},200);
+		$(".fcmiddle").animate({opacity:"0"},200);
+		$(".fcpic").css("display","none");
+		$(".fcmiddle").css("display","none");
+	})
+</script>
+</html>

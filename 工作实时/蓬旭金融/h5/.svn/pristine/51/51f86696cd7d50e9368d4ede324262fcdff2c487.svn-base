@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/yinhangcunkuan.css" />
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/scale.js"></script>
+    <script src="js/scale1.js"></script>
+    <script src="js/jQueryRotate3.js"></script>
+</head>
+<body>
+	<div class="swiper-container">		
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swiper1">
+        	<div class="ani czz-top" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper1/ws.png" alt="" />
+        	</div>
+        	<div class="ani czz-l" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper1/yhqs.png" alt="" />
+        	</div>
+        	<div class="ani czz-r" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper1/cgxy.png" alt="" />
+        	</div>
+        	<div class="ani czz-f" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper1/xz.png" alt="" />
+        	</div>
+        	<div id="down" class="next">						
+ 				<img src="img/swiper1/zs.png" alt="" />
+ 			</div>
+        </div>
+        <div class="swiper-slide swiper2">
+        	<div class="ani czz-top1" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper2/jd.png" alt="" />
+        	</div>
+        	<div class="czz-bjtp">
+        		<img style="width:80px;margin-left:10px" src="img/swiper2/sx.png" alt="" />
+        	
+        	<p class="ani czz-p1" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">筛选银行</p>
+        	<div class="ani czz-tu1" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ld.png" alt="" />
+        	</div>
+        	<p class="ani czz-p2" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">与银行沟通</p>
+        	<div class="ani czz-tu2" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ld.png" alt="" />
+        	</div>
+        	<p class="ani czz-p3" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0.3s">达成合作协议</p>
+        	<div class="ani czz-tu3" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ld.png" alt="" />
+        	</div>
+        	<p class="ani czz-p4" swiper-animate-effect="fadeIn" swiper-animate-duration="2.5s" swiper-animate-delay="0.3s">资料对接</p>
+        	<div class="ani czz-tu4" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ld.png" alt="" />
+        	</div>
+        	<p class="ani czz-p5" swiper-animate-effect="fadeIn" swiper-animate-duration="3s" swiper-animate-delay="0.3s">银行调研评审</p>
+        	<div class="ani czz-tu5" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ld.png" alt="" />
+        	</div>
+        	<p class="ani czz-p6" swiper-animate-effect="fadeIn" swiper-animate-duration="3.5s" swiper-animate-delay="0.3s">签署存管协议</p>
+        	<div class="ani czz-tu6" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ld.png" alt="" />
+        	</div>
+        	<p class="ani czz-p7" swiper-animate-effect="fadeIn" swiper-animate-duration="4s" swiper-animate-delay="0.3s" style="color:#649dad">技术对接</p>
+        	<div class="ani czz-tu7" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ad.png" alt="" />
+        	</div>
+        	<p class="ani czz-p8" swiper-animate-effect="fadeIn" swiper-animate-duration="4.5s" swiper-animate-delay="0.3s" style="color:#649dad">存管上线</p>
+        	<div class="ani czz-tu8" swiper-animate-effect="flash" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        		<img style="width:.8rem;height:.7rem" src="img/swiper2/ad.png" alt="" />
+        	</div>
+        	</div>
+        	<div id="down"  class="next">						
+ 				<img src="img/swiper1/zs.png" alt="" />
+ 			</div>
+ 			
+        </div>
+        <div class="swiper-slide swiper3">
+        	<div class="ani czz-top1" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper3/why.png" alt="" />
+        	</div>
+        	<div class="czz-k1">
+        		<p class="ani czz-d0" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+        			2016年8月24日由银监会、工信部、公安部、网信办联合公布的《网络借贷信息中介机构业务活动管理暂行办法》要求，需要互联网金融平台与银行业金融机构对接，对平台资金进行银行存管，具体做法是互联网金融平台在银行业金融机构开设独立账户，用于存放用户的交易资金，银行业金融机构根据用户的指令、合同内容，对用户的交易与资金流水进行划拨和簿记，以保障用户的资金安全。</p>
+        	</div>
+        	<div id="down" class="next">						
+ 				<img src="img/swiper1/zs.png" alt="" />
+ 			</div>
+        </div>
+        <div class="swiper-slide swiper4">
+        	<div class="ani czz-top1" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper4/hc.png"/>
+        	</div>
+        	<div class="czz-k1">
+        		<p class="ani czz-d1" style="padding-top:10%" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0.3s">
+        			<span style="line-height: 1.8rem;color:#03a3bd"><i class="czz-b"><img src="img/swiper4/d.png" alt="" /></i>管理监督</span><br />
+        			用户在存管银行有独立的存管子账户，由存管银行对资金进行管理和监督，平台无法触碰用户资金。
+        		</p>
+        		<p class="ani czz-d1" style="padding-top:3%" swiper-animate-effect="fadeIn" swiper-animate-duration="4s" swiper-animate-delay="0.3s">
+        			<span style="color:#03a3bd"><i class="czz-b"><img src="img/swiper4/d.png" alt="" /></i>资金安全</span><br />
+        			用户需要单独设立交易密码保障账户安全，账户信息由存管银行管理，资金交易均由用户授权银行操作执行。
+        		</p>
+        		<p class="ani czz-d1" style="padding-top:3%" swiper-animate-effect="fadeIn" swiper-animate-duration="6s" swiper-animate-delay="0.3s">
+        			<span style="color:#03a3bd"><i class="czz-b"><img src="img/swiper4/d.png" alt="" /></i>真实可查</span><br />
+        			银行根据合同约定及用户发出的交易指令，对交易流程进行管理并记录用户资金流水交易真实可查。
+        		</p>
+        	</div>
+        	<div id="down" class="next">						
+ 				<img src="img/swiper1/zs.png" alt="" />
+ 			</div>
+        </div>
+        <div class="swiper-slide swiper5">
+        	<div class="ani czz-top1" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper5/ms.png" />
+        	</div>
+        	<div class="czz-t">
+        		<div class="ta_c1">
+					<img class="Rotation img"  src="img/swiper5/q.png" width="55rem" height="55rem"/>
+				</div>
+				<div class="ta_c2">
+					<img class="Rotation img" src="img/swiper5/q.png" width="55rem" height="55rem"/>
+				</div>
+        	</div>
+        	<div id="down" class="next">						
+ 				<img src="img/swiper1/zs.png" alt="" />
+ 			</div>
+        </div>
+        <div class="swiper-slide swiper6">
+        	<div class="ani czz-top1" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper6/hzxy.png" />
+        	</div>
+        	<div class="czz-xy">
+			  <div class="swiper-wrapper list">
+			    <div class="swiper-slide"><img src="img/swiper6/zjxy1-1.png" alt="" /></div>
+			    <div class="swiper-slide"><img src="img/swiper6/zjxy1-2.png" alt="" /></div>
+			    <div class="swiper-slide"><img src="img/swiper6/zjxy1-3.png" alt="" /></div>
+			  </div>
+			  	<section class="imgzoom_pack">
+	    		<div class="imgzoom_x">X</div>
+	    		<div class="imgzoom_img"><img src="" /></div>
+    			</section>
+
+			</div>
+			<div id="down" class="next">						
+ 				<img src="img/swiper1/zs.png" alt=""/>
+ 			</div>			
+        </div>
+        <div class="swiper-slide swiper7">
+        	<div class="ani czz-top1" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+        		<img src="img/swiper7/jsdj.png"/>
+        	</div>
+        	<div class="czz-xy">
+			  <div class="swiper-wrapper list1">
+			    <div class="swiper-slide"><img class="img1" src="img/swiper7/jsht1-1.png" alt="" /></div>
+			    <div class="swiper-slide"><img class="img1" src="img/swiper7/jsht1-2.png" alt="" /></div>
+			    <div class="swiper-slide"><img class="img1" src="img/swiper7/jsht1-3.png" alt="" /></div>
+			  </div>
+			  <section class="imgzoom_pack1">
+    		<div class="imgzoom_x">X</div>
+    		<div class="imgzoom_img"><img src="" /></div>
+    		</section>
+			</div>
+			<p id="down" style="font-size:.8rem;color:#B6EBF9;width:100%;text-align: center;">End</p>						
+        </div>
+        </div>
+    </div>
+
+</body>
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+  	
+    direction: 'vertical',
+    loop: false,
+    
+    
+    
+	onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+    swiperAnimateCache(swiper); //隐藏动画元素 
+    swiperAnimate(swiper); //初始化完成开始动画
+  }, 
+  onSlideChangeEnd: function(swiper){ 
+    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+  } 
+  })
+$('.next').click(function(){
+mySwiper.slideNext();
+})
+  
+  var mySwiper1 = new Swiper('.czz-xy',{
+	//autoplay:1000,
+	effect : 'coverflow',
+	slidesPerView: 3,
+	centeredSlides: true,
+	coverflow: {
+            rotate: -20,
+            stretch: -5,
+            depth: 60,
+            modifier: 2,
+            slideShadows : false
+        }
+})
+  
+/*$(function(){
+	
+                $(".img1").click(function(){
+                    $(this).toggleClass('min');
+					$(this).toggleClass('max');
+                });
+            });*/
+           
+           document.addEventListener("DOMContentLoaded", function(event){
+				ImagesZoom.init({
+					"elem": ".list"
+				});
+			}, false);
+			document.addEventListener("DOMContentLoaded", function(event){
+				ImagesZoom1.init({
+					"elem": ".list1"
+				});
+			}, false);
+	
+			$(function(){
+				var rotation = function (){
+  				$(".Rotation").rotate({
+				    angle:0,
+				    animateTo:360,
+				    callback: rotation,
+				    easing: function (x,t,b,c,d){        // t: current time, b: begInnIng value, c: change In value, d: duration
+				      return c*(t/d)+b;
+				    }
+				  });
+				}
+				rotation();
+				
+			})
+			
+  </script>
+</html>

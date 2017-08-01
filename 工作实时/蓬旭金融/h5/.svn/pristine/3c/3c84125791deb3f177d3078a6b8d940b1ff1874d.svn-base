@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>充值</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/gl_recharge.css">
+</head>
+<body>
+   <dl>
+      <dt></dt>
+      <dd>
+        <h4>招商银行</h4>
+        <p>231 **** **** **** 2231</p>
+      </dd>
+   </dl>
+   
+   <p class="msg">单笔交易限额¥20000，单日交易限额¥50000</p>
+
+   <p class="txt">
+     <span>充值金额</span>
+     <input type="text" placeholder="请输入充值金额" id="money">
+   </p>
+
+
+   <input type="button" value="充 值" id="btn"  disabled="true">
+ 
+
+<div id="mask"></div>
+
+
+
+<div id="dialog">
+   <span id="close"></span>
+   <h4>请输入短信验证码</h4>
+   <em>充值</em>
+   <strong>￥100.00</strong>
+   <ul id="code">
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+   </ul>
+   <p>验证码已发送至您手机155****1236</p>
+   <input type="button" value="60s" id="send" >
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="keyboard">
+    <p>
+      <span class="num">1</span>
+    </p>
+    <p>
+      <span class="num">2</span><br/>
+      <strong>ABC</strong>
+    </p>
+    <p>
+      <span class="num">3</span><br/>
+      <strong>DEF</strong>
+    </p>
+    <p>
+      <span class="num">4</span><br/>
+      <strong>GHI</strong>
+    </p>
+    <p>
+      <span class="num">5</span><br/>
+      <strong>JKL</strong>
+    </p>
+     <p>
+      <span class="num">6</span><br/>
+      <strong>MNO</strong>
+    </p>
+     <p>
+      <span class="num">7</span><br/>
+      <strong>PQRS</strong>
+    </p>
+     <p>
+      <span class="num">8</span><br/>
+      <strong>TUV</strong>
+    </p>
+    <p>
+      <span class="num">9</span><br/>
+      <strong>WXYZ</strong>
+    </p>
+    <p class="gray"></p>
+    <p>
+      <span class="num zero">0</span>
+    </p>
+    <p>
+      <em id="del">X</em>
+    </p>
+</div>
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+  var code=document.getElementById("code");
+  var lis=code.getElementsByTagName("li");
+  var mask=document.getElementById("mask");
+  var dialog=document.getElementById("dialog");
+  var keyboard=document.getElementById("keyboard");
+  var spans=keyboard.getElementsByTagName("span");
+  var del=document.getElementById("del");
+  var close=document.getElementById("close");
+  var str="";
+  var num=0;
+
+  var money=document.getElementById("money");
+  var btn=document.getElementById("btn");
+  
+  money.addEventListener("input",function(){
+     if(this.value!=""){
+       btn.disabled=false;
+       btn.style.background="rgb(255,151,27)";
+     }else{
+       btn.disabled=true;
+       btn.style.background="rgb(245, 207, 162)";
+     }
+  },false)
+
+  
+
+
+  btn.addEventListener("click",function(){
+     mask.style.display=dialog.style.display="block";
+     keyboard.style.WebkitTransform=keyboard.style.transform="translateY(0)"
+  },false)
+
+
+
+
+
+
+
+  for(var i=0;i<spans.length;i++){
+      spans[i].addEventListener("touchend",function(){
+        
+        if(str.length<lis.length){
+           str+=this.innerHTML;
+           console.log(str)
+           for(var i=0;i<str.length;i++){
+              lis[i].innerHTML=str[i]
+          }
+        }
+      },false)
+  }
+
+
+ 
+del.addEventListener("touchend", function(){
+     
+     if(str.length>0){
+       str=str.substring(0,str.length-1);
+       num=str.length;
+       console.log(str);
+       lis[num].innerHTML="";
+     }
+
+},false)
+
+
+
+close.addEventListener("touchend",function(){
+   mask.style.display=dialog.style.display="none";
+    keyboard.style.WebkitTransform=keyboard.style.transform="translateY(4rem)"
+})
+
+
+
+
+
+</script>	
+</body>
+</html>

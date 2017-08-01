@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>帮助说明</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script src="js/rem.js"></script>
+    <style>
+    	body{
+    		padding: .36rem;
+    		background: #F4F4F4;
+    	}
+    	.container{
+    		width: 100%;
+    		height: auto;
+    	}
+    	h1{
+    		width: 4.4rem;
+    		font-family: PingFangSC-Regular, sans-serif;
+    		font-size: .34rem;
+    		color: #333333;
+    		margin: 0 auto;
+    		text-align: center;
+    		line-height: .6rem;
+    		letter-spacing: .01rem;
+    	}
+    	p{
+    		font-family: PingFangSC-Regular, sans-serif;
+    		font-size: .3rem;
+    		color: #333333;
+    		font-weight: bold;
+    		text-align: justify;
+    		line-height: .5rem;
+    		letter-spacing: .01rem;
+    		padding-top: .2rem;
+    	}
+    	pre{
+    		width: 100%;
+    		display: block;
+    		font-family: PingFangSC-Regular, sans-serif;
+    		font-size: .26rem;
+    		color: #666666;
+    		/*text-align: justify;*/
+    		line-height: .4rem;
+    		white-space: pre-wrap;       
+			white-space: -moz-pre-wrap;  
+			white-space: -pre-wrap;      
+			white-space: -o-pre-wrap;    
+			word-wrap: break-word;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>帮助说明</h1>
+		<p>借款需要哪些基本条件:</p>
+		<pre style="padding-top: .1rem;">1、本人手机号及服务密码；</pre>
+		<pre style="padding-top: .1rem;">2、本人有效身份证号码且年满18周岁；</pre>
+		<pre style="padding-top: .1rem;">3、本人银行卡。</pre>
+		<p>借款额度范围和期限：</p>
+		<pre style="padding-top: .1rem;">1、额度暂时只开放1000元；</pre>
+		<pre style="padding-top: .1rem;">2、借款周期暂时只开放15天。</pre>
+		<p>借款费用有哪些：</p>
+		<pre style="padding-top: .1rem;">利息：按照借款金额的年息15%收取；</pre>
+		<pre style="padding-top: .1rem;">担保费:按照借款金额的年息150%收取；</pre>
+		<pre style="padding-top: .1rem;">手续费:按照借款金额的年息150%收取；</pre>
+		<pre style="padding-top: .1rem;">管理费:按照借款金额的年息100%收取。</pre>
+		<p>借款步骤有哪些：</p>
+		<pre style="padding-top: .1rem;">1、注册成为会员并登陆；</pre>
+		<pre style="padding-top: .1rem;">2、选取需要借款的金额及期限；</pre>
+		<pre style="padding-top: .1rem;">3、完善个人资料；</pre>
+		<pre style="padding-top: .1rem;">4、等待后台系统审核；</pre>
+		<pre style="padding-top: .1rem;">5、审核通过，系统放款至您绑定银行卡。</pre>
+		<p>如果有逾期发生，需要支付哪些费用：</p>
+		<pre style="padding-top: .1rem;">1、自应还款日起每日按照1%的借款金额收取罚息；</pre>
+		<pre style="padding-top: .1rem;">2、逾期超过30日，丙方有权对乙方提供的信息和资料编辑进入网站黑名单，并将黑名单对第三方进行披露，并和任何第三方进行数据共享。</pre>
+		<p>可以提前还款吗？</p>
+		<pre style="padding-top: .1rem;">可以提前还款，乙方提前还款，须将一次性还款金额包括服务费用结清</pre>
+		<p>当前有借款处于审核状态可以借款吗？</p>
+		<pre style="padding-top: .1rem;">不行，乙方须等待丙方后台审核通过才可发起新的借款申请</pre>
+		<p>可否多次借款？</p>
+		<pre style="padding-top: .1rem;">可以，在可用额度内，乙方可以进行多次借款</pre>
+	</div>
+</body>
+</html>

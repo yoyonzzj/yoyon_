@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>申请折现</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/discount.css">
+</head>
+<body>
+  <dl>
+     <dt><img src=""></dt>
+     <dd>
+       <h4>MacBook Pro 15.4 英寸</h4>
+       <p>折现金额<span>(¥500)</span></p>
+     </dd>
+  </dl>
+
+ <a href="javascript:;" class="btn" id="btn">确认折现</a>
+
+<p class="tip">折现成功后，金额将转入可用余额，可进行提现</p>
+
+<div id="mask"></div>
+<div id="dialog">
+     <h4>请确认是否折现？</h4>
+     <div class="btns" id="btns">
+        <span>取消</span>
+        <span class="orange">确认</span>
+     </div> 
+</div>
+<script type="text/javascript" src="js/rem.js"></script>	
+<script type="text/javascript">
+  var btn=document.getElementById("btn");
+  var mask=document.getElementById("mask");
+  var dialog=document.getElementById("dialog");
+  var btns=document.getElementById("btns");
+  var spans=btns.getElementsByTagName("span");
+   
+
+  btn.addEventListener("touchend",function(){
+     mask.style.display=dialog.style.display="block";
+  })
+  
+   spans[0].addEventListener("touchend",function(){
+     mask.style.display=dialog.style.display="none";
+  })
+
+</script>
+
+</body>
+</html>

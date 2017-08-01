@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit">
+   		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>PC端借款</title>
+		<link rel="stylesheet" href="css/jiekuan.css" />
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="czz-top">
+			<div class="abcd">
+				<p class="czz-iphone">
+					<i class="czz-i"></i>
+					<span class="czz-z">iPhone版</span>
+				</p>
+				<p class="czz-az">
+					<i class="czz-a"></i>
+					<span class="czz-q">敬请期待</span>
+				</p>
+				<div class="erweima"></div>
+			</div>
+		</div>
+		<div class="czz-center">
+			<div class="czz-tp">
+				<img src="img/content.png" alt="" />
+			</div>
+		</div>
+		<div class="czz-footer">
+			<div class="czzinner">
+				<a href="###"><div class="czz-jk">立即借款</div></a>
+			</div>
+		</div>
+		<div class="czz-fcbox">
+			<div class="czz-fc">
+				<p style="padding-top: 28px">借款还能赚钱？</p>
+				<p>马上邀请好友，立即赢取奖金，借款越多，奖金越多！</p>
+				<a href="###"><div class="close"><img src="img/close.png" alt=""></div></a>
+			</div>
+		</div>
+	</body>
+	<script>
+	$(function(){
+		$(".czz-jk").on('click', function (e) {
+			$("html,body").animate({scrollTop:0},400);
+		})
+		$(".close").on('click', function (e) {
+			$(".czz-fcbox").animate({width:0},200,function(){
+				$(".czz-fcbox").css("display","none");
+			});
+		})
+	})
+	</script>
+</html>

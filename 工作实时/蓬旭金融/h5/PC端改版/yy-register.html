@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>注册--柚子理财</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/yy-register.css"/>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="sectionbg">
+		<div class="regareabox">
+			<div class="regarea">
+				<div class="regtab">
+					<div class="regtop">
+						<div class="tabreg tabarea">注册</div>
+						<div class="tablog tabarea">登录</div>
+					</div>
+<!--注册区-->
+					<div class="tabareareg contentarea" style="z-index: 1;">
+						<input class="regphone" id="regphone" placeholder="请输入手机号码" />
+						<input class="regpassword" id="regpassword" placeholder="密码为6~20位数字、字母组合" />
+						<input class="regmessage" id="regmessage" placeholder="短信验证码" />
+						<div class="regsendmessage"><div class="regsend" onclick="sendMessage()">获取验证码</div></div>
+						<input class="reginvite" placeholder="如有邀请码请输入" />
+						<input class="resultmsg" id="warnregmsg" value="" readonly />
+						<a href="###"><div class="regnow">立即注册</div></a>
+						<div class="chooseagree" style="position: relative;padding-left: 14px;"><img src="img/choose.png" id="chooseagree" alt="" style="position: absolute;left: 0;top: 22px;" /><img src="img/unchoose.png" id="unchooseagree" alt="" style="position: absolute;left: 0;top: 22px;display: none;" /> &nbsp;默认同意<a href="###">《柚子理财用户服务协议》</a></div>
+					</div>
+<!--登录区-->
+					<div class="tabarealog contentarea">
+						<input class="logphone" id="logphone" placeholder="请输入手机号码" />
+						<input class="logpassword" placeholder="请输入密码" />
+						<input class="resultmsg" id="warnlogmsg" value="" readonly />
+						<a href="###"><div class="regnow">立即登录</div></a>
+						<a href="###"><div class="forgetpsd">忘记密码</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	
+//登录注册切换选项卡
+	var tabarea=$(".tabarea");
+    tabarea.click(function(){
+    	tabarea.css({
+    		color:"#666"
+    	}).filter(this).css({
+    		color:"#ffa540"
+    	})
+    	var index=$(this).index();
+    	$(".contentarea").css("z-index","0").eq(index).css("z-index","1");
+    })
+    
+//注册手机号码输入判断
+	$("#regphone").blur(function checkMobile(){ 
+		$("#warnregmsg").val("");
+	    var regphone = $("#regphone").val(); 
+	    if(!(/^1[3|4|5|8][0-9]\d{8}$/.test(regphone))){
+	    	$("#warnregmsg").val("请输入正确的手机号码");
+	    }
+	});
+	
+//密码格式验证
+	$("#regpassword").blur(function(){
+		$("#warnregmsg").val("");
+	 	var regpassword=$('#regpassword').val();
+		if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,21}$/.test(regpassword))){
+		    $("#warnregmsg").val("请输入密码为6~20位数字、字母组合");
+		}
+	});
+	
+//发送短信验证码
+	var InterValObj; //timer变量，控制时间
+	var count = 60; //间隔函数，1秒执行
+	var curCount;//当前剩余秒数
+
+	function sendMessage() {
+	  　curCount = count;
+	　　//设置button效果，开始计时
+		$("#warnregmsg").val("");
+		var regphone = $("#regphone").val();
+		var regpassword=$('#regpassword').val();
+		if(!(/^1[3|4|5|8][0-9]\d{8}$/.test(regphone))){
+			$("#warnregmsg").val("");
+	    	$("#warnregmsg").val("请输入正确的手机号码");
+	    }else if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,21}$/.test(regpassword))){
+	    	$("#warnregmsg").val("");
+		    $("#warnregmsg").val("请输入密码为6~20位数字、字母组合");
+		}else{
+	    	$(".regsend").css("opacity",".6");
+	        $(".regsend").removeAttr('onclick');
+	        $(".regsend").html("").append("重新获取("+curCount + "s)");
+	        InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+	    } 
+	}
+	//timer处理函数
+	function SetRemainTime() {
+	    if (curCount == 0) {                
+	        window.clearInterval(InterValObj);//停止计时器
+	        $(".regsend").attr("onclick","sendMessage()");//启用按钮
+	        $(".regsend").html("").append("重新发送");
+	    }
+	    else {
+	        curCount--;
+	        $(".regsend").html("").append("重新获取("+curCount + "s)");
+	    }
+	}
+	
+//短信验证
+	$("#regmessage").blur(function(){ 
+		$("#warnregmsg").val("");
+	    var regmessage = $("#regmessage").val(); 
+	    if(regmessage==""){
+	    	$("#warnregmsg").val("手机验证码不能为空");
+	    }
+	});
+
+//点击勾选取消用户协议
+	$("#chooseagree").click(function(){
+		$("#chooseagree").css("display","none");
+		$("#unchooseagree").css("display","block");
+	})
+	$("#unchooseagree").click(function(){
+		$("#unchooseagree").css("display","none");
+		$("#chooseagree").css("display","block");
+	})
+	
+//登录手机号码输入判断
+	$("#logphone").blur(function(){ 
+		$("#warnlogmsg").val("");
+	    var logphone = $("#logphone").val(); 
+	    if(!(/^1[3|4|5|8][0-9]\d{8}$/.test(logphone))){
+	    	$("#warnlogmsg").val("请输入正确的手机号码");
+	    }
+	});
+	
+
+</script>
+</html>

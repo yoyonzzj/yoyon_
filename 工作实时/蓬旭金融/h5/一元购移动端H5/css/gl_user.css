@@ -1,0 +1,80 @@
+body{background:rgb(244,244,244)}
+.header{
+	height:3rem;
+	background:#f99a55;
+	position:relative;
+}
+.header dl{
+	padding:0.96rem 0 0 0.5rem;
+}
+.header dl dt{
+	float: left;
+	width: 1.1rem;
+	height:1.1rem;
+	border-radius:50%;
+	background:#fff;
+}
+.header dl dd{
+	float: left;
+	padding-left:0.35rem;
+	font-size:0.32rem;
+	line-height:1.1rem;
+	color:#fff;
+}
+.header a{
+	position:absolute;
+	width:0.46rem;
+	height:0.46rem;
+	background:#fff;
+	top:0.26rem;
+	right:0.40rem;
+}
+section{
+	padding-left:0.3rem;
+	background:#fff;
+}
+section p{
+	height:1rem;
+	line-height:1rem;
+	font-size:0.3rem;
+	padding-left:0.75rem;
+	border-bottom:1px solid rgb(236,236,236);
+}
+section p a{
+	display:block;
+	width:100%;
+	color:rgb(102,102,102);
+}
+section p a strong{
+	float: right;
+	color:rgb(250,92,49);
+	font-weight:normal;
+	font-size:0.3rem;
+	margin-right:0.75rem;
+}
+
+.footer{
+	position:fixed;
+	left:0;
+	bottom:0;
+	height:1.2rem;
+	width:100%;
+	background:#fff;
+}
+.footer a{
+	float: left;
+	width:33.33%;
+	text-align: center;
+	font-size:0.2rem;
+	padding-top:0.2rem;
+	color:rgb(102,102,102);
+}
+.footer a i{
+	display:inline-block;
+	width:0.44rem;
+	height:0.44rem;
+	background:#ccc;
+}
+.footer a.active{
+	color:rgb(241,156,63);
+}

@@ -1,0 +1,31 @@
+body,input,form,p,pre,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-size: 24px;
+}
+ul,li,ol,dl,dt,dd{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input[type="button"],button,a{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img{
+	border: 0;
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-user-select:none;
+}
+input,textarea{
+	outline: none;
+}
+/*html,body{
+    width: 100%;
+    overflow:hidden;
+}*/

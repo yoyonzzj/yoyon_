@@ -1,0 +1,79 @@
+body{background:rgb(244,244,244);font-size:0.3rem;}
+body,html{height:100%;}
+h4,h5,strong{font-weight:normal;}
+#list li{
+	width:6.9rem;
+	height:2.3rem;
+	margin:0.2rem auto 0;
+	background:#fff;
+	padding:0.3rem 0.3rem;
+	box-sizing:border-box;
+}
+#list li .hd{overflow: hidden;}
+#list li .hd h4{
+  font-size:0.26rem;
+  color:rgb(51,51,51);
+  float: left;
+}
+#list li .hd p{
+	color:rgb(102,102,102);
+	font-size:0.24rem;
+	float: right;
+}
+#list li dl{
+ padding-top:0.5rem;
+}
+#list li dt{
+	float:left;
+	width:0.7rem;
+	height:0.7rem;
+	border-radius:0.04rem;
+	background:#ccc;
+	overflow: hidden;
+	margin-right:0.3rem;
+}
+#list li dt img{
+	width:0.7rem;
+	height:0.7rem;
+}
+#list li dd h5{
+	font-size:0.24rem;
+    color: rgb(51,51,51);
+	padding-bottom:0.09rem;
+	position:relative;
+	top:-0.05rem;
+}
+#list li dd p{
+	font-size:0.24rem;
+}
+#list li dd p .orange{
+	color:rgb(255,151,27);
+}
+.f-fr{float: right;}
+.msg{
+	text-align:center;
+	height:100%;
+	background:#fff;
+	font-size:0.34rem;
+	color:rgb(51,51,51);
+	padding-top:3rem;
+	box-sizing:border-box;
+}
+.msg img{
+	width:2.36rem;
+}
+.msg p{
+	margin-top:0.5rem;
+	margin-bottom:0.7rem;
+}
+.msg a{
+	display:block;
+	width:6rem;
+	height:0.88rem;
+	text-align: center;
+	line-height:0.88rem;
+	margin:0 auto;
+	color:#fff;
+	background:rgb(255,151,27);
+	border-radius:0.1rem;
+}

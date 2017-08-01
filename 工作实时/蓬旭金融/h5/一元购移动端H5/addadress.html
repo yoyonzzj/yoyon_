@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加新地址</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/addadress.css">
+<link rel="stylesheet" type="text/css" href="css/area.css">
+</head>
+<body>
+
+<section>
+  <p><span>收货人</span><input type="text"></p>
+  <p><span>联系电话</span><input type="tel"><em></em></p>
+  <p><span>所在地区</span><input type="text" placeholder="请选择" class="tar" readonly="" id="area"><i></i></p>
+  <p><span>街道</span><input type="text" placeholder="请选择" class="tar" readonly=""><i></i></p>
+  <textarea placeholder="请填写详细地址，不少于5个字"></textarea>
+</section>
+
+<div class="set">
+  <span>设为默认</span>
+  <div id="slidebox">
+     <span id="left"></span>
+     <span id="right"></span>
+     <em id="slide"></em>
+  </div>
+</div>
+
+
+
+
+
+<div id="footer">
+    <a href="#">保存</a>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/area.js"></script>
+<script type="text/javascript">
+  var slidebox=document.getElementById("slidebox");
+  var spans=slidebox.getElementsByTagName("span");
+  var slide=slidebox.getElementsByTagName("em")[0];
+  var disX=0;
+  spans[0].addEventListener("touchend",function(){
+      slide.style.transform="translateX(0)";
+      slide.style.transition="0.3s";
+      slidebox.className="";
+  },false)
+
+ spans[1].addEventListener("touchend",function(){
+      slide.style.transform="translateX(0.4rem)";
+      slide.style.transition="0.3s";
+      slidebox.className="active";
+  },false)
+
+
+ 
+ slide.addEventListener("touchstart",function(ev){
+    disX=ev.changedTouches[0].pageX;
+ },false)
+
+ 
+ slide.addEventListener("touchend",function(ev){
+    var nowdix=ev.changedTouches[0].pageX;
+
+    if(nowdix-disX>0){
+      slide.style.transform="translateX(0.4rem)";
+      slide.style.transition="0.3s";
+      slidebox.className="active";
+    }else if(nowdix-disX<0){
+      slide.style.transform="translateX(0)";
+      slide.style.transition="0.3s";
+      slidebox.className="";
+    }
+
+ },false)
+
+
+
+
+
+
+var area = new lArea();
+area.init({
+    'trigger': '#area',
+    'data':lAreaData
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择收货地址</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/checkadress.css">
+</head>
+<body>
+  <ul id="list">
+     <li>
+        <div class="hd">
+          <span class="username">陈羽</span>
+          <span class="tel">15536900789</span>
+        </div>
+        <p><strong>[ 默认地址 ]</strong>上海市浦东新区张杨路1518号金博尚品苑605室柚子理财</p>
+     </li>
+
+     <li>
+        <div class="hd">
+          <span class="username">陈羽</span>
+          <span class="tel">15536900789</span>
+        </div>
+        <p>上海市浦东新区张杨路1518号金博尚品苑605室</p>
+     </li>
+
+     <li>
+        <div class="hd">
+          <span class="username">陈羽</span>
+          <span class="tel">15536900789</span>
+        </div>
+        <p>上海市浦东新区张杨路1518号金博尚品苑605室</p>
+     </li>
+     <li>
+        <div class="hd">
+          <span class="username">陈羽</span>
+          <span class="tel">15536900789</span>
+        </div>
+        <p>上海市浦东新区张杨路1518号金博尚品苑605室</p>
+     </li>
+     <li>
+        <div class="hd">
+          <span class="username">陈羽</span>
+          <span class="tel">15536900789</span>
+        </div>
+        <p>上海市浦东新区张杨路1518号金博尚品苑605室</p>
+     </li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+    <a href="#">管理收货地址</a>
+</div>
+<script type="text/javascript" src="js/rem.js"></script>
+
+</body>
+</html>

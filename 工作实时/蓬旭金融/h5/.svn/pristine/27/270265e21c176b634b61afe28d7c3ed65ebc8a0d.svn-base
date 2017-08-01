@@ -1,0 +1,41 @@
+body{background:rgb(244,244,244);font-size:0.34rem}
+.content{
+	text-align:center;
+	padding-top:1.9rem;
+}
+.content h4{
+	font-size:0.34rem;
+	font-weight:normal;
+    color:rgb(51,51,51);
+    padding-bottom:0.1rem;
+}
+.content h4 span{
+	color:rgb(255,151,27);
+}
+.content p{
+	font-size:0.3rem;
+	color:rgb(102,102,102);
+	padding:0.5rem 0;
+}
+.content p span{
+	margin-right:0.1rem;
+}
+.content p a{
+	color:rgb(102,102,102);
+	text-decoration:underline;
+}
+.btn{
+	display:block;
+	width:6rem;
+	height:0.88rem;
+	text-align: center;
+	line-height: 0.88rem;
+	color:#fff;
+	margin:0 auto;
+	border-radius:0.1rem;
+	background:rgb(255,151,27);
+}
+.content img{
+	width:2.22rem;
+	margin-bottom:1rem;
+}

@@ -1,0 +1,13 @@
+*{margin:0;padding:0;}
+li{list-style:none}
+img{display:block}
+body{font-family:"微软雅黑"}
+/*以上为重置样式*/
+#container{width:800px;height:602px;border:1px solid #000;margin:0 auto;}
+#container>ul>li{width:100px;height:30px;border:1px solid #ccc;text-align:center;line-height:30px;float:left;}
+#container>div{width:800px;height:570px;display:none}
+img{width:100%;height:100%;}
+#container>ul>._li01{border-top:2px solid orange;border-bottom:0}
+#container>ul>._li02{border-bottom:2px solid orange}
+#container>ul>._li03{border-bottom:2px solid orange}
+#container>._div{display:block}

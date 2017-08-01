@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>明细</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/transdetails.css">
+</head>
+<body>
+   <ul id="list">
+   	  <li>
+   	  	 <div class="left">
+   	  	 	 <h4>充值</h4>
+   	  	 	 <p>2016-05-20 20:18</p>
+   	  	 </div>
+   	  	 <div class="right">
+   	  	 	  <strong class="orange">+1000.00</strong>
+   	  	 	  <p>充值成功</p>
+   	  	 </div>
+   	  </li>
+   
+      <li>
+   	  	 <div class="left">
+   	  	 	 <h4>提现</h4>
+   	  	 	 <p>2016-05-20 20:18</p>
+   	  	 </div>
+   	  	 <div class="right">
+   	  	 	  <strong >-1000.00</strong>
+   	  	 	  <p>提现成功</p>
+   	  	 </div>
+   	  </li>
+
+    <li>
+   	  	 <div class="left">
+   	  	 	 <h4>一元夺宝</h4>
+   	  	 	 <p>2016-05-20 20:18</p>
+   	  	 </div>
+   	  	 <div class="right">
+   	  	 	  <strong >-100.00</strong>
+   	  	 	  <p>夺宝成功</p>
+   	  	 </div>
+   	  </li>
+
+   	  <li>
+   	  	 <div class="left">
+   	  	 	 <h4>充值</h4>
+   	  	 	 <p>2016-05-20 20:18</p>
+   	  	 </div>
+   	  	 <div class="right">
+   	  	 	  <strong class="orange">+1000.00</strong>
+   	  	 	  <p>充值成功</p>
+   	  	 </div>
+   	  </li>
+   
+      <li>
+   	  	 <div class="left">
+   	  	 	 <h4>提现</h4>
+   	  	 	 <p>2016-05-20 20:18</p>
+   	  	 </div>
+   	  	 <div class="right">
+   	  	 	  <strong >-1000.00</strong>
+   	  	 	  <p>提现成功</p>
+   	  	 </div>
+   	  </li>
+
+    <li>
+   	  	 <div class="left">
+   	  	 	 <h4>一元夺宝</h4>
+   	  	 	 <p>2016-05-20 20:18</p>
+   	  	 </div>
+   	  	 <div class="right">
+   	  	 	  <strong >-100.00</strong>
+   	  	 	  <p>夺宝成功</p>
+   	  	 </div>
+   	  </li>
+   </ul>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

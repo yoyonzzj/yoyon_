@@ -1,0 +1,65 @@
+ul li{
+	width:6.9rem;
+	height:2rem;
+	background:#fff;
+	margin:0.2rem auto 0;
+	color:rgb(102,102,102);
+	position:relative;
+}
+ul li.gray{
+	color:rgb(194,193,193);
+}
+ul li em{
+  font-style:normal;
+  font-weight:normal;
+  font-size:0.26rem;
+  color:rgb(102,102,102);
+}
+ul li.gray em{
+	color:rgb(194,193,193);
+}
+ul li h4{
+	float: left;
+    font-size:0.28rem;
+    width:2.85rem;
+    text-align: center;
+    padding-top:0.7rem;
+    color:rgb(255,151,27);
+}
+ul li.gray h4{
+	color:rgb(194,193,193);
+}
+ul li h4.has{
+	padding-top:0.5rem;
+}
+ul li h5{
+	font-size:0.3rem;
+	color:rgb(51,51,51);
+	font-weight:normal;
+	padding-bottom:0.2rem;
+}
+ul li.gray h5{
+   color:rgb(194,193,193);
+}
+ul li h4 span{
+    font-size:0.5rem;
+}
+ul li .info{
+	float: left;
+	padding-top:0.3rem;
+}
+ul li i{
+    position: absolute;
+    width: 0.34rem;
+    height: 0.34rem;
+    right: 0.3rem;
+    top: 0.85rem;
+}
+ul li.check i{
+	background:url(../img/check.png) no-repeat;
+	background-size:cover;
+}
+ul li.uncheck i{
+    background:url(../img/uncheck.png) no-repeat;
+	background-size:cover;
+}

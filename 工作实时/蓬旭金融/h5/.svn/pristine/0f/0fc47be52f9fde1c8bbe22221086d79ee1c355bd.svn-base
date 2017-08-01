@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="js/rem.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <title>柚子理财-理财</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/wxLiCai.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+</head>
+<body>
+	<div class="box">
+		<div class="bannerbox swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><a href="###"><img src="img/hongbao.png" alt="" /></a></div>
+		        <div class="swiper-slide"><a href="###"><img src="img/haoli.png" alt="" /></a></div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination" style="bottom:.01rem"></div>
+		</div>
+		<div class="section3" style="margin-top: 0;">
+			<div class="title-xinren">
+				<p>新手专享</p>
+			</div>
+			<div class="xinshoubiao">
+				<a href="###">
+					<div class="biao-box">
+						<div class="xinshoubiao-title">新手标</div>
+						<div class="biao-left">
+							<div class="percent">15<span>%</span></div>
+							<div class="lookforward">预期年化收益</div>
+						</div>
+						<div class="biao-center">
+							<div class="time">8<span>天</span></div>
+							<div class="lock">锁定期</div>
+						</div>
+						<div class="biao-right">
+							<div class="limitbottom">100 元起投</div>
+							<div class="limittop">10000 元封顶</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="section3">
+			<div class="title-xinren" style="background: url(img/youxuan.png) no-repeat;background-size: .32rem .32rem;background-position: .42rem .32rem;">
+				<p>柚惠系列</p>
+			</div>
+			<div class="xinshoubiao">
+				<a href="###">
+					<div class="biao-box">
+						<div class="xinshoubiao-title">
+							双季盈
+							<div class="hongbao">红包</div>
+							<div class="jiaxiquan">加息券</div>
+						</div>
+						<div class="biao-left">
+							<div class="percent">9<span>%</span></div>
+							<div class="lookforward">预期年化收益</div>
+						</div>
+						<div class="biao-center">
+							<div class="time">180<span>天</span></div>
+							<div class="lock">锁定期</div>
+						</div>
+						<div class="biao-right">
+							<div class="limitbottom"></div>
+							<div class="limittop">100 元起投</div>
+						</div>
+					</div>
+				</a>
+				<a href="###">
+					<div class="biao-box">
+						<div class="xinshoubiao-title">
+							月柚利
+							<div class="hongbao">红包</div>
+							<div class="jiaxiquan">加息券</div>
+						</div>
+						<div class="biao-left">
+							<div class="percent">7.8<span>%</span></div>
+							<div class="lookforward">预期年化收益</div>
+						</div>
+						<div class="biao-center">
+							<div class="time">30<span>天</span></div>
+							<div class="lock">锁定期</div>
+						</div>
+						<div class="biao-right">
+							<div class="limitbottom"></div>
+							<div class="limittop">100 元起投</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script>        
+		var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+		    paginationClickable :true,
+		    autoplay: 3000,
+		    autoplayDisableOnInteraction: false,
+		})        
+	</script>
+</body>
+</html>

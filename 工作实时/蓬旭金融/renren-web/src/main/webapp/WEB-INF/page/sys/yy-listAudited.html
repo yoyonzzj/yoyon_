@@ -1,0 +1,501 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>系统日志</title>
+#parse("sys/header.html")
+</head>
+<style>
+ul,li,ol,dl,dt,dd{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+@media (min-width: 992px){
+	.modal-lg {
+   		 width: 1200px;
+	}
+}
+.modal-content{
+	height:700px;
+	position:relative;
+	padding-top:15px;
+}
+.person-fieldset{
+	padding:20px;
+	margin:15px 30px;
+	border: 1px solid silver;
+}
+.person-legend{
+	border:0;
+	width:auto;
+	padding:0 20px;
+	margin:0;
+}
+.outer-box{
+	width:100%;
+	height:auto;
+	display:inline-block;
+}
+.left-box{
+	width:50%;
+	height:auto;
+	float:left;
+}
+.left-box li{
+	line-height:36px;
+}
+.right-box li{
+	line-height:36px;
+}
+.right-box{
+	width:50%;
+	height:auto;
+	float:left;
+}
+.left-box .left-ul{
+	width:30%;
+	height:auto;
+	float:left;
+}
+.left-box .right-ul{
+	width:70%;
+	height:auto;
+	float:left;
+}
+.left-box .left-ul p{
+	margin:0;
+}
+.left-box .right-ul p{
+	margin:0;
+}
+.right-box .left-ul{
+	width:30%;
+	height:auto;
+	float:left;
+}
+.right-box .right-ul{
+	width:70%;
+	height:auto;
+	float:left;
+}
+.right-box .left-ul p{
+	margin:0;
+}
+.right-box .right-ul p{
+	margin:0;
+}
+.bottom-close{
+	position:absolute;
+	right:10px;
+	background:#CBCBCB;
+	border:0;
+	color:#5D5D5D;
+}
+.bottom-close hover{
+	background:#ECECEC;
+}
+.person-form{
+	display:none;
+}
+.check-form{
+	display:none;
+}
+.person-idpicture{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	display:none;
+	z-index:9999;
+}
+.fengexian{
+	height:1px;
+	background:#B8D0D6;
+}
+.yanzhengma{
+	width:76px;
+	height:22px;
+	display:inline-block;
+	vertical-align:middle;
+	background:#999999;
+	margin-left:10px;
+}
+td{
+	text-align:center;
+	line-height:36px;
+}
+#person-idpicture1{ 
+	display:block;
+ 	margin:100px auto; 
+ } 
+ #chaxun:hover{
+	background:#337ab7;
+	color:#fff;
+}
+#clear:hover{
+	background:#337ab7;
+	color:#fff;
+}
+#pass:hover{
+	background:#337ab7;
+	color:#fff;
+}
+#refuse:hover{
+	background:#337ab7;
+	color:#fff;
+}
+</style>
+<body>
+<div id="rrapp" v-cloak>
+<div id="set_up" onclick="sidenav()" style="background:url(../../../statics/imgs/set_up.png);z-index:3;background-size:30px 30px;cursor:pointer;width:30px;height:30px;float:right;margin-right:20px;z-index:9;margin-top:-3px;position:relative"></div>
+<div id="sidebar" style="position:relative;width:240px;z-index:2;height:360px;background:#fff;overflow-x:scroll;border:1px solid #3C8DBC;position:absolute;right:0;top:0;opacity:0;display:none">
+	<div style="width:100%;height:30px;background:#DCE3ED;">
+		<p style="float:left;margin-left:6px;font-size:14px;line-height:36px;color:#000">配置列表项</p>
+		<p class="close_side" style="float:right;margin-right:6px;font-size:24px;cursor:pointer;line-height:36px;color:#000">×</p>
+	</div>
+	<ul style="width:100%;margin-bottom:30px;height:auto;float:left">
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;用户手机号码</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;用户真实姓名</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;性别</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;年龄</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;户籍地址</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;申请时间</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;认证信息</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;个人信息</li>
+		<li style="float:left;width:220px;height:24px;line-height:24px;border-bottom:1px solid #ECECEC;padding-left:10px"><input type="checkbox">&nbsp;&nbsp;初审</li>
+	</ul>
+	<button class="bottom-close btn btn-primary only-btn" style="position:absolute;bottom:0;left:86px" id="serve_sub">保存提交</button>
+</div>
+<div class="person-idpicture">
+	<button id="rotatepic" style="border:none;width:36px;height:36px;background: url(../../../statics/imgs/rotate.png) no-repeat;background-size:36px 36px;position:absolute;right:50%;bottom:14%;z-index:999;"></button>
+	<img alt="" src="" id="person-idpicture1" style="height:60%">
+</div>
+	<div>
+		<div class="grid-btn" style="text-align:center">
+			<form action="" style="display:inline;margin-right:20px">
+				手机号码:<input type="text" id="userphone" @keyup.enter="query" class="form-control" style="margin-bottom:20px;width:120px;display:inline;margin-right:40px;">
+				姓名:<input type="text" id="userphone" @keyup.enter="query" class="form-control" style="margin-bottom:20px;width:90px;display:inline;margin-right:40px;">
+				性别:<select name="usertype" id="usersex" style="margin-bottom:20px;height:34px;margin-right:40px;border-radius:4px"> 
+					<option value="不限">不限</option>
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+				户籍地址:<select name="usertype" id="userstatus" style="margin-bottom:20px;height:34px;margin-right:40px;border-radius:4px"> 
+					<option value="不限">不限</option>
+					<option value="北京">北京市</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="天津市">天津市</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="上海市">上海市</option>
+                    <option value="福建省">福建省</option>
+                    <option value="重庆市">重庆市</option>
+                    <option value="江西省">江西省</option>
+                    <option value="山东省">山东省</option>
+                    <option value="河南省">河南省</option>
+                    <option value="湖北省">湖北省</option>
+                    <option value="湖南省">湖南省</option>
+                    <option value="广东省">广东省</option>
+                    <option value="海南省">海南省</option>
+                    <option value="山西省">山西省</option>
+                    <option value="青海省">青海省</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="吉林省">吉林省</option>
+                    <option value="台湾省">台湾省</option>
+                    <option value="河北省">河北省</option>
+                    <option value="贵州省">贵州省</option>
+                    <option value="四川省">四川省</option>
+                    <option value="云南省">云南省</option>
+                    <option value="陕西省">陕西省</option>
+                    <option value="甘肃省">甘肃省</option>
+                    <option value="黑龙江省">黑龙江省</option>
+                    <option value="香港特别行政区">香港特别行政区</option>
+                    <option value="澳门特别行政区">澳门特别行政区</option>
+                    <option value="广西壮族自治区">广西壮族自治区</option>
+                    <option value="宁夏回族自治区">宁夏回族自治区</option>
+                    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                    <option value="内蒙古自治区">内蒙古自治区</option>
+                    <option value="西藏自治区">西藏自治区</option>
+				</select>
+				已认证信息：<input class="form-control" style="display:inline;width:20px;height:13px" type="checkbox" name="authenticated" value="运营商">运营商<input class="form-control" style="display:inline;width:20px;height:13px" type="checkbox" name="authenticated" value="京东">京东<input class="form-control" style="display:inline;width:20px;height:13px;" type="checkbox" name="authenticated" value="淘宝">淘宝
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>年龄:<input type="text" class="form-control" @keyup.enter="query" style="width:60px;background:#fff;display:inline;">
+				-<input type="text" class="form-control" @keyup.enter="query" style="width:60px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				申请时间:<input type="text" class="form-control form_datetime date" @keyup.enter="query" id="datetimeStart" placeholder="请选择开始时间" readonly style="width:130px;background:#fff;display:inline;">
+				-<input type="text" class="form-control form_datetime date" @keyup.enter="query" id="datetimeEnd" placeholder="请选择结束时间" readonly style="width:130px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				审核结果:<select name="usertype" id="usersex" style="margin-bottom:20px;height:34px;margin-right:30px;border-radius:4px"> 
+					<option value="全部">全部</option>
+					<option value="通过">通过</option>
+					<option value="未通过">未通过</option>
+				</select><br>
+				<a class="btn btn-default" id="chaxun" style="display: inline;margin-left:30px;padding:8px 20px">查询</a>
+				<a class="btn btn-default" id="clear" style="display: inline;margin-left:30px;padding:8px 20px">清空</a>
+			</form>
+		</div>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content person-content" style="overflow:scroll;padding-bottom:40px">
+<!-- 个人信息弹窗 -->
+		        <form class="person-form aaaa">
+				    <fieldset class="person-fieldset">
+					    <legend class="person-legend">个人信息</legend>
+					    <div class="outer-box">
+					    	<div class="left-box">
+					    		<ul class="left-ul">
+					    			<li>用户手机：</li>
+					    			<li>用户真实姓名：</li>
+					    			<li>开户银行：</li>
+					    			<li>身份证照片：</li>
+					    			<li>身份证照片：</li>
+					    			<li>银行预留手机：</li>
+					    			<li>户籍地址：</li>
+					    			<li>现居地址：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="person-phone"></p></li>
+					    			<li><p id="person-userName"></p></li>
+					    			<li><p id="person-bankName"></p></li>
+					    			<li id="person-idcardZ"></li>
+					    			<li id="person-idcardHand"></li>
+					    			<li><p id="person-bankPhone"></p></li>
+					    			<li><p id="person-hujiAdr"></p></li>
+					    			<li><p id="person-liveAdr"></p></li>
+					    		</ul>
+					    	</div>
+					    	<div class="right-box">
+					    		<ul class="left-ul">
+					    			<li>用户类型：</li>
+					    			<li>用户身份证号码：</li>
+					    			<li>银行账户：</li>
+					    			<li>身份证照片：</li>
+					    			<li>婚姻状况：</li>
+					    			<li>户籍详细地址：</li>
+					    			<li>现居详细地址：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="person-userStatus"></p></li>
+					    			<li><p id="person-idcard"></p></li>
+					    			<li><p id="person-bankUsername"></p></li>
+					    			<li id="person-idcardF"></li>
+					    			<li><p id="person-marriage"></p></li>
+					    			<li><p id="person-hujiAdrDetail"></p></li>
+					    			<li><p id="person-liveAdrDetail"></p></li>
+					    		</ul>
+					    	</div>
+					    </div>
+				    </fieldset>
+				    <fieldset class="person-fieldset">
+					    <legend class="person-legend">工作信息</legend>
+					    <div class="outer-box">
+					    	<div class="left-box">
+					    		<ul class="left-ul">
+					    			<li>用户手机：</li>
+					    			<li>用户真实姓名：</li>
+					    			<li>用户职业：</li>
+					    			<li>月薪（元）：</li>
+					    			<li>发薪渠道：</li>
+					    			<li>公司固话：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="job-phone"></p></li>
+					    			<li><p id="job-userName"></p></li>
+					    			<li><p id="job-professional"></p></li>
+					    			<li><p id="job-monthPay"></p></li>
+					    			<li><p id="job-payChannel"></p></li>
+					    			<li><p id="job-unitPhone"></p></li>
+					    		</ul>
+					    	</div>
+					    	<div class="right-box">
+					    		<ul class="left-ul">
+					    			<li>用户类型：</li>
+					    			<li>用户身份证号码：</li>
+					    			<li>学历：</li>
+					    			<li>发薪日：</li>
+					    			<li>公司名称：</li>
+					    			<li>公司详细地址：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="job-userStatus"></p></li>
+					    			<li><p id="job-idcard"></p></li>
+					    			<li><p id="job-education"></p></li>
+					    			<li><p id="job-monthPayday"></p></li>
+					    			<li><p id="job-unitName"></p></li>
+					    			<li><p id="job-unitAdrDetail"></p></li>
+					    		</ul>
+					    	</div>
+						</div>
+						<div class="fengexian"></div>
+						<fieldset class="person-fieldset" style="margin:15px 6px;">
+						    <legend class="person-legend">补充信息</legend>
+						    <div class="outer-box">
+						    	<div class="left-box">
+						    		<ul class="left-ul">
+						    			<li>公司性质：</li>
+						    			<li>公司职务：</li>
+						    			<li>证明人电话：</li>
+						    		</ul>
+						    		<ul class="right-ul">
+						    			<li><p id="job-unitNature"></p></li>
+						    			<li><p id="job-title">----</p></li>
+						    			<li><p id="job-certificationPersonPhone">----</p></li>
+						    		</ul>
+						    	</div>
+						    	<div class="right-box">
+						    		<ul class="left-ul">
+						    			<li>公司行业：</li>
+						    			<li>证明人：</li>
+						    			<li>额外收入：</li>
+						    		</ul>
+						    		<ul class="right-ul">
+						    			<li><p id="job-unitIndustry"></p></li>
+						    			<li><p id="job-certificationPerson">----</p></li>
+						    			<li><p id="job-otherIncome"></p></li>
+						    		</ul>
+						    	</div>
+							</div>
+						</fieldset>
+					</fieldset>
+					<fieldset class="person-fieldset">
+					    <legend class="person-legend">联系人信息</legend>
+					    <div class="outer-box">
+					    	<div class="left-box">
+					    		<ul class="left-ul">
+					    			<li>用户真实姓名：</li>
+					    			<li>联系人姓名：</li>
+					    			<li>联系人关系：</li>
+					    			<li>紧急联系人：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="contacts-userName"></p></li>
+					    			<li><p id="contacts-contactName"></p></li>
+					    			<li><p id="contacts-relation"></p></li>
+					    			<li><p id="contacts-importantContactname"></p></li>
+					    		</ul>
+					    	</div>
+					    	<div class="right-box">
+					    		<ul class="left-ul">
+					    			<li>用户身份证号码：</li>
+					    			<li>联系人电话：</li>
+					    			<li style="visibility:hidden">学历：</li>
+					    			<li>紧急联系人电话：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="contacts-idcard"></p></li>
+					    			<li><p id="contacts-contactPhone"></p></li>
+					    			<li style="visibility:hidden"><p>123456789</p></li>
+					    			<li><p id="contacts-importantContactPhone"></p></li>
+					    		</ul>
+					    	</div>
+						</div>
+						<div class="fengexian"></div>
+						<fieldset class="person-fieldset" style="margin:15px 6px;">
+						    <legend class="person-legend">补充信息</legend>
+						    <div class="outer-box">
+						    	<div class="left-box">
+						    		<ul class="left-ul">
+						    			<li>联系人居住地址：</li>
+						    			<li>联系人单位名称：</li>
+						    			<li>联系人单位固话：</li>
+						    		</ul>
+						    		<ul class="right-ul">
+						    			<li><p id="contacts-contactAdr"></p></li>
+						    			<li><p id="contacts-unitName"></p></li>
+						    			<li><p id="contacts-unitPhone"></p></li>
+						    		</ul>
+						    	</div>
+						    	<div class="right-box">
+						    		<ul class="left-ul">
+						    			<li>联系人固话：</li>
+						    			<li>联系人单位地址：</li>
+						    			<li style="visibility:hidden">额外收入：</li>
+						    		</ul>
+						    		<ul class="right-ul">
+						    			<li><p id="contacts-contactTel"></p></li>
+						    			<li><p id="contacts-unitAdrDetail"></p></li>
+						    			<li style="visibility:hidden"><p>123456789</p></li>
+						    		</ul>
+						    	</div>
+							</div>
+						</fieldset>
+					</fieldset>
+			    </form>
+<!-- 调整额度弹窗  -->
+				<form class="check-form aaaa">
+				    <fieldset class="person-fieldset">
+					    <legend class="person-legend">调整额度</legend>
+					    <div class="outer-box">
+					    	<div class="left-box">
+					    		<ul class="left-ul">
+					    			<li>用户姓名：</li>
+					    			<li>授信额度：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="check-username"></p></li>
+					    			<li>
+					    				<select name="usertype" style="height:22px;" id="optionFund">
+											<option value="--1000--">1000</option>
+											<option value="--1500--">1500</option>
+											<option value="--2000--">2000</option>
+											<option value="--3000--">3000</option>
+										</select>
+										<sup style="color:#FF175F">*</sup>
+					    			</li>
+					    		</ul>
+					    	</div>
+					    	<div class="right-box">
+					    		<ul class="left-ul">
+					    			<li>用户手机号码：</li>
+					    			<li hidden>隐藏域：</li>
+					    		</ul>
+					    		<ul class="right-ul">
+					    			<li><p id="check-phone"></p></li>
+					    			<li hidden><p id="check-yincang"></p></li>
+					    		</ul>
+					    	</div>
+					    </div>
+				    </fieldset>
+				    <button type="button" class="bottom-close btn btn-primary only-btn" style="right:80px;display:none;bottom: 10px;" id="butongguo">不通过</button>
+			    	<button type="button" class="bottom-close btn btn-primary only-btn" style="right:164px;display:none;bottom: 10px;" id="tongguo">通过</button>
+			    </form>
+			    <button type="button" class="bottom-close btn btn-primary guanbi" data-toggle="modal" data-target=".bs-example-modal-lg">关闭</button>
+			    <button type="button" class="bottom-close btn btn-primary only-btn" data-toggle="modal" data-target=".bs-example-modal-lg" style="display:none;bottom: 10px;">取消</button>
+		    	<button type="button" class="bottom-close btn btn-primary only-btn" style="right:80px;display:none;bottom: 10px;" id="queren">确认</button>
+		    </div>
+		  </div>
+		</div>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div>
+    
+</div>
+
+<script src="${rc.contextPath}/js/sys/yy-listAudited.js?_${date.systemTime}"></script>
+<script type="text/javascript">
+	$('.date').datetimepicker({
+		  language: 'zh-CN',//显示中文
+		  format: 'yyyy-mm-dd',//显示格式
+		  minView: "month",//设置只显示到月份
+		  initialDate: new Date(),//初始化当前日期
+		  autoclose: true,//选中自动关闭
+		  todayBtn: true//显示今日按钮
+	 })
+    $("#datetimeStart").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){
+        $("#datetimeStart").datetimepicker("setEndDate",$("#datetimeEnd").val())
+    });
+    $("#datetimeEnd").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){
+        $("#datetimeEnd").datetimepicker("setStartDate",$("#datetimeStart").val())
+    });
+</script>
+</body>
+</html>

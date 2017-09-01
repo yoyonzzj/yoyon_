@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>黑名单</title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp" v-cloak>
+	 <div>
+		<div class="grid-btn">
+		<form class="form-inline">
+			
+				<label>身份证号码：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="idcard" placeholder="身份证号码">
+			
+				<label>真实姓名：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="username" placeholder="真实姓名">
+			
+				<label>拉黑时间：</label>
+				<input type="text" class="form-control form_datetime date" readonly style="width:10%;display:inline;" id="startTime">-<input type="text" readonly class="form-control form_datetime date"  style="width:10%;display:inline;"  id="endTime">
+			
+			<a class="btn btn-default" id="button">查询</a>
+			</form>
+		</div>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div>
+    </div> 
+
+<script src="${rc.contextPath}/js/sys/list.js?_${date.systemTime}"></script>
+</body>
+<script>
+	$('.date').datetimepicker({
+		  language: 'zh-CN',//显示中文
+		  format: 'yyyy-mm-dd',//显示格式
+		  minView: "month",//设置只显示到月份
+		  initialDate: new Date(),//初始化当前日期
+		  autoclose: true,//选中自动关闭
+		  todayBtn: true//显示今日按钮
+	 })
+    $("#startTime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){    	
+        $("#startTime").datetimepicker("setEndDate",$("#endTime").val())
+    });
+    $("#endTime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){
+        $("#endTime").datetimepicker("setStartDate",$("#startTime").val())
+    }); 
+    
+</script>
+</html>

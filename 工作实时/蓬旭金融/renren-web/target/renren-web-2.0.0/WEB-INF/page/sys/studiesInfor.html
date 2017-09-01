@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>学业信息</title>
+#parse("sys/header.html")
+</head>
+<body>
+<style>
+	#h:hover{cursor:pointer}
+</style>
+<div id="rrapp" v-cloak>
+	 <div>
+		<div class="grid-btn">
+		<form class="form-inline">
+			
+				<label>用户名称：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="phone" placeholder="用户名称">
+			
+				<label>真实姓名：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="username" placeholder="真实姓名">
+			
+				<label>学校名称：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="schoolName" placeholder="学校名称">
+			
+			<a class="btn btn-default" id="button">查询</a>
+			</form>
+		</div>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div> 
+    </div>
+    
+    <!-- 详细信息弹窗 -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width:700px;height:500px;border:10px double #b8d0d6;background:#eef4f5;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <h4 class="modal-title" id="myModalLabel">添加信息</h4>
+      </div>
+      <div class="modal-body" style="font-size:14px;line-height:40px;width:680px;height:330px;background:#fff">	
+		<form id="maintable">
+		<fieldset>
+		<legend style="font-size:20px;font-weight:600">补充信息</legend>
+			<div class="form-group">
+			   	<div class="col-sm-6">专业名称：<span id="majorName"></span></div>	
+			   	<div class="col-sm-6">每月生活费（元）：<span id="expensesMonth"></span></div>
+			</div>
+			<div class="form-group">
+			   	<div class="col-sm-6">辅导员姓名：<span id="instructorName"></span></div>
+			   	<div class="col-sm-6">辅导员电话：<span id="instructorPhone"></span></div>	
+			</div>
+			<div class="form-group">
+			   	<div class="col-sm-6">同学姓名：<span id="schoolmateName"></span></div>			
+			   	<div class="col-sm-6">同学电话：<span id="schoolmatePhone"></span></div>			   	
+			</div>
+		</fieldset>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="${rc.contextPath}/js/sys/studiesInfor.js?_${date.systemTime}"></script>
+</body>
+</html>

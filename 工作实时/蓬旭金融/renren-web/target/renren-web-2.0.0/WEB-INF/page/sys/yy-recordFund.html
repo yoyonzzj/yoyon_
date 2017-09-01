@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>系统日志</title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp" v-cloak>
+	<div>
+		<div class="grid-btn">
+			<form action="" style="display:inline;margin-right:20px">
+				手机号码:<input type="text" class="form-control" id="userphone" @keyup.enter="query" style="width:10%;display:inline;margin-right:20px;">
+				用户类型:<select name="usertype" id="userstatus" style="height:34px;margin-right:20px;border-radius:4px">
+					<option value="不限">不限</option>
+					<option value="学生族">学生族</option>
+					<option value="上班族">上班族</option>
+				</select>
+				<a class="btn btn-default" style="margin-left:50px" id="chaxun">查询</a>
+			</form>
+		</div>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div>
+    
+</div>
+
+<script src="${rc.contextPath}/js/sys/yy-recordFund.js?_${date.systemTime}"></script>
+<script type="text/javascript">
+	$('.date').datetimepicker({
+		  language: 'zh-CN',//显示中文
+		  format: 'yyyy-mm-dd',//显示格式
+		  minView: "month",//设置只显示到月份
+		  initialDate: new Date(),//初始化当前日期
+		  autoclose: true,//选中自动关闭
+		  todayBtn: true//显示今日按钮
+	 })
+    $("#datetimeStart").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){
+        $("#datetimeStart").datetimepicker("setEndDate",$("#datetimeEnd").val())
+    });
+    $("#datetimeEnd").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){
+        $("#datetimeEnd").datetimepicker("setStartDate",$("#datetimeStart").val())
+    });
+</script>
+</body>
+</html>

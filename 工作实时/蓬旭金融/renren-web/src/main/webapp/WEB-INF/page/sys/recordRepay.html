@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>还款记录</title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp" v-cloak>
+	 <div>
+		<div class="grid-btn">
+			<form action="" style="display:inline;margin-right:20px">
+				手机号码:<input type="text" id="userphone" @keyup.enter="query" class="form-control" style="margin-bottom:20px;width:120px;display:inline;margin-right:40px;">
+				姓名:<input type="text" id="userphone" @keyup.enter="query" class="form-control" style="margin-bottom:20px;width:90px;display:inline;margin-right:40px;">
+				性别:<select name="usertype" id="usersex" style="margin-bottom:20px;height:34px;margin-right:40px;border-radius:4px"> 
+					<option value="不限">不限</option>
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+				户籍地址:<select name="usertype" id="userstatus" style="margin-bottom:20px;height:34px;margin-right:40px;border-radius:4px"> 
+					<option value="不限">不限</option>
+					<option value="北京">北京市</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="天津市">天津市</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="上海市">上海市</option>
+                    <option value="福建省">福建省</option>
+                    <option value="重庆市">重庆市</option>
+                    <option value="江西省">江西省</option>
+                    <option value="山东省">山东省</option>
+                    <option value="河南省">河南省</option>
+                    <option value="湖北省">湖北省</option>
+                    <option value="湖南省">湖南省</option>
+                    <option value="广东省">广东省</option>
+                    <option value="海南省">海南省</option>
+                    <option value="山西省">山西省</option>
+                    <option value="青海省">青海省</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="吉林省">吉林省</option>
+                    <option value="台湾省">台湾省</option>
+                    <option value="河北省">河北省</option>
+                    <option value="贵州省">贵州省</option>
+                    <option value="四川省">四川省</option>
+                    <option value="云南省">云南省</option>
+                    <option value="陕西省">陕西省</option>
+                    <option value="甘肃省">甘肃省</option>
+                    <option value="黑龙江省">黑龙江省</option>
+                    <option value="香港特别行政区">香港特别行政区</option>
+                    <option value="澳门特别行政区">澳门特别行政区</option>
+                    <option value="广西壮族自治区">广西壮族自治区</option>
+                    <option value="宁夏回族自治区">宁夏回族自治区</option>
+                    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                    <option value="内蒙古自治区">内蒙古自治区</option>
+                    <option value="西藏自治区">西藏自治区</option>
+				</select>
+				年龄:<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;">
+				-<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				<br>
+				性别:<select name="usertype" id="usersex" style="margin-bottom:20px;height:34px;margin-right:40px;border-radius:4px"> 
+					<option value="不限">不限</option>
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+				申请时间:<input type="text" class="form-control form_datetime date" @keyup.enter="query" id="datetimeStart" placeholder="请选择开始时间" readonly style="margin-bottom:20px;width:130px;background:#fff;display:inline;">
+				-<input type="text" class="form-control form_datetime date" @keyup.enter="query" id="datetimeEnd" placeholder="请选择结束时间" readonly style="margin-bottom:20px;width:130px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				<br>
+				借款次数:<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;">
+				-<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				逾期次数:<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;">
+				-<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				失败次数:<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;">
+				-<input type="text" class="form-control" @keyup.enter="query" style="margin-bottom:20px;width:60px;background:#fff;display:inline;margin-left:4px;margin-right:40px">
+				<br>
+				<a class="btn btn-default" id="chaxun" style="display: inline;margin-left:30px;padding:8px 20px">查询</a>
+				<a class="btn btn-default" id="clear" style="display: inline;margin-left:30px;padding:8px 20px">清空</a>
+				<a class="btn btn-default" id="pass" style="display: inline;margin-left:30px;padding:8px 20px">批量通过</a>
+				<a class="btn btn-default" id="refuse" style="display: inline;margin-left:30px;padding:8px 20px">批量拒绝</a>
+			</form>
+		</div>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div> 
+  </div>  
+    
+
+<script src="${rc.contextPath}/js/sys/recordRepay.js?_${date.systemTime}"></script>
+
+</body>
+<script>
+	$('.date').datetimepicker({
+		  language: 'zh-CN',//显示中文
+		  format: 'yyyy-mm-dd',//显示格式
+		  minView: "month",//设置只显示到月份
+		  initialDate: new Date(),//初始化当前日期
+		  autoclose: true,//选中自动关闭
+		  todayBtn: true//显示今日按钮
+	 })
+    $("#borrowStartTime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){    	
+        $("#borrowStartTime").datetimepicker("setEndDate",$("#borrowEndTime").val())
+    });
+    $("#borrowEndTime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'month',
+        language: 'zh-CN',
+        autoclose:true,
+        startDate:new Date()
+    }).on("click",function(){
+        $("#borrowEndTime").datetimepicker("setStartDate",$("#borrowStartTime").val())
+    }); 
+    
+</script>
+
+</html>

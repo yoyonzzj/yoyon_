@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>认证信息</title>
+#parse("sys/header.html")
+</head>
+<body>
+<div id="rrapp" v-cloak>
+	 <div>
+		<div class="grid-btn">
+		<form class="form-inline">
+			
+				<label>手机号码：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="phone" placeholder="手机号码">
+			
+				<label>真实姓名：</label>
+				<input type="text" class="form-control" style="width:10%;display:inline;margin-right:20px;" id="username" placeholder="真实姓名">
+			
+			<a class="btn btn-default" id="button">查询</a>
+			</form>		
+		</div>
+	    <table id="jqGrid"></table>
+	    <div id="jqGridPager"></div>
+    </div> 
+  </div>  
+
+<script src="${rc.contextPath}/js/sys/identifyInfor.js?_${date.systemTime}"></script>
+</body>
+</html>

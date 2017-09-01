@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>忘记交易密码</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/transpwd.css">
+</head>
+<body>
+<h4><span>*</span> 请重新绑定银行卡找回</h4>
+<div class="form">
+    <p>建设银行 储蓄卡 (0613)<i></i></p>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

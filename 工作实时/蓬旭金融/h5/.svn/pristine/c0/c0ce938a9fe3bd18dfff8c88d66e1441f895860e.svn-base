@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优惠券</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <!--banner轮播-->
+     <div id="banner">
+          <div class="swipe-wrap">
+              <div><a href="#"><img src="img/banner1.png"/></a></div>
+              <div><a href="#"><img src="img/banner2.png"/></a></div>
+              <div><a href="#"><img src="img/banner3.png"/></a></div>
+            
+          </div> 
+          <div class="btnList">
+              <ul>
+                 <li class="cur"></li>
+                 <li></li>
+                 <li></li>
+              </ul>
+        </div>   
+      </div> 
+  <!--banner轮播end-->
+
+ <ul id="nav">
+    <li>
+      <a href="classify.html">
+        <img src="img/index1.png">
+        <p>商品分类</p>
+      </a>
+    </li>
+    <li>
+      <a href="announced.html">
+        <img src="img/index2.png">
+        <p>最新揭晓</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/index3.png">
+        <p>新人指南</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="img/index4.png">
+        <p>常见问题</p>
+      </a>
+    </li>
+ </ul>
+
+ <div class="msg">
+     <i></i>
+     <ul id="msglist" style="position:absolute;top:0">
+       <li>恭喜<a href="#">183****1236</a>获得iPhone7</li>
+       <li>恭喜<a href="#">181****1436</a>获得iPhone6</li>
+       <li>恭喜<a href="#">185****1731</a>获得iPhone6s</li>
+       <li>恭喜<a href="#">186****3731</a>获得iPhone7</li>
+       <li>恭喜<a href="#">188****1931</a>获得iPhone7</li>
+     </ul>
+ </div>
+
+
+ <ul id="tab">
+   <li><span class="active">热门商品</span></li>
+   <li><span>即将开奖</span></li>
+ </ul>
+ <div class="cl"></div>
+ <div id="producebox">
+     <ul id="list1" class="list" style="display:block;">
+         <li>
+            <div class="product">
+               <img src="img/phone.png">
+               <h5>Apple iPhone 7 128G 颜色...</h5>
+               <div class="loading">
+                  <p>开奖进度<em>50%</em></p>
+                  <p class="progess"><span style="width:50%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+            <div class="product">
+               <img src="img/card.png">
+               <h5>50元话费充值（三网通用）</h5>
+               <div class="loading">
+                  <p>开奖进度<em>60%</em></p>
+                  <p class="progess"><span style="width:60%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+         </li>
+   
+   
+         <li>
+            <div class="product">
+               <img src="img/sh.png">
+               <h5>小米运动多功能手环 双色可...</h5>
+               <div class="loading">
+                  <p>开奖进度<em>40%</em></p>
+                  <p class="progess"><span style="width:40%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+            <div class="product">
+               <img src="img/kh.png">
+               <h5>YSL圣罗兰莹亮纯魅唇膏</h5>
+               <div class="loading">
+                  <p>开奖进度<em>60%</em></p>
+                  <p class="progess"><span style="width:60%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+         </li>
+      </ul>
+      
+
+      <ul id="list2" class="list">
+         <li>
+            <div class="product">
+               <img src="img/phone.png">
+               <h5>Apple iPhone 7 128G 颜色...</h5>
+               <div class="loading">
+                  <p>开奖进度<em>50%</em></p>
+                  <p class="progess"><span style="width:50%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+           
+              <div class="product">
+               <img src="img/kh.png">
+               <h5>YSL圣罗兰莹亮纯魅唇膏</h5>
+               <div class="loading">
+                  <p>开奖进度<em>60%</em></p>
+                  <p class="progess"><span style="width:60%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+         </li>
+   
+   
+         <li>
+            <div class="product">
+               <img src="img/sh.png">
+               <h5>小米运动多功能手环 双色可...</h5>
+               <div class="loading">
+                  <p>开奖进度<em>40%</em></p>
+                  <p class="progess"><span style="width:40%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+           <div class="product">
+               <img src="img/card.png">
+               <h5>50元话费充值（三网通用）</h5>
+               <div class="loading">
+                  <p>开奖进度<em>60%</em></p>
+                  <p class="progess"><span style="width:60%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+         </li>
+      </ul>
+ </div>
+
+
+<p class="end">
+  <span>已经到最低啦</span>
+</p>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <a href="javascript:;" class="active">
+      <i></i><br/>
+      夺宝
+    </a>
+    <a href="discover.html">
+      <i></i><br/>
+      发现
+    </a>
+    <a href="gl_user.html"  >
+      <i></i><br/>
+      我的
+    </a>
+</footer>
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript">
+  var elem = document.getElementById('banner');
+  window.mySwipe = Swipe(elem, {
+  
+ auto: 3000,
+ continuous: true,
+ disableScroll: true,
+ stopPropagation: true,
+ callback: function(index, element) {
+          $(".btnList li").eq(index).addClass("cur").siblings().removeClass("cur");
+        }
+
+});
+
+var tab=document.getElementById("tab");
+var spans=tab.getElementsByTagName("span");
+var producebox=document.getElementById("producebox");
+var uls=producebox.getElementsByTagName("ul");
+
+for(var i=0;i<spans.length;i++){
+    spans[i].index=i;
+    spans[i].addEventListener("touchend",function(){
+        for(var i=0;i<spans.length;i++){
+           spans[i].className="";
+           uls[i].style.display="none";
+        }
+        this.className="active";
+        uls[this.index].style.display="block";
+    })
+}
+
+
+
+var now=0;
+var timer=null;
+var msglist=$("#msglist");
+var lis=msglist.find("li");
+
+timer=setInterval(function(){
+  if(now<lis.length-1){
+     now++;
+  }else{
+    now=0;
+  }
+  msglist.animate({"top":-now*0.7+"rem"},400);
+},2000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>	
+</body>
+</html>

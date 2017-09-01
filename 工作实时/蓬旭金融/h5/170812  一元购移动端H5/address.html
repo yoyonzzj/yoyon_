@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>查看收货地址</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/address.css">
+
+</head>
+<body>
+<ul id="list">
+    <li>
+       <p class="line"></p>
+       <div class="info">
+         <h4>
+           <span class="user">陈羽</span>
+           <span class="tel">15536900789</span>
+         </h4>
+         <p class="address">上海市浦东新区张杨路1518号金博尚品苑605室</p>
+         <div class="btns">
+             <strong  class="active"><i></i>设为默认</strong>
+             <p>
+               <a href="javascript:;" class="bj"><i></i>编辑</a>
+               <a href="javascript:;" class="del"><i></i>删除</a>
+             </p>
+         </div>
+       </div>
+       <p class="line"></p>
+    </li>
+
+    <li>
+       <p class="line"></p>
+       <div class="info">
+         <h4>
+           <span class="user">陈羽</span>
+           <span class="tel">15536900789</span>
+         </h4>
+         <p class="address">上海市浦东新区张杨路1518号金博尚品苑605室</p>
+         <div class="btns">
+             <strong><i></i>设为默认</strong>
+             <p>
+               <a href="javascript:;" class="bj"><i></i>编辑</a>
+               <a href="javascript:;" class="del"><i></i>删除</a>
+             </p>
+         </div>
+       </div>
+       <p class="line"></p>
+    </li>
+
+    <li>
+       <p class="line"></p>
+       <div class="info">
+         <h4>
+           <span class="user">陈羽</span>
+           <span class="tel">15536900789</span>
+         </h4>
+         <p class="address">上海市浦东新区张杨路1518号金博尚品苑605室</p>
+         <div class="btns">
+             <strong><i></i>设为默认</strong>
+             <p>
+               <a href="javascript:;" class="bj"><i></i>编辑</a>
+               <a href="javascript:;" class="del"><i></i>删除</a>
+             </p>
+         </div>
+       </div>
+       <p class="line"></p>
+    </li>
+</ul>
+
+
+
+
+
+
+<div id="footer">
+    <a href="addadress.html">添加新地址</a>
+</div>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+    var list=document.getElementById("list");
+    var strongs=list.getElementsByTagName("strong");
+    for(var i=0;i<strongs.length;i++){
+       strongs[i].addEventListener("touchend",function(){
+             for(var i=0;i<strongs.length;i++){
+                 strongs[i].className="";
+             }
+             this.className="active";
+       })
+    }
+</script>
+</body>
+</html>

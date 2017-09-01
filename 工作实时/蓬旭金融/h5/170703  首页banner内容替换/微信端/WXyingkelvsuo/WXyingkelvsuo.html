@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>盈科律所</title>
+    <link rel="stylesheet" href="css/WXyingkelvsuo.css" />
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/photoswipe.css" />
+    <link rel="stylesheet" href="css/default-skin.css" />
+    
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/photoswipe.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+   	<script src="js/swiper-3.4.2.min.js"></script>
+   	<script src="js/jquery-2.2.4.min.js"></script>
+   	<script src="js/bootstrap.min.js"></script> 	
+</head>
+<body>
+	<div class="czz-top"></div>
+	<div class="czz-main">
+		<div class="czz-center">
+			<div class="czz-txt1">
+				<p class="czz-bt1"><span>保额费用：</span>由上海蓬旭金融信息服务有限公司提供</p>
+				<p class="czz-bt1"><span>责任义务：</span>常年法律顾问</p>
+				<p class="czz-dl">自柚子理财与盈科律师事务所签订《常年法律顾问合同》之日起，柚子理财的所有投资人将免费享受由盈科律所提供的法律支援。如柚子理财平台上任何一项融资项目未按合同约定偿还并需启动法律程序时，柚子理财将启用盈科律所专业律师代表投资人启动法律程序解决争议，确保投资人能够及时行动有效维权，最大限度保护投资人利益。</p>
+			</div>
+			<div class="czz-txt2">
+				<h2 class="czz-title"></h2>
+				<p class="czz-dl">盈科律师事务所，是一家全球化法律服务机构,由专业律师人才、专业市场人才、专业管理人才组成的人才队伍致力于为客户提供全球商务法律服务，为客户创造价值。
+盈科律所与互联网金融服务商柚子理财的牵手，是两个公司迈向前进的一小步，也是中国互联网金融迈向规范化、法治化的一大步。柚子理财将与客户签署的合同交由盈科律所作为独立第三方进行审查、保管，并立下公司特别委托：一旦公司不能有效处置相关事务，将由盈科律师事务所作为独立第三方代为处理。这种由互联网金融、律师事务所、传统法律服务一起构成的安全保障系统，无疑将极大地维护投资者利益，有利于争端的解决，从而推进互联网金融的健康稳步发展。</p>
+			</div>
+			</div>
+			<div class="czz-tp">
+				<div class="swiper-container" style="padding:0 .4rem 0 .4rem">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide czz-banner"><img src="img/tu1.png"></div>
+				        <div class="swiper-slide czz-banner"><img src="img/tu2.png"></div>
+				        <div class="swiper-slide czz-banner"><img src="img/tu3.png"></div>
+				        <div class="swiper-slide czz-banner"><img src="img/tu4.png"></div>
+				    </div>
+				</div>
+			</div>
+				
+	<p id="btn" class="ht">查看《合同协议》</p>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <div class="pswp__container">
+            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)" style="background:url(img/1.png)no-repeat center center"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+</div>
+</body>
+	<script language="javascript"> 
+		var mySwiper = new Swiper('.swiper-container',{
+		slidesPerView : 2.5,
+		spaceBetween : 20,
+		})
+		$('.carousel').carousel({
+  interval:false
+})
+
+	var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: 'img/contract1.png',
+            w: 800,
+            h: 1024
+        },
+        {
+            src: 'img/contract2.png',
+            w: 800,
+            h: 1024
+        },
+        {
+            src: 'img/contract3.png',
+            w: 800,
+            h: 1024
+        },
+        {
+            src: 'img/contract4.png',
+            w: 800,
+            h: 1024
+        }
+    ];
+    
+    // define options (if needed)
+    var options = {
+             // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+/*openPhotoSwipe();*/
+
+document.getElementById('btn').onclick = openPhotoSwipe;
+	</script>
+</html>

@@ -1,0 +1,102 @@
+#list li{
+	background:#fff;
+	margin-top:0.18rem;
+}
+#list li .line{
+	width:100%;
+	height:0.06rem;
+	background:url(../img/line.png) no-repeat;
+	background-size:cover;
+}
+#list li h4{
+	font-size:0.3rem;
+	font-weight:normal;
+	color:#666;
+	padding-left:0.4rem;
+	line-height: 0.75rem;
+}
+#list li .address{
+	padding-left:0.4rem;
+	font-size:0.28rem;
+	color:#999;
+	padding-bottom:0.2rem;
+}
+#list li .btns{
+	height:1rem;
+	line-height:1rem;
+	font-size:0.28rem;
+	border-top:1px solid rgb(236,236,236);
+}
+#list li .btns strong{
+	float: left;
+	position:relative;
+	color:#666;
+	font-weight:normal;
+	padding-left:0.95rem;
+}
+#list li .btns strong i{
+	position:absolute;
+	left:0.4rem;
+	top:0.31rem;
+	width:0.36rem;
+	height:0.36rem;
+	background:url(../img/isuncheck.png) no-repeat;
+	background-size:cover;
+}
+#list li .btns strong.active i{
+	background:url(../img/ischeck.png) no-repeat;
+	background-size:cover;
+}
+#list li .btns p{
+	float: right;
+}
+#list li .btns p a{
+	float: left;
+	color:#666;
+	margin-right:0.45rem;
+	position:relative;
+	padding-left:0.45rem;
+}
+#list li .btns p .bj i{
+   position:absolute;
+   width:0.27rem;
+   height:0.23rem;
+   background:url(../img/bj.png) no-repeat;
+   background-size:cover;
+   left:0rem;
+   top:0.38rem;
+}
+#list li .btns p .del i{
+   position:absolute;
+   width:0.26rem;
+   height:0.27rem;
+   background:url(../img/del2.png) no-repeat;
+   background-size:cover;
+   left:0rem;
+   top:0.35rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer a{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:0.88rem;
+	line-height:0.88rem;
+	text-align:center;
+	color:#fff;
+	font-size:0.36rem;
+	background:#ff971b;
+}

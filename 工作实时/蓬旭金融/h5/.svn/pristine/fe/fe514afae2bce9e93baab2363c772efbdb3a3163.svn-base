@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/gl_detail.css">
+</head>
+<body>
+    <!--banner轮播-->
+     <div id="banner">
+          <div class="swipe-wrap">
+              <div><a href="#"><img src="img/banner1.png"/></a></div>
+              <div><a href="#"><img src="img/banner2.png"/></a></div>
+              <div><a href="#"><img src="img/banner3.png"/></a></div>
+            
+          </div> 
+          <div class="btnList">
+              <ul>
+                 <li class="cur"></li>
+                 <li></li>
+                 <li></li>
+              </ul>
+        </div>   
+      </div> 
+  <!--banner轮播end-->
+  
+  <a href="#" class="seedetails">点击查看详情</a>
+  
+  <div class="info">
+     <!--商品名称期号-->
+     <div class="title">
+       <div class="txt">
+        <h4>MacBook Pro 15.4 英寸 512gb（颜色随机）</h4>
+        <p>期号：<span>20215757</span></p>
+      </div>
+      <!-- <em class="code">已开奖</em> -->
+      <!-- <em class="code">开奖中</em> -->
+      <em class="code">进行中</em>
+     </div>
+     <!--商品名称期号end-->
+     
+     <!--开奖中-->
+     <div class="lottery">
+         <div class="progress">
+           <span></span>
+         </div>
+         
+         <div class="progress_info">
+            <p class="left">
+              <span id="leftnum">10000</span>次开奖
+            </p>
+            <p class="right">
+              剩余<span id="remanent">9880</span>次
+            </p>
+         </div>
+         
+         <div class="salebox">
+             <div class="salebox_left">
+               <h6>购买次数</h6>
+               <p>购买次数可增加中奖机会</p>
+             </div>
+             <div class="salebox_right">
+                <span id="prev">-</span>
+                <input type="tel" value="1" id="salenum">
+                <span id="next">+</span>
+             </div>
+         </div>
+     </div>
+    <!---开奖中end-->
+
+    
+
+
+
+
+     <!--倒计时-->
+    <div class="date">
+      <p>开奖倒计时</p>
+      <h4 id="countdown"></h4>
+      <a href="#">计算详情</a>
+     </div> 
+     <!--倒计时end-->
+
+
+
+
+
+
+     <!--获奖者信息-->
+  <div class="userinfo">
+         <dl>
+           <dt>
+             <img src="" alt="">
+           </dt>
+           <dd>
+             <p>获奖者：<span>阿拉灯可是电视...</span></p>
+             <p>本期参与：<span class="orange">10</span>人次</p>
+             <p>开奖时间：<span>2016-01-12 14:12:34</span></p>
+           </dd>
+         </dl>
+         <div class="usercode">
+            <p>中奖号码：<span>12345566</span></p>
+            <a href="#">计算详情</a> 
+         </div>
+     </div>
+     <!--获奖者信息end-->
+     
+     
+        <div class="join">
+           <p class="p1">您参与了：<span class="orange">2</span>次</p>
+           <p>抢购号码：<span>10000555</span>  <span>12052365</span></p>
+           
+        </div>
+
+     <!--参与的信息-->
+        <div class="join">
+         <p class="p1">您参与了：<span class="orange">2</span>人次</p>
+         <p id="luckynumber">幸运号码：<span>10000555</span>  <span>12052365</span></p>
+         <a href="javascript:;" class="more" id="more">查看更多</a>
+      </div> 
+     <!--参与的信息end-->
+
+
+     <!--未参与夺宝提示--> 
+       <p class="tip">您还没有参与本期夺宝额!</p> 
+     <!--未参与夺宝提示end--> 
+  </div>
+ 
+
+
+
+
+<div class="list">
+   <a href="#" class="hd">
+     往期揭晓
+     <i></i>
+   </a>
+   <h4>参与记录</h4>
+   
+   <ul id="list">
+      <li>
+        <div class="img"><img src="" alt=""></div>
+        <div class="txt">
+            <h5>赵钱花说服...(四川成都 210.34.233.30)</h5>
+            <p>
+              <span>2017-07-21 21:15:19.668</span>
+              <strong>参与<em>5</em>人次</strong>
+            </p>           
+         </div>
+      </li>
+      <li>
+        <div class="img"><img src="" alt=""></div>
+        <div class="txt">
+            <h5>赵钱花说服...(四川成都 210.34.233.30)</h5>
+            <p>
+              <span>2017-07-21 21:15:19.668</span>
+              <strong>参与<em>5</em>人次</strong>
+            </p>           
+         </div>
+      </li>
+      <li>
+        <div class="img"><img src="" alt=""></div>
+        <div class="txt">
+            <h5>赵钱花说服...(四川成都 210.34.233.30)</h5>
+            <p>
+              <span>2017-07-21 21:15:19.668</span>
+              <strong>参与<em>5</em>人次</strong>
+            </p>           
+         </div>
+      </li>
+      <li>
+        <div class="img"><img src="" alt=""></div>
+        <div class="txt">
+            <h5>赵钱花说服...(四川成都 210.34.233.30)</h5>
+            <p>
+              <span>2017-07-21 21:15:19.668</span>
+              <strong>参与<em>5</em>人次</strong>
+            </p>           
+         </div>
+      </li>
+      <li>
+        <div class="img"><img src="" alt=""></div>
+        <div class="txt">
+            <h5>赵钱花说服...(四川成都 210.34.233.30)</h5>
+            <p>
+              <span>2017-07-21 21:15:19.668</span>
+              <strong>参与<em>5</em>人次</strong>
+            </p>           
+         </div>
+      </li>
+   </ul>
+</div>
+
+
+<p class="end">已经到最低啦</p>
+
+
+
+<div class="footer">
+   <!-- <p>最新一期火热进行中...</p> -->
+   <p class="result">
+     共计：<strong>￥<span class="price" id="resultprice">1.00</span></strong>
+   </p>
+   <!-- <a href="#">立即参与</a> -->
+   <a href="#" class="sale">立即抢购</a>
+</div>
+
+
+
+<div id="mask"></div>
+<div id="dialog">
+    <h3><img src="img/invalidName@2x.jpg"></h3>
+    <ul class="numlist">
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+      <li><div><span>10000555</span><span>12052365</span><span>12052365</span></div></li>
+    </ul>
+    <span id="close"></span>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+var elem = document.getElementById('banner');
+  window.mySwipe = Swipe(elem, {
+  
+ auto: 3000,
+ continuous: true,
+ disableScroll: true,
+ stopPropagation: true,
+ callback: function(index, element) {
+          $(".btnList li").eq(index).addClass("cur").siblings().removeClass("cur");
+        }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//点击购买次数功能
+  var prev=document.getElementById("prev");
+  var next=document.getElementById("next");
+  var salenum=document.getElementById("salenum");
+  var resultprice=document.getElementById("resultprice");
+
+
+  //剩余次数英文
+  var remanent=parseInt(document.getElementById("remanent").innerHTML);
+  salenum.addEventListener("input",function(){
+      
+      if(this.value=="" || this.value==0){
+         this.value=1
+      }else if(parseInt(salenum.value)>remanent){
+        this.value=remanent;
+      }
+       
+       var num=parseInt(salenum.value);
+
+       resultprice.innerHTML=num.toFixed(2)
+  
+  })
+
+
+ prev.addEventListener("touchend",function(){
+     var num=parseInt(salenum.value);
+     if(num>1){
+        num--;
+     }
+     salenum.value=num;
+     
+     resultprice.innerHTML=num.toFixed(2)
+  })
+
+
+ next.addEventListener("touchend",function(){
+     var num=parseInt(salenum.value);
+     num++
+     salenum.value=num;
+     resultprice.innerHTML=num.toFixed(2)
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//点击查看更多幸运号码弹窗效果
+var more=document.getElementById("more");
+var mask=document.getElementById("mask");
+var dialog=document.getElementById("dialog");
+var close=document.getElementById("close");
+more.addEventListener("touchend",function(){
+   mask.style.display=dialog.style.display="block";
+
+})
+
+close.addEventListener("touchend",function(){
+   mask.style.display=dialog.style.display="none";
+
+})
+
+//是否现实查看更多按钮
+var luckynumber=document.getElementById("luckynumber");
+var numbers=luckynumber.getElementsByTagName("span");
+if(numbers.length>=2){
+   more.style.display="block";
+}else{
+   more.style.display="none";
+}
+
+
+
+//倒计时
+function toZero(num){
+   if(num>9){
+    return num
+   }else{
+    return "0"+num
+   }
+}
+
+var timer=null;
+function ShowCountDown(year,month,day,h,m,s,divname){ 
+      var iNow=new Date(); 
+      var iNew=new Date(year, month-1, day, h, m, s); 
+      var t=Math.floor((iNew-iNow)/1000);
+      var day=Math.floor(t/86400);
+      var h=Math.floor(t%86400/3600)+day*24;
+      var m=Math.floor(t%86400%3600/60);
+      var s=t%60
+      var str=toZero(h)+":"+toZero(m)+":"+toZero(s);
+      var time=document.getElementById(divname); 
+      time.innerHTML = str; 
+      if(h==0 && m==0 && s==0){
+        clearInterval(timer);
+      }
+} 
+  
+  
+ShowCountDown(2017,08,08,11,39,60,'countdown');
+timer=setInterval(function(){
+    ShowCountDown(2017,08,08,11,39,60,'countdown');
+},1000); 
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+var base={
+	  getId:function(id){
+       return document.getElementById(id);
+	  },
+    getTag:function(parent,element){
+       return parent.getElementsByTagName(element);
+    },
+    showTip:function(obj,msg){
+		     obj.innerHTML=msg;
+ 	       obj.style.opacity=1;
+         setTimeout(function(){
+                 obj.style.opacity=0;
+         },2000)
+	  },
+    redirect:function(url){
+       window.location.href=url;
+    },
+    onlyNumber:function(input, n){
+       input.value = input.value.replace(/[^0-9\.]/ig, '');
+       var dotIdx = input.value.indexOf('.'), dotLeft, dotRight;
+       if (dotIdx >= 0) {
+           dotLeft = input.value.substring(0, dotIdx);
+           dotRight = input.value.substring(dotIdx + 1);
+           if (dotRight.length > n) {
+               dotRight = dotRight.substring(0, n);
+           }
+           input.value = dotLeft + '.' + dotRight;
+       }
+  }
+
+
+
+
+
+} 
+

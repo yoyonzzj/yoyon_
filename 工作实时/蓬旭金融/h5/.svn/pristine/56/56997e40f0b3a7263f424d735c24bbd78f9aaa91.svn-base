@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>钱包</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/gl_balance.css">
+</head>
+<body>
+  <div class="header">
+  	<div class="left">
+  		<p>可用余额（元）</p>
+  		<h3>102.60</h3>
+  	</div>
+  	<a href="transdetails.html">明细</a>  
+  </div>
+
+
+  <section>
+  	  <p><span></span><a href="gl_recharge.html">充值<i></i></a></p>
+  	  <p><span></span><a href="gl_cash.html">提现<i></i></a></p>
+  	  <p><span></span><a href="bankcard.html">银行卡<i></i></a></p>
+  </section>
+
+
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

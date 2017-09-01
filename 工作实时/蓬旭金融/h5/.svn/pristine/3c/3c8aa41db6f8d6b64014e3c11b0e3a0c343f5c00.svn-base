@@ -1,0 +1,76 @@
+*{margin:0;padding:0;}
+body{background:#f4f4f4;font-family:"微软雅黑";}
+li{list-style:none;}
+strong{font-weight:normal;}
+h3{font-weight:normal;color:#333;font-size:0.3rem}
+.banner>img{width:100%;display:block;}
+#list{
+	position:relative;
+	top:-0.2rem;
+    border-top-left-radius:0.3rem; 
+	border-top-right-radius:0.3rem;
+	background:#fff;
+}
+#list li h3{
+	height:1.2rem;
+	padding-left:0.5rem;
+	line-height:1.2rem;
+	background:#fff;
+	position:relative;
+	border-top-left-radius:0.3rem; 
+	border-top-right-radius:0.3rem; 
+	box-shadow:0 -0.04rem 0.2rem rgba(0,0,0,0.05);
+}
+#list li h3 i{
+	position:absolute;
+	right:0.5rem;
+	top:0.55rem;
+	width:0.26rem;
+	height:0.14rem;
+	background:url(../images/arrowdown.png) no-repeat;
+	background-size:cover;
+}
+#list li h3.active i{
+	background:url(../images/arrowtop.png) no-repeat;
+	background-size:cover;
+}
+#list li div h4,#list li div p{
+	font-size:0.28rem;
+	color:#666;
+	font-weight:normal;
+}
+#list li div h4{
+	text-align: center;
+	padding:0.3rem 0;
+}
+#list li div {
+	padding-bottom:0.3rem;
+	display:none;
+	position:relative;
+	top:-0.2rem;
+	padding-top:0.3rem;
+	background:#fff;
+}
+#list li div p{
+	padding:0.1rem 0.5rem;
+	position:relative;
+	overflow: hidden;
+}
+#list li div p span{
+    color:#999;
+    float:left;
+    font-size:0.16rem;
+    width:0.3rem;
+    position:relative;
+    top:0.05rem;
+}
+#list li div p strong{
+	float:left;
+	line-height:0.4rem;
+	width:6rem;
+}
+#list li div img{
+	display:block;
+	width:30%;
+	margin:0 auto;
+}

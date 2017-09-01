@@ -1,0 +1,71 @@
+body{background:#fff;}
+.line{height:0.2rem;background:#f4f4f4}
+.form p{
+	width:6.9rem;
+	height:0.9rem;
+	line-height:0.9rem;
+	margin:0 auto;
+	font-size:0.26rem;
+	border-bottom:1px solid #ccc;
+	position:relative;
+}
+.form p.focus{
+	border-bottom:1px solid rgb(240,131,0);
+}
+.form p input{
+	width:5.5rem;
+	height:0.9rem;
+	line-height:0.9rem;
+}
+
+.form p em{
+	width:0.3rem;
+	height:0.3rem;
+	position:absolute;
+	right:0.16rem;
+	top:0.3rem;
+	background:url(../img/del1.png) no-repeat;
+	background-size:cover;
+	display:none;
+}
+.form p:nth-of-type(1) em{
+	right:0.85rem;
+}
+
+#secrecy{
+	position: absolute;
+	right:0.1rem;
+	top:0.25rem;
+	width:0.4rem;
+	height:0.4rem;
+	background:url(../img/biyan.png) no-repeat; 
+	background-size:cover;
+}
+#secrecy.active{
+	background:url(../img/zhengyan.png) no-repeat; 
+	background-size:cover;
+}
+#btn{
+	display:block;
+	width:6.7rem;
+	height:0.84rem;
+	line-height:0.84rem;
+	background:#ff971b;
+	text-align: center;
+	color:#fff;
+	border-radius:0.1rem;
+	margin:0.8rem auto;
+	font-size:0.32rem;
+}
+.tipmsg{
+  text-align: center;
+  color:#fff;
+  font-size:0.28rem;
+  margin-top:1rem;
+}
+.tipmsg span{
+  padding:0.3rem 0.6rem;
+  background:rgba(28,28,28,0.7);
+  border-radius:0.1rem;
+  opacity:0;
+}

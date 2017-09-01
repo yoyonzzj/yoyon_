@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/index.css">		
+</head>
+<body>
+ <div class="banner">
+ 	 <img src="images/banner.png">
+ </div>
+ 
+ <div class="content1">
+ 	 <p>
+ 	 	<span></span><i></i><input type="tel" placeholder="请输入手机号码" class="txt">
+ 	 </p>
+ 	 <p>
+ 	 	<span></span><i></i><input type="password" placeholder="请输入6-16位字母和数字组合密码" class="txt">
+ 	 </p>
+ 	 <p>
+ 	 	<span></span><i></i><input type="tel" placeholder="请输入短信验证码" class="tel">
+ 	 	<input type="button" value="获取" id="send">
+ 	 </p>
+ 	 <a href="#" class="reg">注册领壕礼</a>
+ </div>
+
+
+
+<div class="content2">
+	<h3 class="title1"></h3>
+    <img src="images/bank.png" class="bank">
+	<h3 class="title2"></h3>
+    <ul class="ul1">
+    	<li>
+    		<img src="images/img3.png">
+    		<p>受邀加入新华社</p>
+    		<p>《金融行业自律公约》</p>
+    	</li>
+    	<li>
+    		<img src="images/img1.png">
+    		<p>上海金融信息</p>
+    		<p>行业协会会员单位</p>
+    	</li>
+    </ul>
+	<h3 class="title3"></h3>
+
+	<ul class="ul2">
+    	<li>
+    		<img src="images/img4.png">
+    		<p>与美味不用等</p>
+    		<p>达成战略合作</p>
+    	</li>
+    	<li>
+    		<img src="images/img2.png">
+    		<p>盈科律师事务所</p>
+    		<p>提供法律支持</p>
+    	</li>
+    </ul>
+</div>
+
+
+
+
+<script type="text/javascript">
+window.onload=function(){
+   function setSize(){
+     var html=document.getElementsByTagName('html')[0];
+     var viewWidth=document.documentElement.clientWidth;
+	 html.style.fontSize=viewWidth/7.5+"px";
+   }
+  setSize();
+  window.onresize=setSize;
+ 
+} 
+</script>	
+</body>
+</html>

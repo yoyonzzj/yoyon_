@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/pay.css">
+</head>
+<body>
+   <dl>
+     <dt><img src=""></dt>
+     <dd>
+       <p>良品铺子办公室零食5种</p>
+       <p>期号：<span>20215757</span></p>
+       <p>参与次数：<span class="orange">1</span>人次</p>
+     </dd>
+   </dl>
+
+ 
+   <ul>
+     <li><span>你的可用余额</span><strong>0.10元</strong></li>
+     <li><span>还需支付</span><strong>3807.90元</strong></li>
+     <li><span>优惠券</span><!-- <strong class="gray">无可用</strong> --><strong class="orange" id="get">-0.10元</strong><i></i></li>
+   </ul>
+
+   <a href="#" class="btn">确认支付</a>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  var get=document.getElementById("get");
+  get.addEventListener("touchend",function(){
+      base.redirect("coupon.html");
+  })
+</script>	
+</body>
+</html>

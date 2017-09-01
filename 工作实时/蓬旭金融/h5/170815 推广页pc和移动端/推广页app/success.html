@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style type="text/css">
+ *{margin:0;padding:0;} 
+ body{font-family:"微软雅黑"}
+ h4{font-size:0.5rem;color:#e76039;font-weight:bold;text-align: center;
+  padding-top:0.8rem;}
+ p{
+  font-size:0.36rem;
+  color:#999;
+  text-align: center;
+  padding-top:0.4rem;
+ } 
+ img{display:block;
+  width:2.86rem;margin:0.84rem auto 0;}
+a{
+  display:block;
+  text-decoration:none;
+  width:3.8rem;
+  height:0.8rem;
+  text-align: center;
+  line-height:0.8rem;
+  color:#fff;
+  font-size:0.36rem;
+  background:#ff971b;
+  margin:1.5rem auto;
+  border-radius:0.1rem
+}
+.logo{
+  width:0.9rem;
+  display:block;
+  margin-top:0.8rem;
+}
+</style>
+</head>
+<body>
+   <img src="images/applogo.png" class="logo">
+ <h4>恭喜您，注册成功!</h4>
+ <p>快去下载APP领取新人壕礼吧</p>
+ <img src="images/succuss.png" >
+ <a href="" class="btn">去下载</a>
+
+
+<script type="text/javascript">
+window.onload=function(){
+ 
+function setSize(){
+     var html=document.getElementsByTagName('html')[0];
+     var viewWidth=document.documentElement.clientWidth;
+	 html.style.fontSize=viewWidth/7.5+"px";
+   }
+  setSize();
+  window.onresize=setSize;
+ 
+} 
+</script>	
+</body>
+</html>

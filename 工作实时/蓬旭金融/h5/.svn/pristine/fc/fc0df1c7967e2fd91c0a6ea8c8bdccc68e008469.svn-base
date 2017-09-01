@@ -1,0 +1,281 @@
+*{margin:0;padding:0}
+body{font-family:"微软雅黑";background:#5363f5;}
+li{list-style:none;}
+.banner>img{
+ display:block;
+ width:100%;
+}
+.title1{
+   text-align:center;
+}
+.title1{
+   width:4.98rem;
+   display:block;
+   margin:0.4rem auto;
+}
+.nav{
+	width:6.92rem;
+	height:1.78rem;
+	margin:0 auto;
+	background:url(../images/navbg.png) no-repeat;
+	background-size:cover;
+}
+.nav div{
+	width:3.23rem;
+	height:1.8rem;
+	float: left;
+	text-align: center;
+	color:#fff;
+	font-size:0.24rem;
+}
+.nav div.right{
+	float: right;
+}
+.nav div p{
+	padding-top:0.4rem;
+}
+.nav div h4{
+	font-weight:normal;
+	font-size:0.38rem;
+	padding-top:0.1rem;
+}
+.nav div h4.orange{
+	color:#ffd200;
+}
+
+.content{
+	width:6.9rem;
+	height:30.70rem;
+	padding-top:0.4rem;
+	box-sizing:border-box;
+	background:#4b5cf0;
+	margin:0.7rem auto 0.5rem;
+}
+.title2{
+	display:block;
+	width:4.15rem;
+	margin:0 auto 0.6rem;
+}
+#tab{
+ width:5.4rem;
+ height:0.8rem;
+ margin:0 auto;
+ background:#3d4fef;
+ border:1px solid #3547e7;
+ border-radius:0.4rem;
+ font-size:0.28rem;
+ color:#b1b9ff;
+}
+#tab li{
+ width:2.7rem;
+ text-align: center;
+ line-height:0.8rem;
+ height:0.8rem;
+ float: left;
+ border-radius:0.4rem;
+ box-sizing:border-box;
+}
+#tab li.active{
+  background:#dab403;
+  color:#fff;
+  border:1px solid #3547e7;
+}
+.line{
+	position:relative;
+	width:6.9rem;
+	height:19.24rem;
+	margin-top:1.3rem;
+}
+#line{
+	width:0.08rem;
+	height:19.24rem;
+	background:rgba(255,255,255,0.2);
+	position:absolute;
+	left:3.42rem;
+	border-radius:0.5rem;
+	overflow:hidden;
+}
+#line p{
+	position:absolute;
+	width:8px;
+	background:#4253e8;
+	left:0;
+    bottom:0;
+}
+.line li{
+	width:2.8rem;
+}
+.line .right li img{
+   
+}
+.line .right li h4{
+  text-align:left;
+}
+.line .right li p.name{
+  float: right;
+}
+.line li p.name{
+    color: #fff;
+    font-size: 0.24rem;
+    text-align: center;
+    color: #fff;
+    width: 3rem;
+    padding-top: 0.05rem;
+    line-height: 0.32rem;
+}
+.line li .line-border{
+	width:2.8rem;
+	height:0.1rem;
+	background:#fff;
+	opacity:0.2;
+	border-radius:0.5rem;
+}
+.line li img{
+	width:1.8rem;
+	display:block;
+	margin:0 auto;
+}
+.line li h4{
+width: 2.8rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #fff;
+    font-weight: normal;
+    padding: 0.1rem 0;
+    
+}
+.line li h4 span{
+	font-size:0.28rem;
+	color:#ffd200;
+}
+.line li.cur p{
+	color:#ffd200;
+}
+.line li.li1{
+    position:absolute;
+    top:4rem;
+    left:0.35rem;
+}
+.line li.li2{
+    position: absolute;
+    top: 10rem;
+    left: 0.35rem;
+}
+.line li.li3{
+    position: absolute;
+    top: 16rem;
+    left: 0.35rem;
+}
+
+.line li.li4{
+    position:absolute;
+    top:1rem;
+    left:3.78rem;
+}
+.line li.li5{
+   position:absolute;
+   top:7rem;
+   left:3.78rem;
+}
+.line li.li6{
+   position:absolute;
+   top:13rem;
+   left:3.78rem;
+}
+.right li .img{
+   margin-left:20px;
+}
+.line .end{
+  font-size:0.2rem;
+  color:#ffd200;
+  font-weight:normal;
+  position:absolute;
+  top:-0.4rem;
+  left:3rem;
+}
+.line .start{
+  font-size:0.2rem;
+  color:#ffd200;
+  font-weight:normal;
+  position:absolute;
+  top:19.5rem;
+  left:3.3rem;
+}
+.circle span{
+    position: absolute;
+    left: 3.25rem;
+    width: 0.42rem;
+    height: 0.42rem;
+    background: url(../images/cirle.png) no-repeat;
+    background-size: cover;
+}
+.circle .span1{
+	bottom:18rem;
+}
+.circle .span2{
+	bottom:15rem;
+}
+.circle .span3{
+	bottom:12rem;
+}
+.circle .span4{
+	bottom:9rem;
+}
+.circle .span5{
+	bottom:6rem;
+}
+.circle .span6{
+	bottom:3rem;
+}
+.text{
+	color:#fff;
+	font-size:0.26rem;
+	padding:0.95rem 0 0 0.3rem;
+}
+.text p{
+	padding-bottom:0.2rem;
+}
+.text li{
+	padding-bottom:0.15rem;
+	line-height:0.4rem;
+}
+
+
+#yz,#yz1{
+	height:0.8rem;
+	bottom:0rem;
+	position:absolute;
+}
+#yz img,#yz1 img{
+	width:0.74rem;
+	display:block;
+}
+#yz.left,#yz1.left{
+	left: 0.55rem;
+}
+#yz.right,#yz1.right{
+    left:3rem;
+}
+#yz p,#yz1 p{
+	width:2.35rem;
+	text-align: right;
+}
+#yz.left p,#yz1.left p{
+	float: left;
+	font-size:0.24rem;
+	color:#fff;
+	line-height:0.8rem;
+	margin-right:0.1rem;
+}
+#yz.right p,#yz1.right p{
+	float: right;
+	font-size:0.24rem;
+	color:#fff;
+	line-height:0.8rem;
+	margin-left:0.1rem;
+	text-align:left;
+}
+#yz p span,#yz1 p span{
+	font-size:0.28rem;
+	color:#ffd200;
+}

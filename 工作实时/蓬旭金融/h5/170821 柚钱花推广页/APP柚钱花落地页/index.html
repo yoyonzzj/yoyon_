@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>柚钱花</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">	
+<link rel="stylesheet" type="text/css" href="css/index.css">	
+</head>
+<body>
+
+<div class="banner">
+	<img src="images/banner.png"/>
+</div>
+<div class="step">
+	<img src="images/step.png"/>
+</div>
+
+<div class="form">
+	<p>
+		<span><i></i></span>
+		<input type="tel" placeholder="请输入手机号码" class="txt" id="tel"/>
+	</p>
+	
+  <p>
+		<span><i></i></span>
+		<input type="password" placeholder="请输入6-16位字母和数字组合密码" class="txt" id="pwd"/>
+	</p>
+	<p>
+		<span><i></i></span>
+		<input type="tel" placeholder="请输入短信验证码" class="txt" id="code"/>
+		<input type="button" value="获取" id="send"/>
+	</p>
+
+</div>
+	<a href="javascript:;" class="reg" id="btn">立即注册，极速借款</a>
+
+
+<div class="tip">
+    <span id="tip"></span>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+      //获取手机输入框
+    var tel=$("#tel");
+    //获取验证码输入框
+    var code=$("#code");
+    //获取密码输入框
+    var pwd=$("#pwd");
+    //获取发送验证码按钮
+    var send=$("#send");
+    //获取注册按钮
+    var btn=$("#btn");
+    
+    var tip=$("#tip");
+    var timer=null;
+    var now=10;
+
+    
+//发送验证码接口请求
+   send.click(function(){
+        var regtel=/^1[3|4|5|7|8]\d{9}$/; 
+        var telval=tel.val();
+        if(telval==""){
+            tip.html("手机号码不能为空");
+            tip.css("opacity",1);
+            setTimeout(function(){
+                tip.css("opacity",0);
+            },2000)
+
+        }else if(!regtel.test(telval)){
+            tip.html("手机号码格式不正确");
+            tip.css("opacity",1);
+            setTimeout(function(){
+                tip.css("opacity",0);
+            },2000)
+        }else{
+            $.ajax({
+                      type:"post",
+                      url:"/zy/zyUser/sendsms",
+                      data:{
+                      	record:{
+                      		"mobile":telval,
+                      		"flag":"MSG_REG_",
+                      		"form_token":Math.random()
+                      	}
+                         
+                      },
+                      dataType:"json",
+                      success:function(res){
+                              if(res.code==200){
+                                    tip.html(res.msg);
+                                   
+                                    timer=setInterval(function(){
+                                         if(now!=0){
+                                              send.val(now); 
+                                              now--;
+                                              send.attr("disabled",true);
+                                         }else{
+                                              clearInterval(timer);
+                                              send.attr("disabled",false);
+                                              send.val("重新发送");
+                                              now=10;
+                                         } 
+                                    },1000)
+                    
+                                   
+                            }else if(res.code==500){
+                                  tip.html(res.msg);
+                                  tip.css("opacity",1);
+                                  setTimeout(function(){
+                                      tip.css("opacity",0);
+                                  },2000)
+                            }
+                    }
+              })
+        }
+   })
+
+
+
+
+
+
+
+
+
+//注册接口
+    btn.click(function(){
+             var regpwd=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+             var regtel=/^1[3|4|5|7|8]\d{9}$/; 
+             var telval=tel.val();
+             var codeval=code.val();
+             var pwdval=pwd.val();
+             
+            if(telval==""){
+                 tip.html("手机号码不能为空");
+                 tip.css("opacity",1);
+                                  setTimeout(function(){
+                                      tip.css("opacity",0);
+                                  },2000)
+            }else if(!regtel.test(telval)){
+                 tip.html("手机号码格式不正确");
+                 tip.css("opacity",1);
+                                  setTimeout(function(){
+                                      tip.css("opacity",0);
+                                  },2000)
+            }else if(codeval==""){
+                 tip.html("请输入短信验证码");
+                 tip.css("opacity",1);
+                                  setTimeout(function(){
+                                      tip.css("opacity",0);
+                                  },2000)
+            }else if(pwdval==""){
+                 tip.html("请输入密码");
+                 tip.css("opacity",1);
+                                  setTimeout(function(){
+                                      tip.css("opacity",0);
+                                  },2000)
+            }else if(!regpwd.test(pwdval)){
+                 tip.html("密码格式不正确");
+                 tip.css("opacity",1);
+                                  setTimeout(function(){
+                                      tip.css("opacity",0);
+                                  },2000)
+            }else{
+                 
+                 $.ajax({
+                      type:"post",
+                      url:"/registerReviewForSpread.do",
+                      data:{
+                      	 record:{
+                      	 	 "mobile":telval,
+                             "password":pwdval,
+                             "verify_code":codeval,
+                             "form_token":Math.random(),
+                             "into_from":"4",
+                             "userChannel":"uzicai"
+                      	 }
+                         
+                     
+                      },
+                      dataType:"json",
+                      success:function(res){
+                             if(res==500){
+                                tip.html(res.msg);
+                                tip.css("opacity",1);
+                                setTimeout(function(){
+                                      tip.css("opacity",0);
+                                },2000)
+                             }else{
+                                alert("成功跳转")
+                             }
+                    }
+               })
+
+
+            }
+
+    
+
+    })
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   function setSize(){
+     var html=document.getElementsByTagName('html')[0];
+     var viewWidth=document.documentElement.clientWidth;
+	 html.style.fontSize=viewWidth/7.5+"px";
+   }
+  setSize();
+  window.onresize=setSize;
+
+
+} 
+</script>	
+</body>
+</html>

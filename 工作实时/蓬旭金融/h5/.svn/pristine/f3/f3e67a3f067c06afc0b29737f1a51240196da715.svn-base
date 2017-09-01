@@ -1,0 +1,35 @@
+*{margin:0;padding:0;}
+body{font-family:"微软雅黑";background:#fd594f;}
+.banner>img{display:block;width:100%;}
+.content{
+	padding:0.4rem 0.4rem 0;
+	font-size:0.28rem;
+	color:#fff;
+}
+.box{
+	background:#ff8072;
+	padding:0.4rem 0.3rem 0.55rem;
+	border-radius:0.1rem;
+	margin-bottom:0.4rem;
+}
+.box img.title{
+	display:block;
+	margin:0 auto;
+	width:2.31rem;
+}
+.box p{
+	line-height:0.4rem;
+	padding-top:0.4rem;
+}
+.box p span{
+	color:#f3e65b;
+}
+.code{
+	width:4.7rem;
+	display:block;
+	margin:0.3rem auto 0;
+}
+.box ul{
+	padding-top:0.1rem;
+}
+.box ul li{list-style:none;padding-top:0.2rem;line-height:0.4rem;}

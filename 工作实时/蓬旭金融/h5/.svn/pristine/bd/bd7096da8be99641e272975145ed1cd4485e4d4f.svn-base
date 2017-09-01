@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>柚钱花</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">	
+<link rel="stylesheet" type="text/css" href="css/index.css">	
+</head>
+<body>
+
+<div class="banner">
+	<img src="images/banner.png"/>
+</div>
+<div class="step">
+	<img src="images/step.png"/>
+</div>
+
+<div class="form">
+	<p>
+		<span><i></i></span>
+		<input type="tel" placeholder="请输入手机号码" class="txt" id="tel"/>
+	</p>
+	<p>
+		<span><i></i></span>
+		<input type="password" placeholder="请输入6-16位字母和数字组合密码" class="txt" id="pwd"/>
+	</p>
+	<p>
+		<span><i></i></span>
+		<input type="tel" placeholder="请输入短信验证码" class="txt" id="code"/>
+		<input type="button" value="获取" id="send"/>
+	</p>
+
+</div>
+	<a href="javascript:;" class="reg">立即注册，极速借款</a>
+
+
+
+<script type="text/javascript">
+window.onload=function(){
+   function setSize(){
+     var html=document.getElementsByTagName('html')[0];
+     var viewWidth=document.documentElement.clientWidth;
+	 html.style.fontSize=viewWidth/7.5+"px";
+   }
+  setSize();
+  window.onresize=setSize;
+ 
+  
+  //获取手机号码
+  var tel=document.getElementById("tel");
+  //获取密码
+  var pwd=document.getElementById("pwd");
+  //获取短信验证码
+  var code=document.getElementById("code");
+  //获取注册按钮
+  var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+  
+  
+  
+
+
+
+
+
+
+
+} 
+</script>	
+</body>
+</html>

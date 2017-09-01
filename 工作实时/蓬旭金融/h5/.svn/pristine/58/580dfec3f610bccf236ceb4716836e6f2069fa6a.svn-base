@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品分类</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/classify.css">
+</head>
+<body>
+   <div class="search">
+     <i></i>
+     <input type="text" placeholder="搜索你想要的商品" id="txt">
+     <em id="del"></em>
+   </div>
+   <h4>商品分类</h4>
+   
+   <ul class="list">
+      <li><a href="productlist.html">手机数码<i></i></a></li>
+      <li><a href="productlist.html">电脑办公<i></i></a></li>
+      <li><a href="productlist.html">话费充值卡<i></i></a></li>
+      <li><a href="productlist.html">购物卡<i></i></a></li>
+   </ul>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+  var txt=document.getElementById("txt");
+  var del=document.getElementById("del");
+  del.addEventListener("touchend",function(){
+    txt.value="";
+  })
+</script>	
+</body>
+</html>

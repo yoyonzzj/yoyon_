@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/coupon.css">
+</head>
+<body>
+  <ul id="list">
+     <li class="uncheck">
+        <h4>¥<span>10.00</span></h4>
+        <div class="info">
+            <h5>幸运大转盘</h5>
+            <p>2017-07-17 到期</p>
+            <p>限新人商品使用</p>
+        </div>
+        <i></i>
+     </li>
+     
+     <li class="check">
+        <h4 class="has">
+          ¥<span>10.00</span><br/>
+          <em>满39元可用</em>
+        </h4>
+        <div class="info">
+            <h5>新人福利</h5>
+            <p>2017-07-17 到期</p>
+            <p>限新人商品使用</p>
+        </div>
+        <i></i>
+     </li>
+     <li class="uncheck">
+        <h4 class="has">
+          ¥<span>10.00</span><br/>
+          <em>满39元可用</em>
+        </h4>
+        <div class="info">
+            <h5>新人福利</h5>
+            <p>2017-07-17 到期</p>
+            <p>限新人商品使用</p>
+        </div>
+        <i></i>
+     </li>
+     <li class="gray">
+        <h4 class="has"> 
+          ¥<span>10.00</span><br/>
+          <em>满39元可用</em>
+        </h4>
+        <div class="info">
+            <h5>新人福利</h5>
+            <p>2017-07-17 到期</p>
+            <p>限新人商品使用</p>
+        </div>
+        <i></i>
+     </li>
+  </ul>
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+   var list=document.getElementById("list");
+   var lis=list.getElementsByTagName("li");
+   var arr=[];
+
+
+   for(var i=0;i<lis.length;i++){
+      if(lis[i].className=="check" || lis[i].className=="uncheck")
+        arr.push(lis[i])
+    /*   lis[i].addEventListener("touchend",function(){
+         // alert(this.className)
+         if(this.className=="uncheck"){
+            this.className="check"
+         }
+       },false)*/
+   }
+
+  for(var i=0;i<arr.length;i++){
+      arr[i].addEventListener("touchend",function(){
+         if(this.className=="uncheck"){
+            for(var i=0;i<arr.length;i++){
+              arr[i].className="uncheck";
+            }
+            this.className="check"
+         }
+       },false)
+}
+
+
+
+
+
+
+
+
+</script>	
+</body>
+</html>

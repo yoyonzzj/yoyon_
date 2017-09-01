@@ -1,0 +1,212 @@
+body{background:#fff;}
+.cl{clear:both;}
+.tar{text-align: right;}
+header{
+	height:0.66rem;
+	line-height:0.66rem;
+	padding:0 0.3rem;
+}
+header .home{
+	float:left;
+	width:0.4rem;
+	height:0.4rem;
+	background:url(../img/home.png) no-repeat;
+	background-size:cover;
+	margin-top:0.15rem;
+}
+header .reg{
+	float:right;
+	font-size:0.3rem;
+	color:#ff971b;
+}
+.logo img{
+	display:block;
+	width:2.30rem;
+	margin:1rem auto 0;
+}
+.tab{
+	width:5.8rem;
+	margin:1.1rem auto 0;
+}
+.tab li{
+	height:0.4rem;
+	float: left;
+	width:50%;
+	text-align: center;
+	box-sizing:border-box;
+	color:#333;
+}
+.tab li span{
+	display:block;
+	margin:0 auto;
+	width:1.36rem;
+	border-bottom:1px solid #fff;
+	padding-bottom:0.2rem;
+}
+.tab li span.active{
+	color:#ff971b;
+	border-bottom:1px solid #ff971b;
+}
+.tab li:nth-of-type(1){
+   border-right:1px solid #333;
+}
+#formbox{
+	margin:0.6rem auto 0;
+	width:6.7rem;
+
+}
+#formbox li{
+    height:0.9rem;
+	line-height:0.9rem;
+	position:relative;
+	border-bottom:1px solid #ccc;
+	padding-left:0.9rem;
+}
+
+#formbox  li .txt{
+	display:block;
+	width:4rem;
+	height:0.5rem;
+	font-size:0.26rem;
+	line-height:0.5rem;
+	padding:0.2rem 0;
+}
+#ul1 li:nth-of-type(1) i,#ul2 li:nth-of-type(1) i{
+	position:absolute;
+	width:0.4rem;
+	height:0.4rem;
+	background:url(../img/telphone.png) no-repeat;
+	background-size:cover;
+	left:0.2rem;
+	top:0.25rem; 
+}
+#ul1 li:nth-of-type(1) em,#ul2 li:nth-of-type(1) em{
+	position:absolute;
+	width:0.3rem;
+	height:0.3rem;
+	background:url(../img/del1.png) no-repeat;
+	background-size:cover;
+	right:0.25rem;
+	top:0.3rem;
+	display:none;
+}
+#ul1 li:nth-of-type(2) i{
+	position:absolute;
+	width:0.4rem;
+	height:0.4rem;
+	background:url(../img/pwd.png) no-repeat;
+	background-size:cover;
+	left:0.2rem;
+	top:0.25rem; 
+}
+#ul1 li:nth-of-type(2) em{
+	position:absolute;
+	width:0.3rem;
+	height:0.3rem;
+	background:url(../img/del1.png) no-repeat;
+	background-size:cover;
+	right:0.95rem;
+	top:0.3rem;
+	display:none; 
+}
+#ul1 li:last-child{
+	border-bottom:none;
+}
+#ul1 li:last-child a{
+	color:#ff971b;
+}
+#secrecy{
+	position:absolute;
+	right:0.2rem;
+	top:0.25rem;
+	width:0.4rem;
+	height:0.4rem;
+	background:url(../img/biyan.png) no-repeat;
+	background-size:cover;
+}
+#secrecy.cur{
+	background:url(../img/zhengyan.png) no-repeat;
+	background-size:cover;
+}
+#ul2 li:nth-of-type(2) i{
+	position:absolute;
+	width:0.4rem;
+	height:0.4rem;
+	background:url(../img/tel.png) no-repeat;
+	background-size:cover;
+	left:0.22rem;
+	top:0.25rem; 
+}
+#send{
+	position:absolute;
+	right:0rem;
+	top:0.25rem;
+	width:1.3rem;
+    height:0.4rem;
+	border-left:1px solid #666;
+	background:none;
+	color:#ff971b;
+	font-size:0.26rem;
+}
+#loginbtn{
+	display:block;
+	width:6.7rem;
+	height:0.84rem;
+	margin:0 auto;
+	border-radius:0.1rem;
+	background:#ff971b;
+	text-align: center;
+	line-height:0.84rem;
+	color:#fff;
+	font-size:0.3rem;
+}
+#ul1{
+	margin-bottom:0.2rem;
+}
+#ul2{
+	margin-bottom:0.8rem;
+	display:none;
+}
+#agreement{
+	width:6.7rem;
+	margin:0.4rem auto;
+	height:0.35rem;
+	line-height:0.35rem;
+	font-size:0.22rem;
+}
+#agreement span,#agreement em,#agreement a{
+	float: left;
+	font-style:normal;
+}
+#agreement a{
+	color:#ff971b;
+}
+#agreement span{
+	padding-left: 0.45rem;
+	position:relative;
+}
+#agreement span i{
+	position:absolute;
+	width:0.3rem;
+	height:0.3rem;
+	left:0rem;
+	top:0.0rem;
+	background:url(../img/weixuanze.png) no-repeat;
+    background-size:cover;
+}
+#agreement span.active i{
+  background:url(../img/xuanze.png) no-repeat;
+  background-size:cover;
+}
+
+.tip{
+	margin-top:1rem;
+	text-align:center;
+}
+.tip span{
+    padding: 0.3rem 0.6rem;
+    background: rgba(28,28,28,0.7);
+    border-radius: 0.1rem;
+    color:#fff;
+    opacity:0; 
+}

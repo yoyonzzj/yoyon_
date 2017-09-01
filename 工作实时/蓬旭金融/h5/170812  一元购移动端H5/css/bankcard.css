@@ -1,0 +1,65 @@
+body{background:rgb(64,68,73);}
+#cardlist li{
+	width:7.2rem;
+	height:2.5rem;
+	margin:0.2rem auto 0;
+	background:#ccc;
+	border-radius:0.1rem;
+}
+#cardlist li.red{
+	background:rgb(207,82,95);
+}
+#cardlist li.green{
+	background:rgb(1,182,164);
+}
+#cardlist li.blue{
+	background:rgb( 76,135,185);
+}
+#cardlist li dt{
+	float: left;
+	width:0.72rem;
+	height:0.72rem;
+	overflow: hidden;
+	border-radius:0.36rem;
+	padding:0.04rem;
+	background:#fff;
+	box-sizing:border-box;
+	margin-top:0.1rem;
+}
+#cardlist li dl{
+	overflow:hidden;
+	padding:0.4rem 0 0 0.4rem;
+}
+#cardlist li dt>img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#cardlist li dd{
+	float: left;
+	color:#fff;
+	padding-left:0.2rem;
+}
+#cardlist li dd h4{
+	font-weight:normal;
+	font-size:0.36rem;
+	padding-bottom:0.1rem;
+}
+#cardlist li dd p{
+	font-size:0.26rem;
+}
+#cardlist li div{
+	color:#fff;
+	padding-left:1.3rem;
+}
+#cardlist li div span{
+    float: left;
+    font-size: 0.24rem;
+    margin-right: 0.7rem;
+    padding-top: 0.37rem;
+}
+#cardlist li div strong{
+	float: left;
+	font-size:0.6rem;
+	font-weight:normal;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>银行卡信息</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/gl_bindbank.css">
+</head>
+<body>
+  <section>
+     <h4><span>*</span>请填写您本人的银行借记卡信息</h4>
+     <p><input type="text" placeholder="请输入您本人银行卡号"></p>
+     <p><input type="text" placeholder="请输入持卡人姓名"></p>
+     <p><input type="text" placeholder="请输入身份证证件号"></p>
+     <h4><span>*</span>个人信息仅用于银行验证</h4>
+     <p><input type="text" placeholder="请输入银行卡预留手机号"></p>
+  </section>
+  
+  
+  <a href="javascript:;" class="btn" id="btn">充值</a>
+  
+  <div id="protocol">
+     <p class="protocol">
+       <span class="active">
+         <i></i>
+         点击阅读并同意
+       </span>
+       <em>《</em><a href="#">一元夺宝用户服务协议</a><em>》</em>
+     </p>
+  </div>
+
+
+
+
+
+
+<div id="mask"></div>
+<div id="dialog">
+   <span id="close"></span>
+   <h4>请输入短信验证码</h4>
+   <em>充值</em>
+   <strong>￥100.00</strong>
+   <ul id="code">
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+   </ul>
+   <p>验证码已发送至您手机155****1236</p>
+   <input type="button" value="60s" id="send" >
+</div>
+<div id="keyboard">
+    <p>
+      <span class="num">1</span>
+    </p>
+    <p>
+      <span class="num">2</span><br/>
+      <strong>ABC</strong>
+    </p>
+    <p>
+      <span class="num">3</span><br/>
+      <strong>DEF</strong>
+    </p>
+    <p>
+      <span class="num">4</span><br/>
+      <strong>GHI</strong>
+    </p>
+    <p>
+      <span class="num">5</span><br/>
+      <strong>JKL</strong>
+    </p>
+     <p>
+      <span class="num">6</span><br/>
+      <strong>MNO</strong>
+    </p>
+     <p>
+      <span class="num">7</span><br/>
+      <strong>PQRS</strong>
+    </p>
+     <p>
+      <span class="num">8</span><br/>
+      <strong>TUV</strong>
+    </p>
+    <p>
+      <span class="num">9</span><br/>
+      <strong>WXYZ</strong>
+    </p>
+    <p class="gray"></p>
+    <p>
+      <span class="num zero">0</span>
+    </p>
+    <p>
+      <em id="del">X</em>
+    </p>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+   var onoff=true;
+   var protocol=document.getElementById("protocol");
+   var span=protocol.getElementsByTagName("span")[0];
+
+   span.addEventListener("touchend",function(){
+      if(onoff){
+         onoff=false;
+         this.className="";
+      }else{
+         onoff=true;
+         this.className="active";
+      }
+   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var code=document.getElementById("code");
+  var lis=code.getElementsByTagName("li");
+  var mask=document.getElementById("mask");
+  var dialog=document.getElementById("dialog");
+  var keyboard=document.getElementById("keyboard");
+  var spans=keyboard.getElementsByTagName("span");
+  var del=document.getElementById("del");
+  var close=document.getElementById("close");
+  var str="";
+  var num=0;
+
+  
+
+  
+   var btn=document.getElementById("btn")
+   btn.addEventListener("click",function(){
+     mask.style.display=dialog.style.display="block";
+     keyboard.style.WebkitTransform=keyboard.style.transform="translateY(0)"
+  },false)
+
+  for(var i=0;i<spans.length;i++){
+      spans[i].addEventListener("touchend",function(){
+        
+        if(str.length<lis.length){
+           str+=this.innerHTML;
+           console.log(str)
+           for(var i=0;i<str.length;i++){
+              lis[i].innerHTML=str[i]
+          }
+        }
+      },false)
+  }
+
+  del.addEventListener("touchend", function(){
+     
+     if(str.length>0){
+       str=str.substring(0,str.length-1);
+       num=str.length;
+       console.log(str);
+       lis[num].innerHTML="";
+     }
+
+},false)
+
+
+
+close.addEventListener("touchend",function(){
+    mask.style.display=dialog.style.display="none";
+    keyboard.style.WebkitTransform=keyboard.style.transform="translateY(4rem)";
+    str="";
+    for(var i=0;i<lis.length;i++){
+        lis[i].innerHTML="";
+    }
+})
+
+
+</script>	
+</body>
+</html>

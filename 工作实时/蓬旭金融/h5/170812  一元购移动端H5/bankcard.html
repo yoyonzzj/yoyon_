@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/bankcard.css">
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+</head>
+<body>
+  <ul id="cardlist">
+    <li class="red">
+       <dl>
+          <dt><img src="img/zsbank.png"></dt>
+          <dd>
+            <h4>招商银行</h4>
+            <p>储蓄卡</p>
+          </dd>
+       </dl>
+       <div>
+        <span>* * * *</span>  
+        <span>* * * *</span>
+        <span>* * * *</span>
+        <strong>6217859003230167745</strong>
+      </div>
+    </li>
+    <li class="green">
+       <dl>
+          <dt><img src="img/nybank.png"></dt>
+          <dd>
+            <h4>农业银行</h4>
+            <p>储蓄卡</p>
+          </dd>
+       </dl>
+        <div>
+        <span>* * * *</span>  
+        <span>* * * *</span>
+        <span>* * * *</span>
+        <strong>6217859003230163621</strong>
+      </div>
+    </li>
+    <li class="blue">
+      <dl>
+          <dt><img src="img/jsbank.png"></dt>
+          <dd>
+            <h4>中国建设银行</h4>
+            <p>储蓄卡</p>
+          </dd>
+       </dl>
+        <div>
+        <span>* * * *</span>  
+        <span>* * * *</span>
+        <span>* * * *</span>
+        <strong>6217859003230169815</strong>
+        </div>
+    </li>
+  </ul>
+  
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+   var list=document.getElementById("cardlist");
+   //alert(cutNum("6217857000030169815"))
+   var strongs=list.getElementsByTagName("strong");
+   
+   for(var i=0;i<strongs.length;i++){
+      strongs[i].innerHTML=cutNum(strongs[i].innerHTML)
+   }
+ 
+   function cutNum(str){
+     return str.substring(str.length-4,str.length)
+   }            
+</script>	
+</body>
+</html>

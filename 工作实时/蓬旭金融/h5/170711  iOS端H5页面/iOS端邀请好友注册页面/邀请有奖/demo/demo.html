@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />  
+</head>
+<body>
+  <div class="bg">
+  	<img src="images/bg.png">
+  	<div class="content">
+  		<div class="btns">
+  		   <span>0</span>
+  		   <span>0.00</span>
+  	    </div>
+  	    <div class="txt">
+  	    	<p>1.把自己的邀请码发送给好友，好友注册借款成功。</p>
+  	    	<p>2.在好友还款成功（无逾期）的情况下，将好友借款金额的1%作为邀请奖励，直接发放到您的账户余额中。</p>
+  	    	<p>3.好友成功收到邀请后，下载并打开柚钱花APP，在注册页面填写您的邀请码即可。</p>
+  	    </div>
+  	    <a href="javascript:;" class="share"></a>
+  	</div>
+    	
+  
+    
+  </div>
+
+<style type="text/css">
+*{margin:0;padding:0;}
+body,html{width:100%;}
+.bg img{width:100%;position:absolute;left:0;top:0;}
+.content{position:absolute;width:100%;left:0;top:0;}
+.btns{
+	    padding: 13.5rem 0 0 1.9rem;
+	    overflow: hidden;
+}
+.btns span{
+	float: left;
+	width:3.94rem;
+	height:1.12rem;
+	line-height: 1.12rem;
+	color:#fff;
+	font-size:0.7rem;
+	text-align: center;
+	background:url(images/text.png) no-repeat;
+	background-size:cover;
+}
+.btns span:nth-of-type(1){
+	margin-right:3.3rem;
+}
+.txt{
+    font-size:0.55rem;
+    padding:1.3rem;
+    color:#f7806c;
+    margin-top:2.7rem;
+    line-height:1rem;
+}
+.share{
+	display:block;
+	width:12.8rem;
+	height:1.76rem;
+	background:url(images/share.png) no-repeat;
+	background-size:cover;
+	margin:2rem auto 0;
+}
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	 function setSize(){
+     var html=document.getElementsByTagName('html')[0];
+     var viewWidth=document.documentElement.clientWidth;
+	 html.style.fontSize=viewWidth/15+"px";
+ }
+ setSize();
+ window.onresize=setSize;
+} 
+
+</script>  
+</body>
+</html>

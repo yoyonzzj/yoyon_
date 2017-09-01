@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优惠券</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/yhq.css">
+</head>
+<body>
+  <ul id="list">
+     <li>
+       <div class="left">
+          ¥<strong>10.00</strong>
+       </div>
+       <div class="mid">
+           <h4>幸运大转盘</h4>
+           <p>2017-07-17到期</p> 
+           <p>限新人商品使用</p> 
+       </div>
+       <a href="#">立即使用</a>
+     </li>
+
+     <li class="has">
+       <div class="left">
+          ¥<strong>10.00</strong>
+          <p>满39元可用</p>
+       </div>
+       <div class="mid">
+           <h4>新人福利</h4>
+           <p>2017-07-17到期</p> 
+           <p>限新人商品使用</p> 
+       </div>
+       <a href="#">立即使用</a>
+     </li>
+  </ul>
+
+
+  <p class="nomore">
+     <span>没有更多了~</span>
+  </p>
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

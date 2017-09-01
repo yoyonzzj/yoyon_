@@ -1,0 +1,365 @@
+*{margin:0;padding:0;}
+a:link,a:visited{text-decoration:none;}
+body{font-family:"微软雅黑";background:#eaf6fd;}
+h3,strong{font-weight:normal;}
+li{list-style:none;}
+.w1200{width:1200px;margin:0 auto;}
+input{border:none;background:none;outline:none;}
+.header-box{
+	height:100px;
+	background:#eaf6fd;
+	min-width:1200px;
+}
+.header-box .header{
+	width:1200px;
+	margin:0 auto;
+}
+.header-box .header .logo{
+	float:left;
+	padding-top:23px;
+}
+.header-box .header p{
+	float: right;
+	font-size:18px;
+    padding-top:38px;
+}
+.header-box .header p a{
+	color:#4c689d;
+	padding:0 22px;
+	height:20px;
+	float: left;
+	line-height:20px;
+}
+.header-box .header p .login{
+	height:20px;
+	border-right:1px solid #4c689d;
+}
+.header-box .header p .home{
+	padding-right:0;
+}
+.banner{
+	width:100%;
+	min-width:1200px;
+	height:532px;
+	background:url(../images/banner.png) no-repeat center top;
+}
+
+.regbox{
+    background: #eff6ff;
+    float: right;
+    width: 370px;
+    height: 420px;
+    margin-top: 55px;
+}
+.regbox h3{
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 17px;
+    font-size: 22px;
+    color: #f2a955;
+}
+.regbox p{
+	width:290px;
+	margin:0 auto 15px;
+	height:45px;
+	position:relative;
+	border-bottom:1px solid #dcdcdc;
+}
+.regbox p input{
+	font-size:14px;
+}
+.regbox p .txt{
+	height:45px;
+	display:block;
+	width:290px;
+	line-height:45px;
+}
+.regbox p .code{
+	height:45px;
+	display:block;
+	width:195px;
+	line-height:45px;
+}
+#send{
+	position:absolute;
+	right:0px;
+	top:0;
+	width:90px;
+	height:30px;
+	color:#666;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	border-radius:3px;
+}
+#tip{
+	font-size:12px;
+	color:#ec5c2b;
+	display:block;
+	width:290px;
+	height:24px;
+	line-height:24px;
+	margin:0 auto;
+}
+#agreen{
+padding-top: 17px;
+    font-size: 12px;
+    color: #999;
+    margin-left: 40px;
+    padding-left: 20px;
+    position: relative;
+}
+#agreen i{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(../images/check.png) no-repeat;
+    cursor: pointer;
+    left: 0px;
+    top: 20px;
+}
+#agreen a{
+	color:#f2a955;
+}
+.regbtn{
+	display:block;
+	width:290px;
+	height:42px;
+	text-align: center;
+	line-height:42px;
+	color:#fff;
+	font-size:18px;
+	background:#f2a955;
+	margin:20px auto 0;
+	border-radius:5px;
+}
+.content1{
+	text-align: center;
+	padding-top:70px;
+	overflow:hidden;
+}
+.content1 ul{
+	width:1230px;
+	padding-top:90px;
+}
+.content1 li{
+	float: left;
+	width:392px;
+	margin-right:15px;
+}
+
+.box{
+	width:100%;
+	padding-top:40px;
+	margin-top:85px;
+	min-width:1200px;
+	background:#e1f2fd;
+}
+.content2{
+	text-align: center;
+	padding-bottom:90px;
+}
+.line{
+	margin:100px auto 0;
+	width:168px;
+	height:570px;
+	position:relative;
+	background:url(../images/line.png) no-repeat;
+}
+.line a{
+	color:#fff;
+	font-size:26px;
+}
+.line a:hover{
+	opacity:0.7
+}
+.line .left1{
+    position: absolute;
+    left: -469px;
+    top: 4px;
+    width: 468px;
+    height: 86px;
+    text-align: center;
+    line-height: 77px;
+    background: url(../images/l1.png) no-repeat;
+}
+.line .left2{
+    position: absolute;
+    left: -532px;
+    top: 201px;
+    width: 528px;
+    height: 86px;
+    text-align: center;
+    line-height: 77px;
+    background: url(../images/l2.png) no-repeat;
+}
+.line .left3{
+    position: absolute;
+    left: -443px;
+    top: 394px;
+    width: 438px;
+    height: 86px;
+    text-align: center;
+    line-height: 77px;
+    background: url(../images/l3.png) no-repeat;
+}
+
+.line .right1{
+   position:absolute;
+   left:169px;
+   top:101px;
+   width:398px;
+   height: 86px;
+   text-align: center;
+   line-height: 77px;
+   background: url(../images/r1.png) no-repeat;
+}
+.line .right2{
+   position: absolute;
+   left: 169px;
+   top: 299px;
+   width: 498px;
+   height: 86px;
+   text-align: center;
+   line-height: 77px;
+   background: url(../images/r2.png) no-repeat;
+}
+#top{
+    display: block;
+    width: 446px;
+    height: 106px;
+    line-height: 96px;
+    margin: 70px auto 0;
+    background: url(../images/btn.png) no-repeat;
+    font-size: 28px;
+    color: #fff;
+}
+#top:hover{
+	background: url(../images/btn_hover.png) no-repeat;
+}
+.footbox{
+	min-width:1200px;
+	height:335px;
+	background:#3b3b3b;
+}
+.footer  .top {
+	padding-top:40px;
+	padding-left:190px;
+	overflow:hidden;
+}
+.footer  .top ul{
+	float: left;
+}
+.footer  .top li{
+	float: left;
+	width:130px;
+	text-align: center;
+	font-size:14px;
+	color:#999;
+	margin-right:45px;
+}
+.footer  .top li p{
+	padding-top:24px;
+}
+.footer  .top .right{
+	float: right;
+	padding-right:189px;
+	text-align: right;
+}
+.footer  .top .right h4{
+	color:#fff;
+	font-size:24px;
+	font-weight:normal;
+	padding-top:20px;
+}
+.footer  .top .right p{
+	font-size:14px;
+	color:#999;
+	padding-top:20px;
+}
+.copy{
+	font-size:14px;
+	text-align: center;
+	color:#999;
+	border-top:1px solid #323232;
+	margin-top:25px;
+	padding-top:30px;
+}
+.copy .p1{
+	color:#666;
+	font-size:12px;
+	padding-top:15px;
+}
+
+.fixed{
+	width:100%;
+	height:150px;
+	position:fixed;
+	left:0;
+	bottom:0;
+	background:rgba(0,0,0,0.8);
+}
+.fixedbox{
+	position:relative;
+	height:150px;
+}
+.fixedbox .fd{
+	position:absolute;
+	bottom:0;
+	left:100px;
+}
+#close{
+	position:absolute;
+	top:9px;
+	width:22px;
+	height:21px;
+	background:url(../images/close.png) no-repeat;
+	cursor:pointer;
+}
+.codeimg{
+	float: right;
+	padding-top:20px;
+	margin-right:80px;
+}
+.codeimg .appimg{
+	float: left;
+	width:113px;
+	height:114px;
+}
+.codeimg .app{
+	float: left;
+	width:130px;
+	text-align: center;
+	color:#e7e7e7;
+	padding-top:10px;
+}
+.codeimg .app h4{
+	font-size:18px;
+	font-weight:normal;
+	padding-top:15px;
+}
+.codeimg .app p{
+	font-size:14px;
+	padding-top:3px;
+}
+.fcbtn{
+	position:absolute;
+	right:-113px;
+	top:0;
+	width:113px;
+	height:92px;
+	cursor:pointer;
+	background:url(../images/fcbtn.png) no-repeat;
+}
+
+
+
+
+.regbtn:hover{
+	background:#fcbd76;
+}
+#agreen a:hover{
+	color:#e89940;
+}
+.header-box .header p a:hover{
+	color:#ffa540;
+}

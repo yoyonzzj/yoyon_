@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置交易密码</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/setpwd.css">
+</head>
+<body>
+
+<div class="form" id="form">
+   <p><input type="password" placeholder="输入交易密码（6-16位）"></p>
+   <p><input type="password" placeholder="确认交易密码（6-16位）"></p>
+</div>
+<a href="javascript:;" class="btn" id="btn">确认</a>
+
+<div class="tipmsg">
+	<span id="tipmsg">两次输入的交易密码不一样</span>
+</div>
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	var form=document.getElementById("form");
+	var ainput=form.getElementsByTagName("input");
+	var btn=document.getElementById("btn");
+	var tipmsg=document.getElementById("tipmsg");
+    
+    btn.addEventListener("touchend",function(){
+    	 var str=ainput[0].value;
+    	 var str1=ainput[1].value;
+    	 var len=str.length;
+    	 if(str==""){
+    	 	 base.showTip(tipmsg,"请输入交易密码");
+    	 }else if(len>16 || len<6){
+    	 	 base.showTip(tipmsg,"交易密码必须是6-16位");
+    	 }else if(str!=str1){
+    	 	 base.showTip(tipmsg,"两次输入的交易密码不一样");
+    	 }
+    })
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

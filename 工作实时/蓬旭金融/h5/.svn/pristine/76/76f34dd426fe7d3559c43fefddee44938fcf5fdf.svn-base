@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改登录密码</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/modifypwd.css">
+</head>
+<body>
+  <p class="line"></p>
+  <div class="form" id="form">
+       <p>
+           <input type="password" placeholder="旧密码(6-16位的数字、字母结合)" id="oldpwd">
+           <em></em>
+           <span id="secrecy"></span>
+       </p>
+       <p>
+           <input type="password" placeholder="新密码(6-16位的数字、字母结合)" id="pwd1">
+           <em></em>
+       </p>
+       <p>
+           <input type="password" placeholder="确认密码(6-16位的数字、字母结合)" id="pwd2">
+           <em></em>
+       </p>
+  </div>
+
+
+<input type="button" id="btn" value="确认">
+<div class="tipmsg">
+    <span id="tipmsg">两次输入的交易密码不一样</span>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+    var form=document.getElementById("form");
+    var ps=form.getElementsByTagName("p");
+    var inputs=form.getElementsByTagName("input");
+    var ems=form.getElementsByTagName("em");
+    var secrecy=document.getElementById("secrecy");
+    var btn=document.getElementById("btn");
+    
+
+  
+    //切换密码是否可见
+    secrecy.addEventListener("touchend",function(){
+        if(this.className==""){
+            this.className="active";
+            for(var i=0;i<inputs.length;i++){
+                  inputs[i].type="text";
+            }
+        }else{
+            this.className="";
+            for(var i=0;i<inputs.length;i++){
+                  inputs[i].type="password";
+            }
+        }
+        
+    })
+
+  
+  //获取焦点底部边框变色
+   for(var i=0;i<inputs.length;i++){
+        inputs[i].index=i;
+        inputs[i].addEventListener("focus",function(){
+           ps[this.index].className="focus";
+           
+        })
+
+        inputs[i].addEventListener("blur",function(){
+           ps[this.index].className="";
+           
+        })
+   }
+ 
+
+  //输入密码对应的删除按钮显示
+   for(var i=0;i<inputs.length;i++){
+        inputs[i].index=i;
+        inputs[i].addEventListener("input",function(){
+           if(this.value.length>16){
+             this.value=this.value.substring(0,16);
+           }
+           
+
+           if(this.value.length>0){
+             ems[this.index].style.display="block";
+           }else{
+             ems[this.index].style.display="none";
+           
+           }
+           
+           
+        })
+   }
+ 
+
+  //删除按钮事件
+  for(var i=0;i<ems.length;i++){
+        ems[i].index=i;
+        ems[i].addEventListener("touchend",function(){
+           inputs[this.index].value="";
+           this.style.display="none";
+        
+         })
+   }
+
+
+var tipmsg=document.getElementById("tipmsg");
+
+btn.addEventListener("click",function(){
+    var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+    if(inputs[0].value==""){
+         base.showTip(tipmsg,"旧密码不能为空");
+    }else if(!reg.test(inputs[0].value)){
+         base.showTip(tipmsg,"密码格式不正确");
+    }else if(inputs[1].value==""){
+         base.showTip(tipmsg,"新密码不能为空");
+    }else if(!reg.test(inputs[1].value)){
+         base.showTip(tipmsg,"密码格式不正确");
+    }else if(inputs[1].value!=inputs[2].value){
+         base.showTip(tipmsg,"两次密码输入不一致");
+    }else{
+         base.showTip(tipmsg,"密码修改成功");
+
+         setTimeout(function() {
+           base.redirect("set.html")
+         }, 2000);
+    }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

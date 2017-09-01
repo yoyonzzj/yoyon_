@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索结果</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/productlist.css">
+</head>
+<body>
+
+   
+
+    <div class="searchbox">
+      <h4>共<span>4</span>件商品</h4>
+      
+      <ul id="list">
+         <li>
+            <div class="product">
+               <img src="img/phone.png">
+               <h5>Apple iPhone 7 128G 颜色...</h5>
+               <div class="loading">
+                  <p>开奖进度<em>50%</em></p>
+                  <p class="progess"><span style="width:50%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+            <div class="product">
+               <img src="img/card.png">
+               <h5>50元话费充值（三网通用）</h5>
+               <div class="loading">
+                  <p>开奖进度<em>60%</em></p>
+                  <p class="progess"><span style="width:60%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+         </li>
+   
+   
+         <li>
+            <div class="product">
+               <img src="img/sh.png">
+               <h5>小米运动多功能手环 双色可...</h5>
+               <div class="loading">
+                  <p>开奖进度<em>40%</em></p>
+                  <p class="progess"><span style="width:40%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+            <div class="product">
+               <img src="img/kh.png">
+               <h5>YSL圣罗兰莹亮纯魅唇膏</h5>
+               <div class="loading">
+                  <p>开奖进度<em>60%</em></p>
+                  <p class="progess"><span style="width:60%"></span></p>
+                  <a href="#">立即抢购</a>
+               </div>
+            </div>
+         </li>
+      </ul>
+   </div>
+
+  <p class="nomore"><span>没有个更多啦</span></p>
+ 
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加新地址</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/bjadress.css">
+<link rel="stylesheet" type="text/css" href="css/area.css">
+</head>
+<body>
+
+<section>
+  <p><span>收货人</span><input type="text" value="陈羽"></p>
+  <p><span>联系电话</span><input type="tel" value="13476901236"><em></em></p>
+  <p><span>所在地区</span><input type="text" placeholder="请选择" class="tar" readonly="" id="area" value="上海市浦东新区"><i></i></p>
+  <p><span>街道</span><input type="text" placeholder="请选择" class="tar" readonly="" value="张江镇"><i></i></p>
+  <textarea placeholder="请填写详细地址，不少于5个字" >张扬路1668弄羽北小区12号301市</textarea>
+</section>
+
+<p id="del">删除地址</p>
+
+
+
+
+
+<div id="footer">
+    <a href="javascirpt:;" id="save">保存</a>
+</div>
+
+<div id="mask"></div>
+<!--保存提示弹窗-->
+<div id="savebox" class="dialog">
+    <h4>修改了信息还未保存，确认现在返回吗？</h4>
+    <p class="line"></p>
+    <div class="btns">
+       <span id="save_cancel"><a href="javascript:;">取消</a></span>
+       <span id="save_confirm"><a href="javascript:;">确认</a></span>
+    </div>
+</div>
+<!--保存提示弹窗end-->
+
+
+<!--删除收货地址弹窗-->
+<div id="delbox" class="dialog">
+    <h4>确定要删除此收货地址吗？</h4>
+    <p class="line"></p>
+    <div class="btns">
+       <span id="del_cancel"><a href="javascript:;">取消</a></span>
+       <span id="del_confirm"><a href="javascript:;">确认</a></span>
+    </div>
+</div>
+<!--删除收货地址弹窗end-->
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/area.js"></script>
+<script type="text/javascript">
+ var del=document.getElementById("del");
+ var save=document.getElementById("save");
+ var mask=document.getElementById("mask");
+ var savebox=document.getElementById("savebox");
+ var delbox=document.getElementById("delbox");
+ 
+ var save_cancel=document.getElementById("save_cancel");
+ var save_confirm=document.getElementById("save_confirm");
+ var del_cancel=document.getElementById("del_cancel");
+ var del_confirm=document.getElementById("del_confirm");
+
+del.addEventListener("touchend",function(){
+   mask.style.display=delbox.style.display="block";
+})
+
+save.addEventListener("touchend",function(){
+   mask.style.display=savebox.style.display="block";
+})
+
+
+save_cancel.addEventListener("touchend",function(){
+   mask.style.display=savebox.style.display="none";
+})
+
+save_confirm.addEventListener("touchend",function(){
+   mask.style.display=savebox.style.display="none";
+})
+
+
+
+del_cancel.addEventListener("touchend",function(){
+   mask.style.display=delbox.style.display="none";
+})
+
+del_confirm.addEventListener("touchend",function(){
+   mask.style.display=delbox.style.display="none";
+})
+
+
+
+
+
+
+
+
+var area = new lArea();
+area.init({
+    'trigger': '#area',
+    'data':lAreaData
+});
+</script>
+</body>
+</html>

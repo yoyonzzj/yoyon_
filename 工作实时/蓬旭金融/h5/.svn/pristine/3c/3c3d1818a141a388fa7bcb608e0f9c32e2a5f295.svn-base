@@ -1,0 +1,58 @@
+body{background:rgb(244,244,244)}
+.form{
+  margin-top:0.2rem;
+}
+p{
+   background:#fff;
+   padding-left:0.3rem;
+   line-height:1rem;
+   height:1rem;
+   border-bottom:1px solid rgb(236,236,236);
+}
+p input{
+	border:none;
+	display: block;
+	line-height:1rem;
+    height:1rem;
+    font-size:0.3rem;
+    color:rgb(153,153,153);
+}
+.btn{
+	  display:block;
+    margin:0.75rem auto 0;
+    color:#fff;
+    width:6rem;
+    height:0.88rem;
+    line-height:0.88rem;
+    background:rgb(241, 156, 63);
+    border-radius:0.1rem;
+    text-align: center;
+    font-size: 0.34rem;
+}
+.tipmsg{
+  text-align: center;
+  color:#fff;
+  font-size:0.28rem;
+  margin-top:1rem;
+}
+.tipmsg span{
+  padding:0.3rem 0.6rem;
+  background:rgba(28,28,28,0.7);
+  border-radius:0.1rem;
+  opacity:0;
+}
+ 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

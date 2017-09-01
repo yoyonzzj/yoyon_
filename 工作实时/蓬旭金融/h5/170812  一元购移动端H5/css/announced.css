@@ -1,0 +1,68 @@
+#list{
+	margin-top:0.2rem;
+	background:#fff;
+	padding-left:0.4rem;
+	padding-bottom:0.5rem;
+}
+#list li{
+	overflow:hidden;
+	border-bottom:1px solid rgb(220,220,220);
+	padding:0.3rem 0;
+}
+#list li .img{
+	float: left;
+	width:1.5rem;
+	height:1.5rem;
+	margin-top:0.2rem;
+}
+#list li .img>img{
+	display:block;
+	width:1.5rem;
+	height:1.5rem;
+}
+#list li .info {
+	float: left;
+	padding-left:0.5rem;
+}
+#list li .info h4{
+	font-size:0.26rem;
+	color:#333;
+	font-weight:normal;
+	padding-bottom:0.2rem;
+}
+#list li.soon h4{
+	padding-bottom:0.6rem;
+}
+#list li.soon p{
+  font-size:0.4rem;
+  color:rgb(223, 82, 73);	
+}
+#list li.soon p strong{
+	font-weight:normal;
+}
+#list li.soon p span{
+   font-size:0.26rem;
+   color:#666;
+}
+#list li p{
+	color:#666;
+	font-size:0.22rem;
+	padding-bottom:0.1rem;
+}
+#list li p .orange{
+	color:#ff971b;
+}
+.nomore{
+	width:3.6rem;
+	margin:0.5rem auto;
+	border-top:2px solid rgb(207,207,207);
+	color:rgb( 188,187,187);
+	font-size:0.22rem;
+}
+.nomore span{
+	display:block;
+	width:1.6rem;
+	margin: -0.2rem auto 0;
+	background:rgb(244,244,244);
+	text-align: center;
+}

@@ -1,0 +1,176 @@
+body{background:rgb(244,244,244)}
+#searchbox{
+	overflow:hidden;
+    padding:0.3rem 0.3rem 0;
+}
+.search{
+	background:#fff;
+	width:5.8rem;
+	height:0.7rem;
+	position:relative;
+	border-radius:0.08rem;
+	overflow: hidden;
+	padding-left:1rem;
+	box-sizing:border-box;
+	float: left;
+}
+.search i{
+	position:absolute;
+	left:0.3rem;
+	top:0.15rem;
+	width:0.34rem;
+	height:0.34rem;
+	background:url(../img/search.png) no-repeat;
+	background-size:cover
+}
+.search input{
+	display:block;
+	border:none;
+	height:0.3rem;
+	line-height:0.3rem;
+	width:100%;
+	font-size:0.24rem;
+	padding:0.2rem 0;
+	color:#ccc;
+}
+.search em{
+	position:absolute;
+	right:0.3rem;
+	top:0.2rem;
+	width:0.26rem;
+	height:0.26rem;
+	background:url(../img/del.png) no-repeat;
+	background-size:cover;
+}
+
+#searchbtn{
+	background:none;
+	border:none;
+	font-size:0.32rem;
+	color:#ff971b;
+	height:0.7rem;
+	float:left;
+    margin-left:0.3rem;
+}
+
+
+
+
+
+.searchbox{
+	margin-top:0.6rem;
+	padding-bottom:0.6rem;
+	background:#fff;
+}
+.searchbox h4{
+	font-weight:normal;
+	font-size:0.3rem;
+	color:#333;
+	height:0.9rem;
+	line-height:0.9rem;
+	border-bottom:1px solid rgb(236,236,236);
+	background:#fff;
+	padding-left:0.3rem;
+}
+#list{
+	background:#fff;
+	overflow:hidden;
+}
+#list li{
+	width:50%;
+	float: left;
+}
+#list li:nth-of-type(1){
+	border-right:1px solid rgb(236,236,236);
+	box-sizing:border-box;
+}
+#list li:nth-of-type(2){
+	border-left:1px solid rgb(236,236,236);
+	box-sizing:border-box;
+	margin-left:-1px;
+}
+#list li .product{
+	width:100%;
+	padding-bottom:0.4rem;
+	border-bottom:1px solid rgb(236,236,236);
+}
+#list li .product img{
+	width:70%;
+	display:block;
+	margin:0.4rem auto;
+}
+#list li .product h5{
+	color:#333;
+	font-size:0.24rem;
+	padding:0.2rem 0.2rem 0.1rem;
+	font-weight:normal;
+}
+#list li .product>div{
+	padding:0 0.2rem;
+	font-size:0.24rem;
+	color:#666;
+	position:relative;
+}
+#list li .product>div em{
+	color:red;
+	font-style:normal;
+	margin-left:0.05rem;
+}
+#list li .product>div .progess{
+	width:1.8rem;
+	height:0.06rem;
+	background:#f4f4f4;
+	border-radius:0.1rem;
+	overflow:hidden;
+	position:relative;
+	margin-top:0.25rem;
+}
+#list li .product>div .progess span{
+	position: absolute;
+	left:0;
+	top:0;
+	height:0.06rem;
+	background:#ff971b;
+}
+#list li .product>div a{
+	position:absolute;
+	width:1.2rem;
+	height:0.44rem;
+	text-align: center;
+	line-height:0.44rem;
+	background:#ff971b;
+	border-radius:0.04rem;
+	color:#fff;
+	right:0.2rem;
+	bottom:0rem;
+	font-size:0.24rem;
+}
+.nomore{
+	width:3.56rem;
+	border-top:1px solid rgb(207,207,207);
+	margin:0.4rem auto;
+	color:rgb(188,187,187);
+	font-size:0.22rem;
+}
+.nomore span{
+	display:block;
+	background:#f4f4f4;
+	width:1.7rem;
+	text-align: center;
+	margin:-0.15rem auto;
+}
+
+.noresult{
+	text-align: center;
+	padding-top:3rem;
+}
+.noresult img{
+	display:block;
+	width:30%;
+	margin:0 auto;
+}
+.noresult p{
+	color:#333;
+	font-size:0.34rem;
+	padding:0.5rem 0;
+}

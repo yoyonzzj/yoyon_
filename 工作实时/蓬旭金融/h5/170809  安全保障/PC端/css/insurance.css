@@ -1,0 +1,71 @@
+.banner{
+	width: 100%;
+	height: 381px;
+	background: #1E97FF url(../img/banner.png) no-repeat center center;
+	margin: 0 auto;
+}
+.container{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow:hidden;
+}
+.section1{
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	background: #fff;
+}
+.inner{
+	width: 984px;
+	height: 450px;
+	margin: 0 auto;
+	padding-top: 50px;
+	position: relative;
+}
+.wordbox{
+	width: 100%;
+	margin-top: 150px;
+}
+.title{
+	width: 100%;
+	height: 36px;
+	background: url(../img/four.png) no-repeat center center;
+	background-size: 587px 1px;
+	font-family: "微软雅黑";
+	font-size: 34px;
+	color: #4797f7;
+	text-align: center;
+	line-height: 36px;
+	font-weight: bold;
+}
+.title1{
+	width: 100%;
+	height: 36px;
+	background: url(../img/six.png) no-repeat center center;
+	background-size: 701px 1px;
+	font-family: "微软雅黑";
+	font-size: 34px;
+	color: #4797f7;
+	text-align: center;
+	line-height: 36px;
+	font-weight: bold;
+}
+.detail{
+	width: 100%;
+	height: 22px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #4797f7;
+	text-align: center;
+	line-height: 22px;
+	margin-top: 20px;
+}
+li{
+	list-style-type:disc;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #666;
+	text-align: left;
+	line-height: 40px;
+}

@@ -1,0 +1,422 @@
+.floor{
+	width: 100%;
+	height: 600px;
+}
+.section1{
+	width: 100%;
+	height: 663px;
+	background: #2b2a39;
+}
+.outerbox{
+	height: 663px;
+	margin: 0 auto;
+}
+.innerbox{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.bg1{
+	width: 100%;
+	height:100%;
+	background: url(../img/bg1.png) no-repeat center center;
+}
+.twoBarCode{
+	width: 116px;
+	height: 116px;
+	position: absolute;
+	bottom: 186px;
+	right: 380px;
+}
+.uzicai{
+	width: 700px;
+	height: 500px;
+	position: absolute;
+	right: 10px;
+	bottom:0;
+}
+.firstline{
+	font-family: "微软雅黑";
+	font-size: 42px;
+	color: #fff;
+	margin-left: 200px;
+	opacity: 0;
+}
+.secondline{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #fff;
+	margin-top: 24px;
+	margin-left: 200px;
+	opacity: 0;
+}
+.thirdline{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #fff;
+	margin-top: 24px;
+	margin-left: 200px;
+	opacity: 0;
+}
+.iphone{
+	width: 150px;
+	height:46px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #fff;
+	border:1px solid #fff;
+	margin-top: 180px;
+	opacity: 0;
+	border-radius: 5px;
+	line-height: 50px;
+	padding-left: 28px;
+}
+.iphone:hover{
+	background: rgba(255,255,255,0.1);
+}
+.android{
+	width: 150px;
+	height:46px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #fff;
+	border:1px solid #fff;
+	margin-top:40px;
+	opacity: 0;
+	border-radius: 5px;
+	line-height: 50px;
+	padding-left: 28px;
+}
+.android:hover{
+	background: rgba(255,255,255,0.1);
+}
+.section2{
+	width: 100%;
+	height: 600px;
+	background: #fff;
+}
+.img1{
+	position: absolute;
+	left: 600px;
+	top: 70px;
+	opacity: 0;
+	transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	-moz-transition: all 1.2s;
+}
+.active .img1{
+	opacity: 1;
+	top: 30px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay: 0.7s;
+	-moz-transition-delay: 0.7s;
+}
+.title1{
+	font-family: "微软雅黑";
+	font-size: 44px;
+	color: #333333;
+	position: absolute;
+	left: 100px;
+	top: 200px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .title1{
+	opacity: 1;
+	left: 240px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.underline1{
+	width: 100px;
+	height: 2px;
+	background: #FF971B;
+	position: absolute;
+	left: 100px;
+	top: 270px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .underline1{
+	opacity: 1;
+	left: 240px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.word1{
+	opacity: 0;
+	position: absolute;
+	left: 100px;
+	top: 300px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .word1{
+	opacity: 1;
+	left: 240px;
+	transition-delay:1s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.word{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #333333;
+	margin-top: 12px;
+}
+.img2{
+	position: absolute;
+	left: 80px;
+	top: 70px;
+	opacity: 0;
+	transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	-moz-transition: all 1.2s;
+}
+.active .img2{
+	opacity: 1;
+	left: 120px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.title2{
+	font-family: "微软雅黑";
+	font-size: 44px;
+	color: #333333;
+	position: absolute;
+	left: 820px;
+	top: 200px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .title2{
+	opacity: 1;
+	left: 680px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.underline2{
+	width: 100px;
+	height: 2px;
+	background: #FF971B;
+	position: absolute;
+	left: 820px;
+	top: 270px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .underline2{
+	opacity: 1;
+	left: 680px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.word2{
+	opacity: 0;
+	position: absolute;
+	left: 820px;
+	top: 300px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .word2{
+	opacity: 1;
+	left: 680px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.section3 .outerbox{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../img/bg3.png) no-repeat center center;
+}
+.img3{
+	position: absolute;
+	left: 760px;
+	top: 70px;
+	opacity: 0;
+	transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	-moz-transition: all 1.2s;
+}
+.active .img3{
+	opacity: 1;
+	left: 620px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.title3{
+	font-family: "微软雅黑";
+	font-size: 44px;
+	color: #333333;
+	position: absolute;
+	left: 100px;
+	top: 260px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .title3{
+	opacity: 1;
+	left: 220px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.underline3{
+	width: 100px;
+	height: 2px;
+	background: #FF971B;
+	position: absolute;
+	left: 100px;
+	top: 330px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .underline3{
+	opacity: 1;
+	left: 220px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.word3{
+	opacity: 0;
+	position: absolute;
+	left: 100px;
+	top: 360px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .word3{
+	opacity: 1;
+	left: 220px;
+	transition-delay:1s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.img4{
+	position: absolute;
+	left: 10px;
+	top: 70px;
+	opacity: 0;
+	transition: all 1.2s;
+	-webkit-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	-moz-transition: all 1.2s;
+}
+.active .img4{
+	opacity: 1;
+	left: 60px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.title4{
+	font-family: "微软雅黑";
+	font-size: 44px;
+	color: #333333;
+	position: absolute;
+	left: 800px;
+	top: 180px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .title4{
+	opacity: 1;
+	left: 660px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.underline4{
+	width: 100px;
+	height: 2px;
+	background: #FF971B;
+	position: absolute;
+	left: 800px;
+	top: 250px;
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .underline4{
+	opacity: 1;
+	left: 660px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}
+.word4{
+	opacity: 0;
+	position: absolute;
+	left: 800px;
+	top: 280px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.active .word4{
+	opacity: 1;
+	left: 660px;
+	transition-delay:0.7s;
+	-webkit-transition-delay:0.7s;
+	-o-transition-delay:0.7s;
+	-moz-transition-delay:0.7s;
+}

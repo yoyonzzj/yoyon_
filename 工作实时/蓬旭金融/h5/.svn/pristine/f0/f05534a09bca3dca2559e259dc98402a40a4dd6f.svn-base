@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/gl_user.css">
+</head>
+<body>
+<div class="header">
+    <dl>
+      <dt><img src=""></dt>
+      <dd>骨子里的坚持</dd>
+    </dl>
+    <a href="#"></a>
+</div>
+
+<section>
+    <p><span></span><a href="#">余额账户<strong>1.12元</strong><i></i></a></p>  
+    <p><span></span><a href="#">夺宝记录<i></i></a></p>
+    <p><span></span><a href="#">优惠券<i></i></a></p>
+    <p><span></span><a href="#">收货地址<i></i></a></p>
+</section>
+
+
+
+<footer class="footer">
+    <a href="#">
+      <i></i><br/>
+      夺宝
+    </a>
+    <a href="#">
+      <i></i><br/>
+      发现
+    </a>
+    <a href="#"  class="active">
+      <i></i><br/>
+      我的
+    </a>
+</footer>
+<script type="text/javascript" src="js/rem.js"></script>	
+</body>
+</html>

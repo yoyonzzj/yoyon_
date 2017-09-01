@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/set.css">
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+
+</head>
+<body>
+  <section>
+     <div>
+      <span>头像</span>
+      <p id="photo"></p>
+      <input id="img" type="file" accept="image/*" />
+      <i></i>
+     </div>
+     <div>
+       <span>昵称</span>
+       <input type="text" class="txt" placeholder="请输入昵称">
+       <i></i>
+     </div>
+     <div id="set1">
+       <span>修改登录密码</span>
+       <i></i>
+     </div>
+     <div id="set2">
+       <span>交易密码</span>
+       <i></i>
+     </div>
+  </section>
+  
+  <a href="javascript:;" class="out" id="out">退出当前账号</a>
+
+
+
+
+
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+   $(function(){
+        $('#img').change(function() {
+              var file = this.files[0];
+              console.log(file);
+              var r = new FileReader();
+              r.readAsDataURL(file);
+              $(r).load(function() {
+                  $('#photo').html('<img src="' + this.result + '" alt="" />').show();
+              })
+            
+        })
+   
+     var set1=document.getElementById("set1");
+     var set2=document.getElementById("set2");
+
+     set1.addEventListener("touchend",function(){
+         base.redirect("modifypwd.html");
+     })
+
+     set2.addEventListener("touchend",function(){
+         base.redirect("forgettranspwd.html");
+     })
+
+
+
+
+
+
+
+
+   })
+               
+</script>	
+</body>
+</html>

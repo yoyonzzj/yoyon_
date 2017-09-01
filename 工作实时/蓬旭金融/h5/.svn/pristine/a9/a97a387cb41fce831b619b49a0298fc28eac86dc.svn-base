@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发现</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/discover.css">
+</head>
+<body>
+
+
+<div id="box">
+   <img src="img/discover.png">
+   <p>后续将推出超多壕礼活动，敬请期待！</p>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <a href="index.html">
+      <i></i><br/>
+      夺宝
+    </a>
+    <a href="javascript:;"  class="active">
+      <i></i><br/>
+      发现
+    </a>
+    <a href="gl_user.html"  >
+      <i></i><br/>
+      我的
+    </a>
+</footer>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+  //切换登录模式
+  var tab=document.getElementById("tab");
+  var spans=tab.getElementsByTagName("span");
+  var formbox=document.getElementById("formbox");
+  var uls=formbox.getElementsByTagName("ul");
+  
+  for(var i=0;i<spans.length;i++){
+      spans[i].index=i;
+      spans[i].addEventListener("touchend",function(){
+           for(var i=0;i<spans.length;i++){
+             spans[i].className="";
+             uls[i].style.display="none";
+           }
+           this.className="active";
+           uls[this.index].style.display="block";
+      })
+  }
+
+
+</script>	
+</body>
+</html>

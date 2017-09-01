@@ -1,0 +1,24 @@
+var base={
+	getId:function(id){
+       return document.getElementById(id);
+	},
+    getTag:function(parent,element){
+       return parent.getElementsByTagName(element);
+    },
+
+    
+
+    showTip:function(obj,msg){
+		obj.innerHTML=msg;
+ 	     obj.style.opacity=1;
+         setTimeout(function(){
+                 obj.style.opacity=0;
+         },1000)
+	}
+
+
+
+
+
+} 
+

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit">
+    	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>首页--柚子理财</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/yy-index.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.animateNumber.min.js"></script>
+		<script type="text/javascript" src="js/animate.js"></script>
+		<!--<script type="text/javascript" src="js/functions.js"></script>-->
+		<script type="text/javascript" src="js/yy-index.js"></script>
+		
+	</head>
+	<body>
+		<div class="outerbox">
+			<div class="bannerbox">
+				<div class="bannercontainerfirst">
+					<div class="bannercontainer">
+						<div class="bannerinner">
+							<a href=""><div class="banneritem banneritem1" style="z-index:2"></div></a>
+							<a href=""><div class="banneritem banneritem2"></div></a>
+							<a href=""><div class="banneritem banneritem3"></div></a>
+							<a href=""><div class="banneritem banneritem4"></div></a>
+							<a href=""><div class="banneritem banneritem5"></div></a>
+							<a href=""><div class="banneritem banneritem6"></div></a>
+							<a href=""><div class="banneritem banneritem7"></div></a>
+							<a href=""><div class="banneritem banneritem8"></div></a>
+						</div>
+						<div class="left">&lt;</div>
+					    <div class="right">&gt;</div>
+					    <div class="anniucontainer">
+					    	<div class="anniuinner">
+							    <div class="anniubox">
+							        <div class="anniu first" style="margin-left: 0;">柚子理财季柚赢</div>
+							        <div class="anniu">柚子理财季柚赢</div>
+							        <div class="anniu">柚子理财季柚赢</div>
+							        <div class="anniu">柚子理财季柚赢</div>
+							        <div class="anniu">柚子理财季柚赢</div>
+							        <div class="anniu">柚子理财季柚赢</div>
+							        <div class="anniu">柚子理财季柚赢</div>
+							        <div class="anniu last">柚子理财季柚赢</div>
+							    </div>
+							    <!--未登录状态-->
+							    <div class="loginarea1">
+							    	<div class="yearreturn">预期年化收益</div>
+							    	<div class="returnnumber">7.8-15%</div>
+							    	<a href="###"><div class="newuser">注册领68888元收益</div></a>
+							    	<div class="activate">激活后可提现</div>
+							    	<div class="userlogin">已有账号？立即登录</div>
+							    </div>
+							    <!--已登录状态-->
+							    <div class="loginarea2">
+							    	<div class="yearreturn2">预期年化收益</div>
+							    	<div class="returnnumber2">7.8-15%</div>
+							    	<a href="###"><div class="newuser2">进入我的账户</div></a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tradecountbox">
+				<ul class="tradecountinner">
+					<li><p style="font-size: 14px;color: #666;padding-right: 6px;">交易总额 </p> <p class="numberRun21" style="color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-right: 6px;padding-left: 6px;">万</p> <p class="numberRun11" id="decimals" style="font-size: 24px;color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-left: 6px;">元</p></li>
+					<li><p style="font-size: 14px;color: #666;padding-right: 6px;">质保服务专款 </p> <p class="numberRun22" style="color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-right: 6px;padding-left: 6px;">万</p> <p class="numberRun12" id="decimals" style="font-size: 24px;color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-left: 6px;">元</p></li>
+					<li><p style="font-size: 14px;color: #666;padding-right: 6px;">赚取金额 </p> <p class="numberRun23" style="color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-right: 6px;padding-left: 6px;">万</p> <p class="numberRun13" id="decimals" style="font-size: 24px;color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-left: 6px;">元</p></li>
+					<li><p style="font-size: 14px;color: #666;padding-right: 6px;">累计注册用户 </p> <p class="numberRun24" style="color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-right: 6px;padding-left: 6px;">万</p> <p class="numberRun14" id="decimals" style="font-size: 24px;color: #ea544a;">0</p> <p style="font-size: 14px;color: #ea544a;padding-left: 6px;">元</p></li>
+				</ul>
+			</div>
+			<div class="uzitrendsbox">
+				<div class="uzitrendsinner">
+					<div class="dongtai">
+						<div class="leftfix">
+							<img src="img/laba.png" alt="" />
+							<p>柚子动态:</p>
+						</div>
+						<div class="ulouter">
+							<ul class="ulslide">
+								<a href="###"><li>1111</li></a>
+								<a href="###"><li>2222</li></a>
+								<a href="###"><li>3333</li></a>
+							</ul>
+						</div>
+						<a href="###" class="rightmore">查看更多&gt;&gt;</a>
+					</div>
+				</div>
+			</div>
+			<div class="middlebox">
+				<ul class="middlesec1">
+					<li>
+						<div class="liinner">
+							<img src="img/icon1.png" alt="" />
+							<div class="zaixian">
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 25px;text-align:left;font-size: 20px;color: #666;">银行存管上线</p>
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 12px;text-align:left;font-size: 16px;color: #999;">稳健理财新基石</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liinner">
+							<img src="img/icon2.png" alt="" style="width: 72px;" />
+							<div class="zaixian">
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 25px;text-align:left;font-size: 20px;color: #666;">昆仑备付金计划</p>
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 12px;text-align:left;font-size: 16px;color: #999;">全面保障逾期先赔</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liinner">
+							<img src="img/icon3.png" alt="" />
+							<div class="zaixian">
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 25px;text-align:left;font-size: 20px;color: #666;">银行级别风控</p>
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 12px;text-align:left;font-size: 16px;color: #999;">立体风控系统业内领先</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="liinner">
+							<img src="img/icon4.png" alt="" />
+							<div class="zaixian">
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 25px;text-align:left;font-size: 20px;color: #666;">盈科律所</p>
+								<p style="width: 100%;height:20px;float: left;line-height: 30px;margin-top: 12px;text-align:left;font-size: 16px;color: #999;">专业律师团队全程保障</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+<!--新手活动-->
+				<div class="middlesec2">
+					<div class="sec2left">
+						<p class="topword"style="padding-top: 30px;">新手活动</p>
+						<img src="img/jianbianline.png" alt="" style="float: left;padding-top: 8px;" />
+						<p class="bottomword">收益高 &nbsp;期限短&nbsp; 无门槛</p>
+					</div>
+					<div class="sec2middle">
+						<div class="sec2inner">
+							<div class="newuserbiao">
+								<div class="biaodi">新手标</div>
+								<div class="yuanjiao">限额限量</div>
+							</div>
+							<div class="sec2nianhua">
+								<p class="nianhuanumber">15%</p>
+								<p class="miaoshu">预期年化收益率</p>
+							</div>
+							<a href="###"><div class="sec2liji">立即抢购</div></a>
+						</div>
+					</div>
+					<div class="sec2right">
+						<div class="sec2inner">
+							<div class="newuserbiao">
+								<div class="biaodi">新手体验金</div>
+								<div class="yuanjiao">体验</div>
+							</div>
+							<div class="sec2nianhua">
+								<p class="nianhuanumber">￥68888</p>
+								<p class="miaoshu">注册即可领取，投资后激活收益</p>
+							</div>
+							<a href="###"><div class="sec2liji">立即使用</div></a>
+						</div>
+					</div>
+				</div>
+				
+<!--美味系列-->
+				<div class="middlesec3">
+					<div class="sec3left">
+						<div class="jianbian">
+							<p class="topword">美味系列</p>
+							<img src="img/jianbianline.png" alt="" style="float: left;padding-top: 8px;" />
+							<p class="bottomword">优质餐饮品牌新手活动</p>
+							<p class="bottomword">严格风控审核</p>
+							<p class="bottomword">坐享稳健高收益</p>
+							<img class="kaikou" src="img/kaikou.png" alt="" />
+						</div>
+					</div>
+					<div class="sec3right">
+						<div class="biaoinner">
+							<div class="biaoinner1">
+								<div class="firstline">
+									<div class="newuserbiao">
+										<div class="biaodi">美食宝</div>
+										<div class="yuanjiao">加息券</div>
+										<div class="yuanjiao" style="background: #ff6868;">红包</div>
+									</div>
+									<div class="shouyilv" style="margin-right: 100px;">
+										<p class="shouyinumber">12%</p>
+										<p class="shouyiword">预期年化收益率</p>
+									</div>
+									<div class="shouyilv" style="margin-right: 74px;">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">200,000 <span style="font-size: 14px;">元</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">产品总额</p>
+									</div>
+									<div class="shouyilv" style="margin-right: 80px;">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">20000 <span style="font-size: 14px;">元</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">剩余金额</p>
+									</div>
+									<div class="shouyilv">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">60 <span style="font-size: 14px;">天</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">产品期限</p>
+									</div>
+									<a href="###"><div class="buynow">立即购买</div></a>
+								</div>
+								<div class="jindutiao1">
+									<div class="shishi1"></div>
+								</div>
+								<p class="baifenbi">100%</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+<!--柚惠系列-->
+				<div class="middlesec3 middlesec4">
+					<div class="sec3left sec3left4">
+						<p class="topword">美味系列</p>
+						<img src="img/jianbianline.png" alt="" style="float: left;padding-top: 8px;" />
+						<p class="bottomword">优质餐饮品牌新手活动</p>
+						<p class="bottomword">严格风控审核</p>
+						<p class="bottomword">坐享稳健高收益</p>
+					</div>
+					<div class="sec3right sec3right4">
+						<div class="biaoinner">
+							<div class="biaoinner1">
+								<div class="firstline">
+									<div class="newuserbiao">
+										<div class="biaodi">美食宝</div>
+										<div class="yuanjiao">加息券</div>
+										<div class="yuanjiao" style="background: #ff6868;">红包</div>
+									</div>
+									<div class="shouyilv" style="margin-right: 100px;">
+										<p class="shouyinumber">12%</p>
+										<p class="shouyiword">预期年化收益率</p>
+									</div>
+									<div class="shouyilv" style="margin-right: 74px;">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">200,000 <span style="font-size: 14px;">元</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">产品总额</p>
+									</div>
+									<div class="shouyilv" style="margin-right: 80px;">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">20000 <span style="font-size: 14px;">元</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">剩余金额</p>
+									</div>
+									<div class="shouyilv">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">60 <span style="font-size: 14px;">天</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">产品期限</p>
+									</div>
+									<a href="###"><div class="buynow">立即购买</div></a>
+								</div>
+								<div class="jindutiao1">
+									<div class="shishi1"></div>
+								</div>
+								<p class="baifenbi">100%</p>
+							</div>
+						</div>
+						<div class="biaoinner">
+							<div class="biaoinner1">
+								<div class="firstline">
+									<div class="newuserbiao">
+										<div class="biaodi">美食宝</div>
+										<div class="yuanjiao">加息券</div>
+										<div class="yuanjiao" style="background: #ff6868;">红包</div>
+									</div>
+									<div class="shouyilv" style="margin-right: 100px;">
+										<p class="shouyinumber">12%</p>
+										<p class="shouyiword">预期年化收益率</p>
+									</div>
+									<div class="shouyilv" style="margin-right: 74px;">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">200,000 <span style="font-size: 14px;">元</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">产品总额</p>
+									</div>
+									<div class="shouyilv" style="margin-right: 80px;">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">20000 <span style="font-size: 14px;">元</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">剩余金额</p>
+									</div>
+									<div class="shouyilv">
+										<p class="shouyinumber" style="font-size: 24px;color: #ff4e04;padding-top: 9px;">60 <span style="font-size: 14px;">天</span></p>
+										<p class="shouyiword" style="padding-top: 10px;">产品期限</p>
+									</div>
+									<a href="###"><div class="buynow">立即购买</div></a>
+								</div>
+								<div class="jindutiao1">
+									<div class="shishi1"></div>
+								</div>
+								<p class="baifenbi">100%</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+<!--行业资讯-->
+				<div class="middlesec5" style="position: relative;">
+					<div class="sec5top">
+						<div class="hangye hybtn">媒体报道</div>
+						<div class="meiti hybtn">行业资讯</div>
+						<div class="zixunmore"><a href="###">查看更多>></a></div>
+					</div>
+					<div class="hycontent">
+<!--行业资讯-->
+<!--一张图-->
+						<!--<div class="hypic">
+							
+						</div>-->
+<!--多张轮播-->
+						<div class="hypiclunbo">
+							<div class="mtinner">
+								<div class="hyitem hyitem1">01</div>
+								<div class="hyitem hyitem2">02</div>
+								<div class="hyitem hyitem3">03</div>
+								<div class="hyitem hyitem4">04</div>
+								<div class="hyitem hyitem5">05</div>
+							</div>
+							<div class="hybtnbox">
+								<div class="hybtns" style="z-index:1;background-color:red;"></div>
+								<div class="hybtns"></div>
+								<div class="hybtns"></div>
+								<div class="hybtns"></div>
+								<div class="hybtns"></div>
+							</div>
+						</div>
+						
+						<div class="hydetail">
+							<div class="detailline">
+								<div class="detailtitle">
+									<div class="dettitle">2017年国家对中小企业贷款融资政策是什么？</div>
+									<span class="dettime">2017-06-26 16:27</span>
+								</div>
+								<p class="xiangqing">2017年国家对中小企业贷款融资政策是什么？中小企业的重要性不言而喻，中小企业的困难不言而喻</p>
+							</div>
+							<div class="detailline" style="border-bottom: 1px solid #ececec;border-top: 1px solid #ececec;padding-bottom: 10px;">
+								<div class="detailtitle" style="padding-top: 14px">
+									<div class="dettitle">2017年国家对中小企业贷款融资政策是什么？</div>
+									<span class="dettime">2017-06-26 16:27</span>
+								</div>
+								<p class="xiangqing">2017年国家对中小企业贷款融资政策是什么？中小企业的重要性不言而喻，中小企业的困难不言而喻</p>
+							</div>
+							<div class="detailline">
+								<div class="detailtitle" style="padding-top: 14px;">
+									<div class="dettitle">2017年国家对中小企业贷款融资政策是什么？</div>
+									<span class="dettime">2017-06-26 16:27</span>
+								</div>
+								<p class="xiangqing">2017年国家对中小企业贷款融资政策是什么？中小企业的重要性不言而喻，中小企业的困难不言而喻</p>
+							</div>
+						</div>
+					</div>
+					<div class="hycontent" style="z-index: 1;">
+
+<!--媒体报道-->
+<!--一张图-->
+						<!--<div class="hypic">
+							
+						</div>-->
+<!--多张轮播-->
+						<div class="mtpiclunbo">
+							<div class="mtinner">
+								<div class="mtitem mtitem1">01</div>
+								<div class="mtitem mtitem2">02</div>
+								<div class="mtitem mtitem3">03</div>
+								<div class="mtitem mtitem4">04</div>
+								<div class="mtitem mtitem5">05</div>
+							</div>
+							<div class="mtbtnbox">
+								<div class="mtbtn" style="z-index:1;background-color:red;"></div>
+								<div class="mtbtn"></div>
+								<div class="mtbtn"></div>
+								<div class="mtbtn"></div>
+								<div class="mtbtn"></div>
+							</div>
+						</div>
+						
+						<div class="hydetail">
+							<div class="detailline">
+								<div class="detailtitle">
+									<div class="dettitle">2017年国家对中小企业贷款融资政策是什么？</div>
+									<span class="dettime">2017-06-26 16:27</span>
+								</div>
+								<p class="xiangqing">2017年国家对中小企业贷款融资政策是什么？中小企业的重要性不言而喻，中小企业的困难不言而喻</p>
+							</div>
+							<div class="detailline" style="border-bottom: 1px solid #ececec;border-top: 1px solid #ececec;padding-bottom: 10px;">
+								<div class="detailtitle" style="padding-top: 14px">
+									<div class="dettitle">2017年国家对中小企业贷款融资政策是什么？</div>
+									<span class="dettime">2017-06-26 16:27</span>
+								</div>
+								<p class="xiangqing">2017年国家对中小企业贷款融资政策是什么？中小企业的重要性不言而喻，中小企业的困难不言而喻</p>
+							</div>
+							<div class="detailline">
+								<div class="detailtitle" style="padding-top: 14px;">
+									<div class="dettitle">2017年国家对中小企业贷款融资政策是什么？</div>
+									<span class="dettime">2017-06-26 16:27</span>
+								</div>
+								<p class="xiangqing">2017年国家对中小企业贷款融资政策是什么？中小企业的重要性不言而喻，中小企业的困难不言而喻</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--合作伙伴-->			
+				<div class="hezuoword">合作伙伴</div>
+				<div class="middlesec6">
+					<div class="sec6container">
+						<div class="sec6inner">
+							<a href="###"><div class="contacts"><img src="img/cooperate1.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate2.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate3.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate4.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate5.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate6.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate7.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate8.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate9.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate10.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate11.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate12.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate13.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate14.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate15.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate16.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate17.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate18.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate19.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate20.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate1.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate2.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate3.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate4.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate5.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate6.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate7.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate8.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate9.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate10.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate11.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate12.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate13.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate14.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate15.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate16.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate17.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate18.png" alt="" /></div></a>
+							<a href="###"><div class="contacts"><img src="img/cooperate19.png" alt="" /></div></a>
+							<a href="###"><div class="contacts" style="margin: 0;"><img src="img/cooperate20.png" alt="" /></div></a>
+						</div>
+					</div>
+					<a href="###"><div class="sec6left"><img src="img/sec6left.png" alt="" /></div></a>
+					<a href="###"><div class="sec6right"><img src="img/sec6right.png" alt="" /></div></a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+
+//美味系列高度
+		var autoheight=$(".sec3right").height();
+		$(".sec3left").height(autoheight);
+		$(".middlesec3").height(autoheight);
+		var autoheight4=$(".sec3right4").height();
+		$(".sec3left4").height(autoheight4);
+		$(".middlesec4").height(autoheight4);
+
+//行业资讯选项卡
+		var hybtnss=$(".hybtn");
+	    hybtnss.mouseover(function(){
+	    	hybtnss.css({
+	    		borderBottom:"none",
+	    		color:"#333"
+	    	}).filter(this).css({
+	    		borderBottom:"2px solid #ffa540",
+	    		color:"#ffa540"
+	    	})
+	    	var index=$(this).index();
+	    	$(".hycontent").css("z-index","1").eq(index).css("z-index","0");
+	    })
+
+//媒体报道小轮播
+		var mtbtns=$(".mtbtn");
+	    var mt=setInterval(mtmove,2000)
+	    var mtnow=0;
+	    var mtnext=0;
+	    var mtz=10;
+	    function mtmove(){
+	        mtnext++;
+	        if(mtnext==mtbtns.length){
+	            mtnext=0;
+	        }
+	        mtbtns.eq(mtnow).css("background-color","#fff").end().eq(mtnext).css("background-color","red");
+	        $(".mtitem").eq(mtnext).css({left:330,zIndex:mtz++}).animate({left:0},1000).end().eq(mtnow).animate({left:-330},1000);
+	        mtnow=mtnext;
+	    }
+	    $(".mtpiclunbo").hover(function(){clearInterval(mt)},function(){mt=setInterval(mtmove,2000)})
+	    mtbtns.mouseover(function(){
+	        mtnext=$(this).index();
+	        if(mtnext>mtnow){
+	            var l=330;
+	        }else if(mtnext<mtnow){
+	            var l=-330;
+	        }
+	        mtbtns.eq(mtnow).css("background-color","#fff").end().eq(mtnext).css("background-color","red");
+	        $(".mtitem").eq(mtnext).css({left:l,zIndex:mtz++}).animate({left:0},1000).end().eq(mtnow).animate({left:-l},1000);
+	        mtnow=mtnext;
+	    })
+	    
+//行业资讯小轮播
+		var hybtns=$(".hybtns");
+	    var ht=setInterval(hymove,2000)
+	    var hynow=0;
+	    var hynext=0;
+	    var hyz=10;
+	    function hymove(){
+	        hynext++;
+	        if(hynext==hybtns.length){
+	            hynext=0;
+	        }
+	        hybtns.eq(hynow).css("background-color","#fff").end().eq(hynext).css("background-color","red");
+	        $(".hyitem").eq(hynext).css({left:330,zIndex:hyz++}).animate({left:0},1000).end().eq(hynow).animate({left:-330},1000);
+	        hynow=hynext;
+	    }
+	    $(".hypiclunbo").hover(function(){clearInterval(ht)},function(){ht=setInterval(hymove,2000)})
+	    hybtns.mouseover(function(){
+	        hynext=$(this).index();
+	        if(hynext>hynow){
+	            var l=330;
+	        }else if(hynext<hynow){
+	            var l=-330;
+	        }
+	        hybtns.eq(hynow).css("background-color","#fff").end().eq(hynext).css("background-color","red");
+	        $(".hyitem").eq(hynext).css({left:l,zIndex:hyz++}).animate({left:0},1000).end().eq(hynow).animate({left:-l},1000);
+	        hynow=hynext;
+	    })
+
+//底部合作伙伴无缝轮播
+		$(function(){
+		var sec6inner=$(".sec6inner")[0];
+		var middlesec6=$(".middlesec6")[0];
+		t=setInterval(move,2000);
+	    var num=0;
+	    function move(){
+	    	num++;
+	    	if(num==21){
+	    		num=1;
+	    		sec6inner.style.marginLeft=0;
+	    	}
+	    	if (num==-1){
+	    		num=19;
+	    		sec6inner.style.marginLeft="-4080px";
+	    	};
+	    	animate(sec6inner,{marginLeft:-204*num},500)
+	    }
+	    	middlesec6.onmouseover=function(){
+	    		clearInterval(t);
+	    	}
+	    	middlesec6.onmouseout=function(){
+	    		t=setInterval(move,2000);
+	    	}
+	    var sec6left=$(".sec6left")[0];
+	    var sec6right=$(".sec6right")[0];
+	    sec6right.onclick=function(){
+	    	move();
+	    }
+	    sec6left.onclick=function(){
+	    	num-=2;
+	    	move();
+	    }
+	})
+	</script>
+</html>

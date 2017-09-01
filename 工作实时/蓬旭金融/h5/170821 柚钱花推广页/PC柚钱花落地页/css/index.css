@@ -1,0 +1,92 @@
+*{margin:0;padding:0;}
+li{list-style:none;}
+body{font-family:"微软雅黑";}
+.banner{
+	width:100%;
+	height:587px;
+	min-width:1200px;
+	background:url(../images/banner.png) no-repeat center top;
+}
+.codeimg{
+	width:1200px;
+	margin:0 auto;
+}
+.codeimg ul{
+	padding: 335px 0 0 274px;
+}
+.codeimg li{
+	float:left;
+    width:130px;
+    text-align: center;
+    font-size:18px;
+    color:#fff;
+    margin-right:60px;
+}
+.codeimg li p{
+	line-height:36px;
+	font-size:16px;
+}
+.content{
+	width:1200px;
+	margin:0 auto;
+	padding-top:35px;
+	overflow: hidden;
+}
+.content h3{
+	font-size:31px;
+	font-weight:normal;
+	color:#333;
+	text-align: center;
+}
+.content .ul1{
+	padding-left:80px;
+	padding-top:80px;
+	padding-bottom:95px;
+	overflow: hidden;
+}
+.content .ul1 li{
+	width:170px;
+	float: left;
+	text-align: center;
+	font-size:24px;
+	color:#333;
+}
+.content .ul1 li p{
+	padding-top:25px;
+}
+.content .ul1 li.arrow{
+	width:151px;
+	margin:0 60px;
+	padding-top:25px;
+}
+.content .ul2{
+	width:1300px;
+	overflow: hidden;
+}
+.content .ul2 li{
+	float: left;
+	width:190px;
+	text-align: center;
+	margin-right:150px;
+	padding-top:80px;
+}
+.content .ul2 li.last{
+	margin-right:0;
+}
+.content .ul2 li h4{
+	font-weight:normal;
+	font-size:24px;
+	color:#333;
+	padding:20px 0;
+}
+.content .ul2 li p{
+	color:#888;
+	font-size:16px;
+}
+.footer{
+	height:243px;
+	width:100%;
+	min-width:1200px;
+	background:url(../images/footer.png) no-repeat center top;
+	margin-top:-80px;
+}

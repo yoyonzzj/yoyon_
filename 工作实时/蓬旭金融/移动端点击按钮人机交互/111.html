@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta charset="UTF-8">  
+        <title></title>  
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">  
+        <script src="touch-0.2.14.min.js"></script>
+        <style>  
+         .btn{  
+            display: block;  
+            position: relative;  
+            top: 100px;  
+            margin: 20px;  
+            width: 200px;   
+            height: 50px;  
+            line-height: 50px;  
+            text-align: center;  
+            border-radius: 5px;  
+            font-size: 18px;  
+            color: red;  
+            background-color: blue;  
+            }  
+            .btn-on{  
+                background-color: green;  
+            }  
+               
+        </style>  
+    </head>  
+    <body>  
+        <div class="btn"></div>  
+          
+        <script>  
+        var btn=document.querySelector(".btn");  
+        touch.on(btn,"touchstart",function(){ 
+            this.className="btn btn-on";  
+        }) 
+        touch.on(btn,"touchend",function(){ 
+            this.className="btn";  
+        }) 
+        </script>  
+    </body>  
+</html>  

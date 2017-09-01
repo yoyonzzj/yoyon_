@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置登录密码</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/setloginpwd.css">
+</head>
+<body>
+   <p class="line"></p>
+   <div class="form" id="form">
+       <p>
+         <i></i>
+         <input type="password" placeholder="请输入(6-16位的数字、字母结合)" id="pwd1" name="pwd1">
+         <em></em>
+         <span id="screct"></span>
+       </p>
+       <p>
+         <i></i>
+         <input type="password" placeholder="请确认登陆密码" id="pwd2" name="pwd2">
+         <em></em>
+       </p>
+   </div>
+
+   <input type="button" value="确认" id="btn">
+
+
+   <div class="tip">
+     <span id="tipmsg">asdasd</span>
+   </div>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+   var form=document.getElementById("form");
+   var pwd1=document.getElementById("pwd1");
+   var pwd2=document.getElementById("pwd2");
+   var screct=document.getElementById("screct");
+   var btn=document.getElementById("btn");
+   var tipmsg=document.getElementById("tipmsg");
+   var ems=form.getElementsByTagName("em");
+   var onoff=true;
+   
+   screct.addEventListener("touchend",function(){
+        if(onoff){
+          pwd1.type=pwd2.type="text";
+          this.className="cur";
+        }else{
+          pwd1.type=pwd2.type="password";
+          this.className="cur";
+        }
+        onoff=!onoff;
+   }) 
+
+  base.delTip(pwd1);
+  base.delTip(pwd2);
+  
+  for(var i=0;i<ems.length;i++){
+    base.clearVal(ems[i]);
+  }
+
+ btn.addEventListener("click",function(){
+       var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+       if(pwd1.value==""){
+          base.showTip(tipmsg,"密码不能为空");
+       }else if(!reg.test(pwd1.value)){
+          base.showTip(tipmsg,"密码格式不正确");
+       }else if(pwd1.value!=pwd2.value){
+          base.showTip(tipmsg,"两次输入密码不一致");
+       }
+})
+
+
+
+</script>	
+</body>
+</html>

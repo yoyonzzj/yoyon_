@@ -1,0 +1,67 @@
+#list li{
+	width:6.9rem;
+	height:2rem;
+	background:#fff;
+	margin:0.2rem auto 0;
+}
+#list li .left{
+	color:#ff971b;
+	float: left;
+	font-size:0.28rem;
+	width:2.90rem;
+	text-align: center;
+	padding-top:0.8rem;
+}
+#list li.has .left{
+   padding-top:0.6rem;
+}
+#list li .left strong{
+	font-size:0.5rem;
+}
+#list li .left p{
+	font-size:0.26rem;
+	color:#666;
+
+}
+#list li .mid{
+	float:left;
+}
+#list li .mid h4{
+	font-weight:normal;
+	color:#333;
+	font-size:0.3rem;
+	padding:0.3rem 0 0.2rem;
+}
+#list li .mid p{
+	color:#666;
+	font-size:0.24rem;
+	padding-bottom:0.1rem;
+}
+#list li a{
+	float:right;
+	width:1.3rem;
+	height:0.5rem;
+	text-align: center;
+	line-height: 0.5rem;
+	color:#fff;
+	background:#ff971b;
+	font-size:0.24rem;
+	border-radius:0.04rem;
+	margin-right:0.25rem;
+	margin-top:0.75rem;
+}
+
+.nomore{
+	width:3.7rem;
+	margin:0.7rem auto;
+	border-top:2px solid rgb(207,207,207);
+}
+.nomore span{
+	display:block;
+	width: 2rem;
+	margin:-0.17rem auto;
+	text-align: center;
+	background:#f4f4f4;
+	font-size:0.22rem;
+	color:rgb(188,187,187);
+}

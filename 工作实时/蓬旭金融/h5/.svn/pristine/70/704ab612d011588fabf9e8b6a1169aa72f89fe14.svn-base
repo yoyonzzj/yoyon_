@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提现</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/base.css">	
+<link rel="stylesheet" type="text/css" href="css/gl_cash.css">
+</head>
+<body>
+   <dl>
+      <dt><img src="img/zsbank.png"></dt>
+      <dd>
+        <h4>招商银行</h4>
+        <p>231 **** **** **** 2231</p>
+      </dd>
+   </dl>
+   
+
+
+   <div class="txt">
+     <span>提现金额</span>
+     <p><em>￥</em><input type="number" placeholder="请输入提现金额" id="money"></p>
+   </div>
+   
+   <p class="msg">可用余额<span id="price">2300.00</span>元<em id="all">全部提现</em></p>
+
+   <input type="button" value="提 现" id="btn"  disabled="true">
+ 
+
+
+<p id="tip">
+  <span id="tipmsg"></span>
+</p>
+
+
+
+
+<div id="mask"></div>
+<div id="dialog">
+   <span id="close"></span>
+   <h4>请输入交易密码</h4>
+   <em>提现</em>
+   <strong>￥100.00</strong>
+   <input type="password" id="pwd">
+   <a href="javascript:;" id="btn1">确认</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript">
+  
+  var money=document.getElementById("money");//提现金额输入框
+  var mask=document.getElementById("mask");//黑色半透明遮罩层
+  var dialog=document.getElementById("dialog");//交易密码弹窗
+  var strong=dialog.getElementsByTagName("strong")[0];//交易密码弹窗金额显示
+  var btn=document.getElementById("btn");//提现按钮
+  var btn1=document.getElementById("btn1");//交易密码弹窗确认按钮
+  var close=document.getElementById("close");//交易密码弹窗关闭按钮
+  var price=document.getElementById("price");//可用余额
+  var all=document.getElementById("all");//全部提现按钮
+  var tipmsg=document.getElementById("tipmsg");//悬浮提示
+  
+
+//提现金额输入框事件
+  money.addEventListener("input",function(){
+     var reg=/[^\d\.]/g;
+     base.onlyNumber(this,2);
+     if(parseFloat(this.value)>parseFloat(price.innerHTML)){
+        this.value=parseFloat(price.innerHTML).toFixed(2)
+     }
+
+
+
+     if(this.value!=""){
+       btn.disabled=false;
+       btn.style.background="rgb(255,151,27)";
+     }else{
+       btn.disabled=true;
+       btn.style.background="rgb(245, 207, 162)";
+     }
+  },false)
+
+  
+
+//全部提现金额点击事件
+all.addEventListener("touchend",function(){
+    money.value=price.innerHTML;
+    btn.disabled=false;
+    btn.style.background="rgb(255,151,27)";
+})
+
+
+
+
+//提现按钮点击事件
+  btn.addEventListener("click",function(){
+      if(parseFloat(money.value)<100){
+          base.showTip(tipmsg,"提现金额最低为100元");
+      }else{
+         mask.style.display=dialog.style.display="block";
+         strong.innerHTML="￥"+money.value;
+      }
+
+
+      
+  },false)
+
+  
+  
+
+ //关闭按钮事件
+  var pwd=document.getElementById("pwd");
+  close.addEventListener("touchend",function(){
+    mask.style.display=dialog.style.display="none";
+    pwd.value="";
+ })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>	
+</body>
+</html>

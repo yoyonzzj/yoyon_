@@ -1,0 +1,158 @@
+body{background:rgb(244,244,244);font-size:0.28rem;}
+dl{
+  background:#fff;
+  height:2.15rem;
+  padding:0.4rem 0 0 1.44rem;
+  box-sizing:border-box;
+  border-top:1px solid rgb(236,236,236);
+}
+dt{
+	float:left;
+	width:1.3rem;
+	height:1.3rem;
+	background:#ccc;
+}
+dt img{
+	width:1.3rem;
+	height:1.3rem;
+}
+dd{
+	float:left;
+	padding-left:0.3rem;
+	padding-top:0.45rem;
+}
+dd h4{
+	font-weight:normal;
+	padding-bottom:0.25rem;
+}
+
+.btn{
+	display:block;
+	width:6rem;
+	height:0.88rem;
+	line-height:0.88rem;
+	text-align:center;
+	color:#fff;
+	background:rgb(255,151,27);
+	margin:1.2rem auto 1rem;
+	font-size:0.34rem;
+	border-radius:0.1rem;
+}
+
+.takeinfo{
+	background:#fff;
+	margin-top:0.2rem;
+	padding:0.3rem 0 0 0.4rem;
+}
+.takeinfo h4,.remark h4{
+	color:rgb(102,102,102);
+	font-weight:normal;
+	font-size:0.3rem;
+}
+.takeinfo a{
+	display:block;
+	height:0.7rem;
+	line-height:0.7rem;
+	color:rgb(153,153,153);
+	margin-top:0.2rem;
+	position:relative;
+}
+.takeinfo a i{
+   position:absolute;
+   right:0.4rem;
+   top:0.2rem;
+   width:0.14rem;
+   height:0.26rem;
+   background:url(../img/arrow1.png) no-repeat;
+   background-size:cover;
+}
+.adressinfo{
+	padding:0.3rem 0;
+}
+.remark{
+	background:#fff;
+	margin-top:0.2rem;
+	padding:0.3rem 0 0 0.4rem;
+}
+.remark textarea{
+	background:#fff;
+	width:100%;
+	height:1.5rem;
+	margin-top:0.3rem;
+	resize:none;
+	padding-right:0.4rem;
+	box-sizing:border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mask{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    display:none;
+}
+
+.dialog {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    background: #fff;
+    border-radius: 0.1rem;
+    width: 5.46rem;
+    margin-left: -2.73rem;
+    display: none;
+}
+.dialog h4 {
+    font-weight: normal;
+    text-align: center;
+    width: 3.90rem;
+    margin: 0 auto;
+    color: rgb(51,51,51);
+    font-size: 0.32rem;
+    line-height: 0.6rem;
+    padding: 0.5rem 0 0.3rem;
+}
+.dialog .line {
+    width: 5rem;
+    border-top: 1px solid rgb(236,236,236);
+    margin: 0 auto;
+}
+.dialog .btns {
+    height: 0.85rem;
+    line-height: 0.35rem;
+}
+.dialog .btns span {
+    float: left;
+    width: 50%;
+    height: 0.85rem;
+    text-align: center;
+    padding-top: 0.25rem;
+    box-sizing: border-box;
+    font-size: 0.32rem;
+}
+.dialog .btns span a {
+    display: block;
+    height: 0.35rem;
+    width: 100%;
+}
+.dialog .btns span:nth-of-type(1) a{
+    border-right: 1px solid rgb(220,220,220);
+    color: #999;
+}
+.dialog .btns span:nth-of-type(2) a{
+    color: rgb(241,156,63);
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">	
+</head>
+<body>
+	<div class="header-box">
+		<div class="header">
+			<div class="logo"><a href="https://www.uzicai.com/"><img src="images/logo.png" /></a></div>
+			<p>
+				<a href="https://www.uzicai.com/toLogin.do" class="login">登录</a>
+				<a href="https://www.uzicai.com/" class="home">返回首页</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="banner">
+		<div class="w1200">
+			<div class="regbox">
+				<h3>注册</h3>
+				<p><input type="text" placeholder="请输入您的手机号码" class="txt" id="tel"/></p>
+				<p><input type="text" placeholder="请输入您的短信验证码" class="code" id="code"/><input type="button" value="获取验证码" id="send"/></p>
+				<p><input type="password" placeholder="请输入6-16位字母和数字组合密码" class="txt" id="pwd"/></p>
+				<span id="tip"><!-- 请输入正确的手机号码 --></span>
+                <div id="agreen">
+                	<i></i>
+                	<strong>我已阅读并同意<a href="#">《柚子理财注册协议》</a></strong>
+                </div>
+                <a href="javascript:;" class="regbtn" id="btn">注册领68888壕礼</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content1 w1200">
+		<img src="images/title1.png"/>
+		<ul>
+			<li><img src="images/hl1.png" /></li>
+			<li><img src="images/hl2.png" /></li>
+			<li><img src="images/hl3.png" /></li>
+		</ul>
+	</div>
+
+	<div class="box">
+		<div class="content2 w1200">
+			 <img src="images/title2.png"/>
+			 <div class="line">
+			 	<a href="http://www.uzicai.com/activity/pcDeposit/pcDeposit.html" class="left1">与晋商银行签署了银行存管协议</a>
+			 	<a href="https://www.uzicai.com/content/selfDiscipline.do" class="left2">受邀加入新华社《金融行业自律公约》</a>
+			 	<a href="https://www.uzicai.com/content/yingKe.do" class="left3">盈科律师事务所提供法律支持</a>
+			 	<a href="http://www.uzicai.com/delicious.do" class="right1">与美味不用等达成战略合作</a>
+			 	<a href="#" class="right2">成为上海金融信息行业协会会员单位</a>
+			 </div>
+
+			 <a href="javascript:;" id="top">立即注册领68888壕礼</a>
+		</div>
+	</div>
+
+
+	<div class="footbox">
+		<div class="footer w1200">
+			 <div class="top">
+			 	<ul>
+			 		<li>
+			 			<img src="images/app.png" />
+			 			<p>下载柚子理财app</p>
+			 		</li>
+			 		<li>
+			 			<img src="images/wx.png" />
+			 			<p>官方微信公众号</p>
+			 		</li>
+			 	</ul>
+			 	<div class="right">
+			 		<h4>4009-020-892</h4>
+			 		<p>服务时间：9:30-12:00  /  13:30-17:30</p>
+			 		<p>公司地址：上海市浦东新区张扬路1518号605室</p>
+			 	</div>
+			 </div>
+
+			 <div class="copy">
+			 	<p>版权所有 ©柚子理财 上海蓬旭金融信息服务有限公司 沪ICP备15047822号</p>
+			 	<p class="p1">平台提示：投资有风险，理财需谨慎</p>
+			 </div>
+		</div>
+	</div>
+
+
+	<div class="fixed">
+		<div class="w1200 fixedbox">
+			<span id="close"></span>
+			<img src="images/fd.png" class="fd"/>
+			<div class="codeimg">
+				<img src="images/app.png"  class="appimg"/>
+				<div class="app">
+					<img src="images/uzlogo.png"/>
+					<h4>理财app</h4>
+					<p>安全合规投资 </p>
+				</div>
+			</div>
+		</div>
+    <span class="fcbtn"></span>
+	</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    //获取手机输入框
+    var tel=$("#tel");
+    //获取验证码输入框
+    var code=$("#code");
+    //获取密码输入框
+    var pwd=$("#pwd");
+    //获取发送验证码按钮
+    var send=$("#send");
+    //获取注册按钮
+    var btn=$("#btn");
+    
+    var tip=$("#tip");
+    var timer=null;
+    var now=10;
+    
+   
+   
+    var check=document.getElementById("agreen").getElementsByTagName("i")[0];
+    
+    var onoff=true;
+    check.onclick=function(){
+   
+      if(onoff){
+         check.style.background="url(images/uncheck.png) no-repeat";
+      
+      }else{
+         check.style.background="url(images/check.png) no-repeat";
+        
+      }
+      onoff=!onoff;
+   
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //发送验证码接口请求
+   send.click(function(){
+   	    var regtel=/^1[3|4|5|7|8]\d{9}$/; 
+   	    var telval=tel.val();
+    	if(telval==""){
+    		tip.html("手机号码不能为空");
+    	}else if(!regtel.test(telval)){
+    		tip.html("手机号码格式不正确");
+    	}else{
+    		$.ajax({
+    			      type:"post",
+    			      url:"/sendSmsForSpread.do",
+    			      data:{
+                         tel:telval
+    			      },
+    			      dataType:"json",
+    			      success:function(res){
+                              if(res.code==200){
+                    	            tip.html(res.msg);
+                                   
+                                    timer=setInterval(function(){
+    				                     if(now!=0){
+    					                      send.val(now); 
+    		        	                      now--;
+    			                              send.attr("disabled",true);
+                                         }else{
+    		        	                      clearInterval(timer);
+                                              send.attr("disabled",false);
+                                              send.val("重新发送");
+                                              now=10;
+    		                             } 
+    			                    },1000)
+    			    
+    		                       
+                            }else if(res.code==500){
+                    	          tip.html(res.msg);
+                            }
+    			    }
+    		  })
+    	}
+   })
+
+
+
+
+
+
+
+
+
+//注册接口
+    btn.click(function(){
+             var regpwd=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
+             var regtel=/^1[3|4|5|7|8]\d{9}$/; 
+             var telval=tel.val();
+             var codeval=code.val();
+             var pwdval=pwd.val();
+             
+          console.log(onoff)
+          
+
+
+
+          if(!onoff){
+             tip.html("请同意注册协议");
+
+          }else if(telval==""){
+    		     tip.html("手机号码不能为空");
+    	    }else if(!regtel.test(telval)){
+    		     tip.html("手机号码格式不正确");
+    	    }else if(codeval==""){
+                 tip.html("请输入短信验证码");
+    	    }else if(pwdval==""){
+                 tip.html("请输入密码");
+    	    }else if(!regpwd.test(pwdval)){
+    	    	 tip.html("密码格式不正确");
+    	    }else{
+                 
+                 $.ajax({
+    			      type:"post",
+    			      url:"/registerReviewForSpread.do",
+    			      data:{
+                         userAccount:telval,
+                         userPassword:pwdval,
+                         phoneCode:codeval
+                        // userChannel:
+    			      },
+    			      dataType:"json",
+    			      success:function(res){
+                             if(res==500){
+                             	tip.html(res.msg);
+                             }else{
+                             	alert("成功跳转")
+                             }
+    			    }
+    		   })
+
+
+    	    }
+
+    
+
+    })
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+   tel.focus(function(){
+   		tip.html("");
+   });
+   
+   code.focus(function(){
+   		tip.html("");
+   });
+   
+   pwd.focus(function(){
+   		tip.html("");
+   });
+
+
+
+
+
+
+   $("#top").click(function(){
+   	   $("body,html").animate({
+   	   	  scrollTop:0
+   	   },400)
+   })
+
+    $("#close").click(function(){
+   	   $(".fixed").animate({"left":"-100%"},200);
+   })
+
+    $(".fcbtn").click(function(){
+       $(".fixed").animate({"left":0},200);
+    })
+
+   
+
+   $("#send").hover(function(){
+      $(this).css("color","#f2a955")
+   },function(){
+      $(this).css("color","#666")
+   })
+
+</script>	
+</body>
+</html>

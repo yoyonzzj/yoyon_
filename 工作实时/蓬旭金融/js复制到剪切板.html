@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="target">88888886</div>
+	<input type="text" id="hide_target">
+	<button id="copy" onclick="copyUrl2()">复制</button>
+	<script>
+		var target=document.getElementById("target");
+		var hide_target=document.getElementById("hide_target");
+		hide_target.value=target.innerHTML;
+		function copyUrl2(){
+			hide_target.select(); // 选择对象
+			document.execCommand("Copy"); // 执行浏览器复制命令
+		}
+	</script>
+</body>
+</html>

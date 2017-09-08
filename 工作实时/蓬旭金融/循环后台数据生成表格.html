@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table border="1" width="100%">
+		<thead>
+			<tr>
+				<td>序号</td>
+				<td>逾期天数</td>
+				<td>借款金额</td>
+				<td>借款期限</td>
+				<td>借款时间</td>
+				<td>还款时间</td>
+			</tr>
+		</thead>
+		<tbody id="data_tr">
+		</tbody>
+	</table>
+</body>
+<script>
+	$.post('/zyBorrowVerify/queryBorrowList?userId='+userId,function(data){
+		//获得响应数据
+		var obj=eval(data.result);
+		$("#data_tr").html("");
+		$(obj).each(function (index){
+			var val=obj[index];
+			var tr=$('<tr></tr>');
+			var index_order=index+1;
+			tr.append('<td>'+ index_order + '</td>' + '<td>'+ val.overdueDay + '</td>'+'<td>'+ val.borrowLimit + '</td>'+'<td>'+ val.borrowPeriods + '</td>'+'<td>'+ val.grantDate + '</td>'+'<td>'+ val.borrowStatus + '</td>');
+			$("#data_tr").append(tr);
+		});
+	},'json');
+</script>
+</html>

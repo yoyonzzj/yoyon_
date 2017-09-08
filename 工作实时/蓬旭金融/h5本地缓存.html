@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var btn=document.getElementById("btn");
+	var div1=document.getElementById("div1");
+    
+    btn.onclick=function(){
+    
+    	localStorage.setItem("isshow", "none");
+       div1.style.display=localStorage.getItem("isshow")
+         
+    }
+      div1.style.display=localStorage.getItem("isshow")
+</script>
+</html>
